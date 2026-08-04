@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you use BPMR-Net, please cite the software and the associated paper."
+title: "BPMR-Net"
+type: software
+version: 0.1.0
+date-released: 2026-08-04
+authors:
+  - family-names: "Qin"
+    given-names: "Ying"
+  - family-names: "Zhang"
+    given-names: "Dawang"
+  - family-names: "Qiao"
+    given-names: "Yidong"
+license: Apache-2.0
+repository-code: "https://github.com/YingQin0727/bpmr-net"
+abstract: >-
+  Boundary-preserving masked multi-receptive residual refinement and
+  entropy-selective fusion for sparse-section microstructure reconstruction.
+preferred-citation:
+  type: article
+  title: >-
+    Sparse-section reconstruction of multiphase microstructures through
+    baseline-preserving residual probability refinement
+  authors:
+    - family-names: "Qin"
+      given-names: "Ying"
+    - family-names: "Zhang"
+      given-names: "Dawang"
+    - family-names: "Qiao"
+      given-names: "Yidong"
+  year: 2026
+  notes: "Add the final journal, volume, pages, and DOI after publication."

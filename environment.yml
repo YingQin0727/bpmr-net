@@ -1,0 +1,15 @@
+name: bpmr-net
+channels:
+  - pytorch
+  - conda-forge
+dependencies:
+  - python=3.11
+  - numpy>=1.24
+  - pytorch>=2.2
+  - matplotlib>=3.8
+  - pandas>=2.0
+  - scipy>=1.11
+  - pillow>=10
+  - pip
+  - pip:
+      - -e .[dev,paper]

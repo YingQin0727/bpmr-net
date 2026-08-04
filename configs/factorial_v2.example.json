@@ -1,0 +1,18 @@
+{
+  "schema": "bpmr_net_factorial_paths_v1",
+  "project_root": ".",
+  "output_root": "outputs/factorial_v2",
+  "dense_sources": {
+    "WF2": "data/raw/WF2_5um_1030x1033x3051_8b_segmented_corrected.raw",
+    "GI": "data/raw/GI_5um_1030x1033x3051_8b_segmented.raw"
+  },
+  "external_manifests_root": "data/manifests",
+  "checkpoint_root": "checkpoints",
+  "materials": ["WF2", "GI"],
+  "sampling_regimes_um": [25, 250, 1000],
+  "orientations": ["x", "y", "z"],
+  "training_seeds": [1701, 1702],
+  "reconstruction_seeds": [2701, 2702, 2703, 2704, 2705],
+  "methods": ["B0", "ORIGINAL_R2", "SELECTIVE_V2"],
+  "es_bpmr_entropy_threshold": 0.12690064311027527
+}

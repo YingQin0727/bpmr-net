@@ -1,0 +1,8 @@
+BPMR-Net
+Copyright 2026 Ying Qin, Dawang Zhang, and Yidong Qiao
+
+This distribution contains an independently packaged implementation of the
+model, feature encoding, fusion rules, and reproducibility interfaces used in
+the associated research project. Third-party datasets and model checkpoints
+are not covered by the Apache-2.0 license unless explicitly stated by their
+respective owners.
