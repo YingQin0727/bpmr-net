@@ -1,0 +1,87 @@
+{
+  "schema": "mtcomm_revision_protocol_v1",
+  "manuscript": "MTCOMM-D-26-05155",
+  "output_root_default": "outputs/revision_mtcomm_2026",
+  "source_paper_workflow": "paper_reproduction",
+  "training": {
+    "adaptation_epochs": 50,
+    "early_stopping_primary": false,
+    "primary_endpoint": "epoch_50",
+    "secondary_checkpointing": "best_validation_allowed_for_secondary_analysis",
+    "training_seeds": [1701, 1702, 1703],
+    "batch_size": 4096,
+    "shuffle": false,
+    "paired_event_stream_required": true,
+    "source_b0_hash_match_required": true
+  },
+  "variants": {
+    "A0": {
+      "name": "B0_MSE_CONT",
+      "trainable": "all_B0_parameters",
+      "loss": "MSE",
+      "gate": null,
+      "dilations": null
+    },
+    "A1": {
+      "name": "B0_NLL_CONT",
+      "trainable": "all_B0_parameters",
+      "loss": "categorical_NLL",
+      "gate": null,
+      "dilations": null
+    },
+    "A2": {
+      "name": "BPMR_MSE",
+      "trainable": "residual_branch_only",
+      "loss": "MSE",
+      "gate": "adaptive_entropy_margin_support",
+      "dilations": [1, 2, 4]
+    },
+    "A3": {
+      "name": "BPMR_NLL",
+      "trainable": "residual_branch_only",
+      "loss": "categorical_NLL",
+      "gate": "adaptive_entropy_margin_support",
+      "dilations": [1, 2, 4]
+    },
+    "A4": {
+      "name": "BPMR_NLL_CONSTANT_GATE",
+      "trainable": "residual_branch_only",
+      "loss": "categorical_NLL",
+      "gate": "input_independent_scalar",
+      "dilations": [1, 2, 4]
+    },
+    "A5": {
+      "name": "BPMR_NLL_SINGLE_SCALE_MATCHED",
+      "trainable": "residual_branch_only",
+      "loss": "categorical_NLL",
+      "gate": "adaptive_entropy_margin_support",
+      "dilations": [1, 1, 1]
+    }
+  },
+  "reconstruction": {
+    "rollout_seeds": [2701, 2702, 2703, 2704, 2705],
+    "r1_max_sweep": 3,
+    "r2_max_sweep": 10,
+    "resume_from_saved_rng_state": true,
+    "update_orders": ["forward", "reverse", "random_per_sweep"],
+    "initializations": ["production_phase_prior", "uniform_four_phase", "dominant_phase_from_allowed_registered_data"],
+    "global_model_spacings_um": [25, 250, 1000],
+    "local_observation_spacings_um": [25, 250, 1000],
+    "crossed_design": true
+  },
+  "integrity": {
+    "dense_truth_reads_during_training": 0,
+    "dense_truth_reads_during_reconstruction": 0,
+    "additional_roi_selection_before_reconstruction": true,
+    "sha256_required_for": [
+      "source_b0_checkpoint",
+      "fit_event_identity",
+      "validation_event_identity",
+      "batch_order",
+      "epoch50_checkpoint",
+      "best_validation_checkpoint",
+      "reconstruction_state",
+      "update_order"
+    ]
+  }
+}
