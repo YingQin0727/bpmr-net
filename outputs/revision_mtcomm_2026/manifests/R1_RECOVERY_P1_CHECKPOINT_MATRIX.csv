@@ -1,0 +1,3 @@
+method,discovered,expected,missing,duplicates,identity_status
+B0,144,144,0,0,COMPLETE
+ORIGINAL_R2_or_SELECTIVE_V2,144,144,0,0,PRESENT_BUT_METADATA_NOT_FULLY_VALIDATED

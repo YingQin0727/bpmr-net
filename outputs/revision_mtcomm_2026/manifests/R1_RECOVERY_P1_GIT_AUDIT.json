@@ -1,0 +1,12 @@
+{
+  "schema": "mtcomm_r1_recovery_p1_git_audit_v1",
+  "repository_root": "C:\\Users\\admin\\Documents\\ChatGPT\\论文1",
+  "branch": "revision/mtcomm-major-2026",
+  "local_head": "e1e242df6d8187f2a8b2986e37e2817da685f57d",
+  "origin_head": "e1e242df6d8187f2a8b2986e37e2817da685f57d",
+  "commit_present_locally": true,
+  "commit_present_on_origin": true,
+  "push_required": true,
+  "synchronized": true,
+  "main_touched": false
+}

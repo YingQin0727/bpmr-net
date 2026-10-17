@@ -1,0 +1,17 @@
+{
+  "schema": "mtcomm_r1_recovery_p1_final_v1",
+  "classification": "BLOCKED",
+  "synchronized_git_head": "e1e242df6d8187f2a8b2986e37e2817da685f57d",
+  "archive_root": "C:\\Users\\admin\\Documents\\博士申请论文",
+  "final_v1_status": "PRESENT_BUT_UNVERIFIED",
+  "plane_store_status": "MISSING",
+  "baseline_status": "PRESENT_BUT_UNVERIFIED",
+  "legacy_r2_status": "PRESENT_BUT_IMPORT_FAIL",
+  "b0_checkpoint_count": 144,
+  "b0_checkpoint_complete": true,
+  "original_bpmr_checkpoint_count": 144,
+  "manifest_integrity": "BLOCKED_BY_MISSING_PLANE_STORE",
+  "exact_missing_components": ["registered sparse plane store", "condition manifests", "Python 3.11-compatible environment or validated compatibility", "Windows-compatible legacy runtime dependency"],
+  "next_stage_may_run": false,
+  "resume": "REVISION_R1_EXEC_P0_RESUME=NO"
+}

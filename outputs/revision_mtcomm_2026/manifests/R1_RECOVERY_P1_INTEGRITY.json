@@ -1,0 +1,12 @@
+{
+  "schema": "mtcomm_r1_recovery_p1_integrity_v1",
+  "final_v1_registries": "PRESENT_BUT_UNVERIFIED",
+  "registered_plane_manifests": "PRESENT_BUT_INCOMPLETE",
+  "plane_store": "MISSING",
+  "baseline": "PRESENT_BUT_UNVERIFIED",
+  "source_b0_checkpoints": "PRESENT_BUT_UNVERIFIED",
+  "source_bpmr_checkpoints": "PRESENT_BUT_UNVERIFIED",
+  "registry_hash_conflicts": [],
+  "dense_truth_used_for_repair": false,
+  "classification": "BLOCKED"
+}

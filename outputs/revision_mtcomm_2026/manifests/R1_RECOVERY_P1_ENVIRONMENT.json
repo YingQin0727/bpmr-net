@@ -1,0 +1,14 @@
+{
+  "schema": "mtcomm_r1_recovery_p1_environment_v1",
+  "python": "3.13.2",
+  "torch": "2.13.0+cpu",
+  "numpy": "2.5.1",
+  "scipy": "1.18.0",
+  "pandas": "3.0.3",
+  "cuda_available": false,
+  "declared_target_python": "3.11",
+  "torch_import": true,
+  "bpmr_import": false,
+  "environment_compatible": false,
+  "reason": "Active interpreter is Python 3.13 rather than the repository's Python 3.11 target; editable package import was not completed."
+}

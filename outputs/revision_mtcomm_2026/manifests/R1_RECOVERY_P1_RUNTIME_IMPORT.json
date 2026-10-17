@@ -1,0 +1,10 @@
+{
+  "schema": "mtcomm_r1_recovery_p1_runtime_import_v1",
+  "path": "C:\\Users\\admin\\Documents\\博士申请论文\\r2_lite_3d_pilot.py",
+  "sha256": "7F9E99CE653CA0FCA7480F04BE9FF871548AF03CBD7BA7E24B3A352CF3FA5130",
+  "syntax_compile": "PASS",
+  "import": "FAIL",
+  "missing_dependency": "resource",
+  "platform": "Windows",
+  "long_reconstruction_run": false
+}

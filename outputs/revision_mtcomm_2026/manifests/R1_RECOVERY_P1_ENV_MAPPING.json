@@ -1,0 +1,6 @@
+{
+  "schema": "mtcomm_r1_recovery_p1_env_mapping_v1",
+  "created": false,
+  "reason": "Candidate archive is incomplete; no machine-specific mapping was activated or committed.",
+  "BPMR_OUTPUT_ROOT": "outputs/revision_mtcomm_2026"
+}

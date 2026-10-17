@@ -1,0 +1,12 @@
+required_component,discovered,path,evidence
+final-v1 registries,YES,C:\Users\admin\Documents\博士申请论文\factorial_v2_inputs,frozen_condition_registry_v1.json and frozen_method_registry_v1.json
+registered plane manifests,PARTIAL,C:\Users\admin\Documents\博士申请论文\factorial_v2_inputs,nested_sparse_section_registry_v2.json only; condition manifests absent
+sparse plane store,NO,,no plane_store directory or npy.gz plane files found in candidate roots
+baseline archive,PARTIAL,C:\Users\admin\Documents\博士申请论文\stage5b_smoke_snapshot\baseline,baseline directory exists but not validated as the required production archive
+legacy 3-D runtime,PARTIAL,C:\Users\admin\Documents\博士申请论文\r2_lite_3d_pilot.py,source present; Windows import fails on resource
+Gate-B runtime,UNKNOWN,,not required for discovery decision
+B0 checkpoints,YES,C:\Users\admin\Documents\博士申请论文\.remote_factorial_v2\checkpoints,144 complete identities
+BPMR checkpoints,YES,C:\Users\admin\Documents\博士申请论文\.remote_factorial_v2\checkpoints,144 files present
+factorial-v2 outputs,YES,C:\Users\admin\Documents\博士申请论文\.remote_factorial_v2,freeze manifests and checkpoint tree present
+source dense truth bindings,YES,C:\Users\admin\Documents\博士申请论文\factorial_v2_inputs,r2_lite_dense_truth_binding_v1.json
+development-data roster,YES,C:\Users\admin\Documents\博士申请论文\stage5b_development_data_roster.json,roster present

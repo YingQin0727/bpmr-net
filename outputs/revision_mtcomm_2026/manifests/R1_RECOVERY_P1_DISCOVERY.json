@@ -1,0 +1,18 @@
+{
+  "schema": "mtcomm_r1_recovery_p1_discovery_v1",
+  "candidate_roots": [
+    {
+      "root": "C:\\Users\\admin\\Documents\\博士申请论文",
+      "evidence": [
+        "factorial_v2_inputs/frozen_condition_registry_v1.json",
+        "reconstruction_state_freeze_manifest_v1.json",
+        ".remote_factorial_v2/checkpoints",
+        "r2_lite_3d_pilot.py",
+        "factorial_v2_inputs/nested_sparse_section_registry_v2.json"
+      ],
+      "assessment": "BEST_CANDIDATE_BUT_INCOMPLETE"
+    }
+  ],
+  "dense_truth_hashed": false,
+  "isolated_files_copied": false
+}
