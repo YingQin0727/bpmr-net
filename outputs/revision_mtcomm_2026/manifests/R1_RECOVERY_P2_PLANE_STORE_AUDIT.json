@@ -1,0 +1,9 @@
+{
+  "schema": "mtcomm_r1_recovery_p2_plane_store_audit_v1",
+  "npy_gz_candidates_in_targeted_roots": 0,
+  "registered_plane_payload": "MISSING",
+  "authoritative_hashes_for_payload": "NONE_FOUND",
+  "representative_verification": "NOT_APPLICABLE",
+  "status": "PLANE_STORE=NOT_RECOVERED",
+  "dense_truth_used": false
+}

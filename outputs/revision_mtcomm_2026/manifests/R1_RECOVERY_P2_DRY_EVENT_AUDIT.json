@@ -1,0 +1,12 @@
+{
+  "schema": "mtcomm_r1_recovery_p2_dry_event_audit_v1",
+  "pilot_identity": "WF2/250um/x/template_phase_0/seed_1701",
+  "status": "NOT_RUN",
+  "fit_features_sha256": null,
+  "fit_targets_sha256": null,
+  "validation_features_sha256": null,
+  "validation_targets_sha256": null,
+  "withheld_features_sha256": null,
+  "withheld_targets_sha256": null,
+  "reason": "Condition manifests and registered plane payload are not recovered."
+}

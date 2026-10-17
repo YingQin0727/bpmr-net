@@ -1,0 +1,7 @@
+{
+  "schema": "mtcomm_r1_recovery_p2_final_v1_audit_v1",
+  "registry_equivalent": "PRESENT_BUT_UNVERIFIED",
+  "publication_final_v1_layout": "NOT_FOUND",
+  "matches_submitted_workflow": "NOT_PROVEN",
+  "status": "BLOCKED_BY_MISSING_LEVEL3_PAYLOAD"
+}

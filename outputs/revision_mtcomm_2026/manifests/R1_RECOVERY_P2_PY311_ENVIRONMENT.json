@@ -1,0 +1,9 @@
+{
+  "schema": "mtcomm_r1_recovery_p2_py311_environment_v1",
+  "python311_found": false,
+  "active_python": "3.13.2",
+  "torch": "2.13.0+cpu",
+  "bpmr_import": false,
+  "status": "FAIL",
+  "reason": "No Python 3.11 interpreter or conda executable is available on this machine."
+}

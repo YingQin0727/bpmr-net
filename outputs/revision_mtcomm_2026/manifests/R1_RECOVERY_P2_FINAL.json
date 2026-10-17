@@ -1,0 +1,20 @@
+{
+  "schema": "mtcomm_r1_recovery_p2_final_v1",
+  "classification": "BLOCKED",
+  "authoritative_root_selected": "C:\\Users\\admin\\Documents\\博士申请论文\\factorial_v2_supervisor_handoff_v1\\core_extracted_r2\\supervisor_handoff_v1_r2",
+  "handoff_master_manifest_sha256": "9053925e5d0229ed0b5b859aae3774b8dac851f4665089d18025257e3c826bd2",
+  "global_plane_sets_sha256": "14a4fa8987ea3ed84d478f6a38ddf6b384c8cf9128dde13e58becffd2dd8b302",
+  "plane_role_registry_sha256": "7e57171bf2a4a723eea771b70af9eeb22c17b5bc83a06bd6ada6907b7d7d8f06",
+  "checkpoint_training_registry_sha256": "573d3ac8e6385f91244984839f6f9f8f3d280b1de4f5834fa8363bdf6e31d8c4",
+  "source_roi_registry_sha256": "79a58ee84fdbb6405d03876d77fd8a4a0f55703fdc070a630d46db227e212b0e",
+  "plane_store_status": "NOT_RECOVERED",
+  "condition_manifest_status": "NOT_RECOVERED",
+  "b0_verified_count": 0,
+  "b0_present_count": 144,
+  "bpmr_verified_count": 0,
+  "bpmr_present_count": 144,
+  "legacy_runtime_status": "PRESENT_BUT_WINDOWS_IMPORT_FAIL",
+  "dry_event_reconstruction": "FAIL_NOT_RUN",
+  "exact_remaining_blockers": ["registered .npy.gz plane payload", "condition manifests", "Python 3.11 environment", "checkpoint per-file SHA crosscheck"],
+  "resume": "REVISION_R1_EXEC_P0_RESUME=NO"
+}

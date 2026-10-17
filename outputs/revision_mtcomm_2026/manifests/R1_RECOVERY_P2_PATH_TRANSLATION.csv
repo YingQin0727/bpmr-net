@@ -1,0 +1,7 @@
+current_expected_component,old_authoritative_component,old_absolute_path,identity_evidence,compatibility,action
+data/final_v1,frozen registries,C:\Users\admin\Documents\博士申请论文\factorial_v2_supervisor_handoff_v1\core_extracted_r2\supervisor_handoff_v1_r2\10_CONFIGS_AND_PROTOCOLS,registry names and hashes,PATH_ONLY_TRANSLATION,do not copy
+data/plane_store,registered sparse plane payload,,registry references only; no npy.gz payload,MISSING,stop
+data/manifests,step62 condition manifests,,no condition manifests found,MISSING,stop
+data/baseline,stage5b baseline,C:\Users\admin\Documents\博士申请论文\stage5b_smoke_snapshot\baseline,directory exists only,PRESENT_UNVERIFIED,do not use
+external/legacy_r2,r2_lite_3d_pilot.py,C:\Users\admin\Documents\博士申请论文\r2_lite_3d_pilot.py,source hash and syntax,PATH_ONLY_TRANSLATION,Windows shim later
+outputs/factorial_v2,remote factorial package,C:\Users\admin\Documents\博士申请论文\.remote_factorial_v2,checkpoint/freeze manifests,PATH_ONLY_TRANSLATION,do not copy

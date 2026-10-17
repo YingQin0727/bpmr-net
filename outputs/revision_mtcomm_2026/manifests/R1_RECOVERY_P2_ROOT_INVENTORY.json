@@ -1,0 +1,12 @@
+{
+  "schema": "mtcomm_r1_recovery_p2_root_inventory_v1",
+  "roots": [
+    {"path": "C:\\Users\\admin\\Documents\\博士申请论文\\factorial_v2_supervisor_handoff_v1\\core_extracted_r2\\supervisor_handoff_v1_r2", "status": "PRESENT", "relevant_content": "authoritative registries, handoff manifest, sparse protocol NPZ/JSON, source tree"},
+    {"path": "D:\\paper2_stage00a_audit", "status": "MISSING_OR_EMPTY", "relevant_content": null},
+    {"path": "D:\\paper2_stage00b_provenance", "status": "MISSING_OR_EMPTY", "relevant_content": null},
+    {"path": "D:\\paper2_stage00c_authoritative_recovery", "status": "MISSING_OR_EMPTY", "relevant_content": null},
+    {"path": "D:\\paper2_stage00c_authoritative_recovery\\outputs", "status": "MISSING_OR_EMPTY", "relevant_content": null},
+    {"path": "D:\\Paper2", "status": "PRESENT", "relevant_content": "historical Paper2 outputs and manifests; no npy.gz plane files found"}
+  ],
+  "dense_truth_scanned_or_hashed": false
+}

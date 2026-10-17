@@ -1,0 +1,10 @@
+{
+  "schema": "mtcomm_r1_recovery_p2_legacy_runtime_audit_v1",
+  "path": "C:\\Users\\admin\\Documents\\博士申请论文\\r2_lite_3d_pilot.py",
+  "scientific_source_present": true,
+  "sha256": "7f9e99ce653ca0fca7480f04be9ff871548af03cbd7ba7e24b3a352cf3fa5130",
+  "syntax": "PASS",
+  "windows_import": "FAIL_RESOURCE_MONITOR_ONLY",
+  "frozen_runtime_modified": false,
+  "scientific_identity": "PRESENT_BUT_UNVERIFIED"
+}

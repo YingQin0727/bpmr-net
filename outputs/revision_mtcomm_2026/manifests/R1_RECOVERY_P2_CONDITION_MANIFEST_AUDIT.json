@@ -1,0 +1,8 @@
+{
+  "schema": "mtcomm_r1_recovery_p2_condition_manifest_audit_v1",
+  "exact_condition_manifests": "NOT_RECOVERED",
+  "semantic_equivalent": "NOT_PROVEN",
+  "raw_registries_present": true,
+  "new_manifest_generated": false,
+  "reason": "Only global/plane-role registries and sparse protocol summaries were found; required material-label/support file identities are absent."
+}

@@ -1,0 +1,3 @@
+scope,count,expected,status,details
+B0,144,144,PRESENT_HASH_UNRECORDED,paths and logical identities complete; per-file registry SHA crosscheck not completed
+BPMR,144,144,PRESENT_HASH_UNRECORDED,paths and logical identities complete; per-file registry SHA crosscheck not completed
