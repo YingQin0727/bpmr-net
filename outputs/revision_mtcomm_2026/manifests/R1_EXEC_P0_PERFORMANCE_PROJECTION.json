@@ -1,0 +1,9 @@
+{
+  "schema": "mtcomm_r1_exec_p0_performance_projection_v1",
+  "classification": "BLOCKED",
+  "benchmark_collected": false,
+  "serial_estimate_seconds": null,
+  "local_parallel_estimate_seconds": null,
+  "recommendation": "SERVER_RECOMMENDED",
+  "reason": "No fit or trajectory can be benchmarked until the external archive and PyTorch environment are supplied."
+}

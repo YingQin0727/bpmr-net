@@ -1,0 +1,89 @@
+{
+  "blocking_items": [
+    "frozen_final_v1_registry is unavailable or empty",
+    "registered_sparse_plane_store is unavailable or empty",
+    "baseline_archive is unavailable or empty",
+    "legacy_3d_runtime is unavailable or empty",
+    "source B0 checkpoint and frozen event manifests are unavailable; no pilot may run"
+  ],
+  "branch": {
+    "actual": "revision/mtcomm-major-2026",
+    "expected": "revision/mtcomm-major-2026",
+    "pass": true
+  },
+  "classification": "BLOCKED",
+  "factorial_output_root": "C:\\Users\\admin\\Documents\\ChatGPT\\\u8bba\u65871\\outputs\\factorial_v2",
+  "head_sha": "4940e52363234e4ac27fe9999f01c92b29bc9d9f",
+  "output_roots_nonoverlapping": true,
+  "protected_path_modifications": [],
+  "protected_paths_unchanged": true,
+  "required_files": {
+    "paper_reproduction/factorial_evaluation_and_package_v2.py": {
+      "exists": true,
+      "purpose": "evaluation workflow",
+      "sha256": "4212cf9ff43fb915b27283db89c73b6edd090c0a902ffcadc2f39965de64df93",
+      "tracked": true
+    },
+    "paper_reproduction/factorial_multiseed_reconstruction_v2.py": {
+      "exists": true,
+      "purpose": "reconstruction workflow",
+      "sha256": "1261d071ac0163b4e60bb74695cd03de9113d1c478c5ea80fd19e914f3e61ba4",
+      "tracked": true
+    },
+    "paper_reproduction/factorial_protocol_and_training_v2.py": {
+      "exists": true,
+      "purpose": "training workflow",
+      "sha256": "009c7519425bf9b92de1c7d08ec69f778821e55e8433e846add8e3e11e958bbc",
+      "tracked": true
+    },
+    "paper_revision/README.md": {
+      "exists": true,
+      "purpose": "required frozen workflow README",
+      "sha256": "330d6ef9c964f232860d78eb0fcef50812cc44c3796c934cb13f4497a9f6f459",
+      "tracked": false
+    },
+    "paper_revision/revision_protocol.json": {
+      "exists": true,
+      "purpose": "frozen revision protocol",
+      "sha256": "d3101090140d780fa012cc885bb366fbb2ac7d14d4e2ee9f25a4b6a0a8af1f16",
+      "tracked": true
+    },
+    "src/bpmr_net/models.py": {
+      "exists": true,
+      "purpose": "submitted-paper model",
+      "sha256": "8c0d0012c8ba741cd27759dfd8c1c88c2f2c47a2545c62504d4c364211d676b6",
+      "tracked": true
+    }
+  },
+  "research_archive_complete": false,
+  "research_inputs": {
+    "baseline_archive": {
+      "exists": false,
+      "nonempty": false,
+      "path": "C:\\Users\\admin\\Documents\\ChatGPT\\\u8bba\u65871\\data\\baseline"
+    },
+    "frozen_final_v1_registry": {
+      "exists": false,
+      "nonempty": false,
+      "path": "C:\\Users\\admin\\Documents\\ChatGPT\\\u8bba\u65871\\data\\final_v1"
+    },
+    "legacy_3d_runtime": {
+      "exists": false,
+      "nonempty": false,
+      "path": "C:\\Users\\admin\\Documents\\ChatGPT\\\u8bba\u65871\\external\\legacy_r2"
+    },
+    "registered_sparse_plane_store": {
+      "exists": false,
+      "nonempty": false,
+      "path": "C:\\Users\\admin\\Documents\\ChatGPT\\\u8bba\u65871\\data\\plane_store"
+    },
+    "source_b0_checkpoints": {
+      "exists": true,
+      "nonempty": true,
+      "path": "C:\\Users\\admin\\Documents\\ChatGPT\\\u8bba\u65871\\checkpoints"
+    }
+  },
+  "revision_output_root": "C:\\Users\\admin\\Documents\\ChatGPT\\\u8bba\u65871\\outputs\\revision_mtcomm_2026",
+  "schema": "mtcomm_r1_exec_p0_preflight_v1",
+  "working_tree_clean": false
+}

@@ -1,0 +1,7 @@
+{
+  "schema": "mtcomm_r1_exec_p0_event_pairing_audit_v1",
+  "classification": "BLOCKED",
+  "pairing_pass": false,
+  "reason": "Frozen event manifests, registered sparse-plane inputs, source B0 checkpoint, and PyTorch runtime are unavailable.",
+  "dense_truth_used": false
+}

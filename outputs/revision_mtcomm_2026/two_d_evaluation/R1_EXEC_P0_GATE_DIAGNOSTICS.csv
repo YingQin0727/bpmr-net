@@ -1,0 +1,2 @@
+variant,classification,reason
+A3,BLOCKED,missing held-out events, trained checkpoint, and PyTorch runtime

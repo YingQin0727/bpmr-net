@@ -1,0 +1,9 @@
+{
+  "schema": "mtcomm_r1_exec_p0_pilot_completion_v1",
+  "classification": "BLOCKED",
+  "pilot": "WF2/G250/L250/x/template_phase_0/seed_1701",
+  "variants": ["A0", "A1", "A2", "A3", "A4", "A5"],
+  "epochs_completed": 0,
+  "reason": "Required external research archive and PyTorch runtime are unavailable; no scientific fit was started.",
+  "dense_truth_used": false
+}

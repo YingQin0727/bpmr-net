@@ -1,0 +1,3 @@
+REVISION_R1_EXEC_P0=BLOCKED
+No training or reconstruction job was started.
+Blocking inputs: data/final_v1, data/plane_store, data/baseline, external/legacy_r2, source B0 checkpoint release, PyTorch runtime.

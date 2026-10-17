@@ -1,0 +1,11 @@
+{
+  "schema": "mtcomm_r1_exec_p0_reconstruction_audit_v1",
+  "classification": "BLOCKED",
+  "sweeps_completed": 0,
+  "exact_resume": "BLOCKED",
+  "update_order": "BLOCKED",
+  "initialization": "BLOCKED",
+  "crossed_g250_l25": "BLOCKED",
+  "reason": "Registered plane store, frozen reconstruction manifests, legacy 3-D runtime, and trained pilot checkpoints are unavailable.",
+  "dense_truth_used": false
+}
