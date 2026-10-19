@@ -1,0 +1,18 @@
+{
+  "identity": "REVISION_REPLICATION",
+  "status": "HARD_GATE_PENDING_IMPLEMENTATION",
+  "historical_roi_independent_test_eligible": false,
+  "reason": "Previously inspected outcomes and unknown historical fit-plane exposure; absence of recovered original payloads prevents negative exposure proof.",
+  "safeguards": [
+    "Paired spatial coordinates across flow states",
+    "128-voxel guard and full patch footprint containment",
+    "Historical ROI union exclusions",
+    "No performance-driven ROI selection",
+    "Distinct test observations and withheld truth"
+  ],
+  "programmatic_contract": "paper_revision/replication_firewall.py rejects wrong identity, roles, escaping paths and hashes; synthetic denial test passed.",
+  "isolation_required": "Separate data-preparation principal and read-only role mounts/accounts. Train sees train only; selection sees validation only; recon sees observations only; evaluator sees predictions/truth. Raw source never mounted downstream.",
+  "limitation": "Helper is not an OS sandbox; no scientific worker/container configured or validated in P0. Thus end-to-end no-label-access is NOT established.",
+  "provenance_gate": "No plane can be admitted without exact source/coordinate/phase/hash manifest. No new planes created in P0.",
+  "dependence_warning": "Spatial separation prevents direct overlap, not shared geology or independent-material generalization."
+}

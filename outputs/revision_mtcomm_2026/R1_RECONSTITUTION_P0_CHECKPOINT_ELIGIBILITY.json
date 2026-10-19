@@ -1,0 +1,19 @@
+{
+  "identity": "REVISION_REPLICATION",
+  "preferred": "Design A",
+  "historical_B0_eligible": false,
+  "design_B": "Blocked: no complete payload-bound historical fit exposure proof against new held-out blocks; matching shape/weights or registry existence insufficient.",
+  "design_A": "New B0 per condition/seed/orientation/phase trained on new train only, fixed 50 epochs; common exact checkpoint hash feeds all six branches. Never mix A/B causal estimates.",
+  "branches": {
+    "A0": "all 46529 B0 parameters, MSE",
+    "A1": "all 46529 B0 parameters, NLL",
+    "A2": "frozen common B0 + 383 residual parameters, MSE",
+    "A3": "frozen common B0 + 383 residual parameters, NLL",
+    "A4": "frozen common B0 + 380 trainable residual parameters, NLL, constant gate",
+    "A5": "frozen common B0 + 383 residual parameters, NLL, dilations111"
+  },
+  "controls": "Same allowed events/batch order, seed pairing, 50 continuation epochs, batch4096, fixed learning-rate/optimizer declared before fit; primary epoch50, best-validation secondary only. Untouched B0 baseline quantifies continuation.",
+  "estimands": "A0/A1 objective in B0; A2/A3 objective in residual; A0/A2 and A1/A3 parameterization under same objective; A3/A4 adaptive gate; A3/A5 receptive fields.",
+  "capacity": "Equal epochs/steps do not equal trainable freedom, optimization geometry, effective capacity or FLOPs. Record all and avoid claiming pure architecture causality across frozen vs fully trainable B0.",
+  "checkpoint_selection": "No test-driven selection or threshold tuning; report seed-level paired differences, not voxel-level independent replication."
+}

@@ -1,0 +1,84 @@
+{
+  "identity": "REVISION_REPLICATION",
+  "sources": [
+    {
+      "material": "WF2",
+      "path": "D:\\Paper2\\paper2_stage02a_source_recovery\\official_download\\WF2_5um_1030x1033x3051_8b_segmented_corrected.raw",
+      "bytes": 3246233490,
+      "sha256": "932853c36761504216c3a734a852c08f6bf451ba6a5c4da9367a2ec8b724d22a",
+      "authoritative_sha256": "932853c36761504216c3a734a852c08f6bf451ba6a5c4da9367a2ec8b724d22a",
+      "matches_authoritative_registry": true,
+      "shape_zyx": [
+        3051,
+        1033,
+        1030
+      ],
+      "dtype": "uint8",
+      "axis_order": "zyx",
+      "spacing_um": [
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "material": "GI",
+      "path": "D:\\Paper2\\paper2_stage02a_source_recovery\\official_download\\GI_5um_1030x1033x3051_8b_segmented.raw",
+      "bytes": 3246233490,
+      "sha256": "35f336b0446a0bd8107197fdde697283b450d67aabb9fd59d4f104d8b97f8c94",
+      "authoritative_sha256": "35f336b0446a0bd8107197fdde697283b450d67aabb9fd59d4f104d8b97f8c94",
+      "matches_authoritative_registry": true,
+      "shape_zyx": [
+        3051,
+        1033,
+        1030
+      ],
+      "dtype": "uint8",
+      "axis_order": "zyx",
+      "spacing_um": [
+        5,
+        5,
+        5
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "path": "C:\\Users\\admin\\Documents\\博士申请论文\\factorial_v2_inputs\\frozen_target_roi_registry_v2.json",
+      "sha256": "716a30359a596ed1aab7b1296130ba926018dc50b17346182caf6003392fe989"
+    },
+    {
+      "path": "D:\\Paper2\\paper2_stage02a_source_recovery\\archive_inventory\\DRP167_tree.json",
+      "sha256": "c3efd809d04af2154c33e3b3f1f5d814465cec8b25bd70888e157fa42845241d"
+    },
+    {
+      "path": "D:\\Paper2\\paper2_stage02a_source_recovery\\audit\\DRP167_DOWNLOAD_LEDGER.csv",
+      "sha256": "815cf1d5cb1cc091de57794aa3c0c40b051634aea1d1341772cd58ef6f38776f"
+    },
+    {
+      "path": "D:\\Paper2\\paper2_stage02a_source_recovery\\audit\\DRP167_OFFICIAL_FILE_INVENTORY.csv",
+      "sha256": "6f4e0824b075804695dbb218bd03a4ecc0e4c04c5cc1a16a78a67a11e5b793a7"
+    },
+    {
+      "path": "D:\\Downloads\\论文1修改comments.txt",
+      "sha256": "230de9bdb164b4d7f83689faf973b5cf3347e1ebb41a54cfbca92a59b7f1e714"
+    }
+  ],
+  "official_url": "https://www.digitalrocksportal.org/projects/167",
+  "doi": "10.17612/P7HT11",
+  "license": "ODC-BY 1.0; retain attribution to Alessio Scanziani/Imperial College London and DOI; label all derived data.",
+  "provenance": "Official-download ledger plus archived provider tree, current official project page, and byte equality to frozen ROI source registry.",
+  "compatibility": "Same WF2 second waterflooding / GI gas-injection states of Ketton water-wet carbonate; same raw identities as manuscript ROI registry.",
+  "phase_mapping": {
+    "raw_1": "oil",
+    "raw_2": "brine",
+    "raw_3": "rock",
+    "raw_4": "gas",
+    "canonical": "raw minus one, 0..3"
+  },
+  "segmentation": "Provider metadata: seeded watershed; no resegmentation planned.",
+  "conflict": "data/README.md GI SHA256 differs from actual and authoritative frozen_target_roi_registry_v2.json; preserve README, use authority-linked new manifest.",
+  "new_downloads": false,
+  "decoded_source_pixels": 0,
+  "pending": "Stream-validate full raw label domain during authorized preparation; do not infer label domain merely from dtype."
+}

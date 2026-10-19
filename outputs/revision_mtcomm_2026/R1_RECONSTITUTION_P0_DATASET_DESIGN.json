@@ -1,0 +1,107 @@
+{
+  "identity": "REVISION_REPLICATION",
+  "status": "PROPOSED_NOT_MATERIALIZED",
+  "design": "A",
+  "axis_order": "zyx",
+  "coordinate_convention": "half-open voxel bounds; physical coordinates index*5 micrometres; plane x->zy, y->zx, z->yx",
+  "paired_flow_states": true,
+  "split_units": "Identical spatial blocks in WF2 and GI because states share a rock; never split states independently.",
+  "splits": {
+    "train": [
+      [
+        32,
+        1000
+      ],
+      [
+        32,
+        1001
+      ],
+      [
+        32,
+        998
+      ]
+    ],
+    "validation": [
+      [
+        1128,
+        1512
+      ],
+      [
+        32,
+        1001
+      ],
+      [
+        32,
+        998
+      ]
+    ],
+    "test": [
+      [
+        1640,
+        3019
+      ],
+      [
+        32,
+        1001
+      ],
+      [
+        32,
+        998
+      ]
+    ]
+  },
+  "guard": "128-voxel (640 um) z gaps; all feature footprints radius 4 remain inside own split; guard exceeds feature reach but cannot establish geological decorrelation.",
+  "historical_exclusions": [
+    {
+      "material": "WF2",
+      "origin_zyx": [
+        1376,
+        576,
+        580
+      ],
+      "shape_zyx": [
+        48,
+        48,
+        48
+      ],
+      "dilation_voxels": 128
+    },
+    {
+      "material": "GI",
+      "origin_zyx": [
+        1576,
+        376,
+        580
+      ],
+      "shape_zyx": [
+        48,
+        48,
+        48
+      ],
+      "dilation_voxels": 128
+    }
+  ],
+  "historical_rule": "Exclude union of both historical ROIs dilated by 128 voxels from ALL new splits and diagnostic ROI selection; historical regions only descriptive legacy evidence.",
+  "planes": "Only split-clipped planes/tiles; never whole planes crossing roles. Nested axis indices at multiples of 5/50/200 for 25/250/1000 um. Register each cropped plane before fitting.",
+  "plane_manifest_fields": [
+    "identity",
+    "source_sha256",
+    "source_shape_zyx",
+    "dtype",
+    "phase_map",
+    "spacing_um",
+    "normal_axis",
+    "normal_index",
+    "in_plane_bounds",
+    "plane_axis_order",
+    "split",
+    "support_sha256",
+    "payload_sha256",
+    "preparation_code_sha256"
+  ],
+  "roi_rule": "Enumerate 48^3 cubes at z=1700+200*k, y=200+200*j, x=200+200*i, wholly in test and outside historical exclusions. Sort by SHA256(source-family-id|zyx origin|fixed salt REVISION_REPLICATION_P0); take first 3 distinct locations, same locations in both states. No outcome/phase-coverage screening or replacements after viewing results.",
+  "diversity": "Report all selected phase distributions including absent phases; objective geometric selection does not guarantee diverse composition. Additional strata would require separate prespecified protocol.",
+  "test_observations": "Register observation-mask subset separately; evaluators exclude clamped observations. Recon receives observation values only, never complementary test truth.",
+  "initial_matrix": "2 flow states x 3 training sparsities x 3 seeds x 12 orientation/phase models; A0-A5 plus one new common B0 per unit. One validation-selection rule for all. No automatic continuation from old protocol.",
+  "uncertainty": "Exact sample counts, legal tile support and worker firewall must be validated before dataset release. This document is not a released dataset."
+}

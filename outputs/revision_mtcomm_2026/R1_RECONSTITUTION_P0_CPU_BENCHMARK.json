@@ -1,0 +1,300 @@
+{
+  "identity": "REVISION_REPLICATION",
+  "scientific_evidence": false,
+  "python": "3.11.17 (main, Oct 14 2026, 01:04:22) [MSC v.1944 64 bit (AMD64)]",
+  "torch": "2.14.1+cpu",
+  "numpy": "2.4.6",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "processor": "AMD64 Family 25 Model 68 Stepping 1, AuthenticAMD",
+  "threads": 4,
+  "logical_cpus": 16,
+  "physical_cpus": 8,
+  "total_ram_bytes": 16387301376,
+  "rss_baseline_bytes": 214687744,
+  "sampled_peak_rss_bytes": 437772288,
+  "memory_limitations": "Sampled process RSS, not OS peak or full source staging; allocator retention included.",
+  "imports_passed": [
+    "numpy",
+    "torch",
+    "bpmr_net",
+    "paper_revision.models_revision"
+  ],
+  "optimizer_steps": [
+    {
+      "variant": "A0",
+      "batch": 256,
+      "step_seconds": [
+        0.0018344000000070082,
+        0.0014584000000468222,
+        0.0013142999999899985
+      ],
+      "median_step_seconds": 0.0014584000000468222,
+      "trainable_parameters": 46529,
+      "checkpoint_bytes": 189645,
+      "median_warm_load_seconds": 0.0009063999999625594
+    },
+    {
+      "variant": "A0",
+      "batch": 4096,
+      "step_seconds": [
+        0.007165399999962574,
+        0.00698279999994611,
+        0.0069951999998920655
+      ],
+      "median_step_seconds": 0.0069951999998920655,
+      "trainable_parameters": 46529,
+      "checkpoint_bytes": 189645,
+      "median_warm_load_seconds": 0.0009178999999903681
+    },
+    {
+      "variant": "A1",
+      "batch": 256,
+      "step_seconds": [
+        0.0012548999999353327,
+        0.001278800000022784,
+        0.0012565000000677173
+      ],
+      "median_step_seconds": 0.0012565000000677173,
+      "trainable_parameters": 46529,
+      "checkpoint_bytes": 189645,
+      "median_warm_load_seconds": 0.0009168999999928928
+    },
+    {
+      "variant": "A1",
+      "batch": 4096,
+      "step_seconds": [
+        0.007188799999994444,
+        0.007213500000034401,
+        0.007208999999988919
+      ],
+      "median_step_seconds": 0.007208999999988919,
+      "trainable_parameters": 46529,
+      "checkpoint_bytes": 189645,
+      "median_warm_load_seconds": 0.0009089999999787324
+    },
+    {
+      "variant": "A2",
+      "batch": 256,
+      "step_seconds": [
+        0.006328899999971327,
+        0.005954699999961122,
+        0.005901399999970636
+      ],
+      "median_step_seconds": 0.005954699999961122,
+      "trainable_parameters": 383,
+      "checkpoint_bytes": 194724,
+      "median_warm_load_seconds": 0.0019644999999854917
+    },
+    {
+      "variant": "A2",
+      "batch": 4096,
+      "step_seconds": [
+        0.08162819999995463,
+        0.08194000000003143,
+        0.08823860000006789
+      ],
+      "median_step_seconds": 0.08194000000003143,
+      "trainable_parameters": 383,
+      "checkpoint_bytes": 194724,
+      "median_warm_load_seconds": 0.003785899999911635
+    },
+    {
+      "variant": "A3",
+      "batch": 256,
+      "step_seconds": [
+        0.007022399999982554,
+        0.0077803000000358224,
+        0.00891639999997551
+      ],
+      "median_step_seconds": 0.0077803000000358224,
+      "trainable_parameters": 383,
+      "checkpoint_bytes": 194724,
+      "median_warm_load_seconds": 0.003282300000023497
+    },
+    {
+      "variant": "A3",
+      "batch": 4096,
+      "step_seconds": [
+        0.07574969999996028,
+        0.0744372999999996,
+        0.0735035999999809
+      ],
+      "median_step_seconds": 0.0744372999999996,
+      "trainable_parameters": 383,
+      "checkpoint_bytes": 194724,
+      "median_warm_load_seconds": 0.0021380999999109918
+    },
+    {
+      "variant": "A4",
+      "batch": 256,
+      "step_seconds": [
+        0.0057516000000532586,
+        0.0056026999999403415,
+        0.006275599999980841
+      ],
+      "median_step_seconds": 0.0057516000000532586,
+      "trainable_parameters": 380,
+      "checkpoint_bytes": 194724,
+      "median_warm_load_seconds": 0.0019323999999869557
+    },
+    {
+      "variant": "A4",
+      "batch": 4096,
+      "step_seconds": [
+        0.088442099999952,
+        0.08445099999994454,
+        0.10710489999996753
+      ],
+      "median_step_seconds": 0.088442099999952,
+      "trainable_parameters": 380,
+      "checkpoint_bytes": 194724,
+      "median_warm_load_seconds": 0.0036346000000548884
+    },
+    {
+      "variant": "A5",
+      "batch": 256,
+      "step_seconds": [
+        0.008062600000016573,
+        0.008086700000035307,
+        0.008006600000044273
+      ],
+      "median_step_seconds": 0.008062600000016573,
+      "trainable_parameters": 383,
+      "checkpoint_bytes": 194724,
+      "median_warm_load_seconds": 0.003967500000044311
+    },
+    {
+      "variant": "A5",
+      "batch": 4096,
+      "step_seconds": [
+        0.0654931999999917,
+        0.07521010000004935,
+        0.06275110000001405
+      ],
+      "median_step_seconds": 0.0654931999999917,
+      "trainable_parameters": 383,
+      "checkpoint_bytes": 194724,
+      "median_warm_load_seconds": 0.003940999999940686
+    }
+  ],
+  "voxel_proxy": {
+    "A0": {
+      "median_seconds_per_voxel": 0.002360799999905794,
+      "samples_seconds": [
+        0.0027305999999498454,
+        0.0023128999999926236,
+        0.0023938000000498505,
+        0.002360799999905794,
+        0.0021821999999929176,
+        0.0023145000000113214,
+        0.002455899999972644,
+        0.002430200000048899,
+        0.0026642000000265398,
+        0.002464199999963057,
+        0.002402400000050875,
+        0.002508600000055594,
+        0.002117399999974623,
+        0.0021471000000019558,
+        0.0023833999999851585,
+        0.002290099999981976,
+        0.002174500000023727,
+        0.0023272999999335298,
+        0.0023672999999462263,
+        0.0023379000000431915,
+        0.0023139999999557403,
+        0.002424099999984719,
+        0.0017700999999306077,
+        0.0020806999999649634,
+        0.002443899999889254,
+        0.0026465999999345513,
+        0.002272599999969316,
+        0.002569200000039018,
+        0.0022698999999875014,
+        0.0017335000000002765,
+        0.0023733999998967192,
+        0.0023602999999638996,
+        0.0023908000000574248,
+        0.0034629000000450105,
+        0.002214200000025812
+      ]
+    },
+    "A3": {
+      "median_seconds_per_voxel": 0.012967699999990145,
+      "samples_seconds": [
+        0.01421030000005885,
+        0.014570400000025074,
+        0.013902799999982562,
+        0.013025399999946785,
+        0.01405459999989489,
+        0.013779799999952047,
+        0.013845800000012787,
+        0.014141500000050655,
+        0.013503499999956148,
+        0.013237799999956223,
+        0.013760800000000017,
+        0.019525700000031065,
+        0.01368990000003123,
+        0.012988800000016454,
+        0.012976900000012392,
+        0.012990700000045763,
+        0.01270560000000387,
+        0.012737000000015541,
+        0.011241700000027777,
+        0.011145800000008421,
+        0.011210099999971135,
+        0.010923599999955513,
+        0.010838600000056431,
+        0.011036200000035024,
+        0.011103600000069491,
+        0.01082700000006298,
+        0.011189700000045377,
+        0.011179699999956938,
+        0.0108181999999033,
+        0.010874099999909959,
+        0.012967699999990145,
+        0.013079999999945358,
+        0.012412799999992785,
+        0.010177499999940665,
+        0.00954860000001645
+      ]
+    }
+  },
+  "limitations": [
+    "Synthetic inputs only; not accuracy evidence.",
+    "Warm in-memory checkpoint loading excludes cold disk latency.",
+    "Voxel proxy excludes actual scheduler, feature-plane extraction from 3D, RNG persistence and metric evaluation.",
+    "Historical reconstruction script imports Unix resource and external modules; Windows runner must be implemented and verified before scientific use."
+  ],
+  "recommendation": "LOCAL_CPU_NOT_FEASIBLE",
+  "recommendation_scope": "Full candidate matrix on current serial immediate-update CPU proxy under 19-day revision window; small training/model studies locally feasible.",
+  "paper_dependency_imports_passed": [
+    "matplotlib",
+    "pandas",
+    "scipy",
+    "PIL"
+  ],
+  "budget_assumptions": {
+    "training_events_per_model": 100000,
+    "batch": 4096,
+    "epochs": 50,
+    "steps_per_fit": 1250,
+    "source_B0_epochs": 50,
+    "states": 2,
+    "global_sparsities": 3,
+    "training_seeds": 3,
+    "orientation_phase_models": 12,
+    "additional_test_rois_per_state": 3,
+    "rollout_seeds": 5,
+    "sweeps": 10
+  },
+  "estimates": {
+    "training_hours": 24.863399999981084,
+    "primary_crossed_reconstruction_serial_days": 586.7500031976379,
+    "reduced_one_global_one_local_serial_days": 65.19444479973754,
+    "one_A3_48cubed_10sweep_hours": 3.9836774399969728,
+    "source_bytes_each": 3246233490,
+    "eager_float32_source_bytes_each": 12984933960
+  },
+  "caveat": "No exact scheduler benchmark; these are conditional proxy extrapolations, not measured campaign runtimes. Serial seconds ignore observed-mask skips and parallel speedup; extra baselines, sensitivity, ES and I/O excluded. Training count cap is proposed, not historical.",
+  "server_required": "Not required for P0 or small training. Full proposed serial matrix unsuitable locally; reduce valid scope or validate CPU parallel/optimized implementation before deciding hardware. No GPU/server commissioned."
+}

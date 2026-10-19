@@ -1,0 +1,24 @@
+{
+  "identity": "REVISION_REPLICATION",
+  "classification": "PARTIAL",
+  "result": "REVISION_R1_RECONSTITUTION_P0=PARTIAL",
+  "sources_available": true,
+  "source_identity_verified": true,
+  "design": "A proposed; not released",
+  "reviewer_items_covered": 12,
+  "cpu_recommendation": "LOCAL_CPU_NOT_FEASIBLE",
+  "scientific_execution_authorized": false,
+  "blockers": [
+    "Full raw phase-domain validation pending preparation (semantics and source identity established).",
+    "No registered new plane payloads by P0 instruction; auditable manifest release pending.",
+    "Role helper tested but OS-level worker isolation and end-to-end leakage proof pending.",
+    "Historical B0 exposure cannot be cleared; Design B ineligible.",
+    "Established comparator implementation not selected/verified.",
+    "Full candidate reconstruction matrix exceeds local budget; Windows scientific runner and reduced scientifically sufficient schedule not validated."
+  ],
+  "warning": "WF2 and GI are flow states of the same carbonate rock, not independent materials.",
+  "historical_modified": false,
+  "scientific_planes_created": 0,
+  "scientific_fits": 0,
+  "real_reconstructions": 0
+}
