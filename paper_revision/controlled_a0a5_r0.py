@@ -73,6 +73,7 @@ def main():
     reads += [ROOT/name for name in launch]
     access_log=OUT.joinpath(P+'_PYTHON_ACCESS.jsonl')
     writes=[OUT.joinpath(P+'_TASK_LEDGER.csv'),OUT.joinpath(P+'_TRAINING_METRICS.csv'),OUT.joinpath(P+'_CHECKPOINT_MANIFEST.json'),access_log]
+    writes += [p.with_suffix('.tmp') for p in writes[:3]]
     writes += [OUT/'A0A5'/u/v/'epoch50.pt' for u in units for v in VARIANTS]
     guard=TrainingAccess(reads,writes,[Path(__import__('sys').base_prefix)/'Lib',Path(__import__('sys').base_prefix)/'DLLs',ROOT/'.venv-revision311/Lib/site-packages'])
     guard.install(); guard.phase='controlled_A0A5_formal'
