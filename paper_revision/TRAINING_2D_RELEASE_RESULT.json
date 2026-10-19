@@ -1,0 +1,68 @@
+{
+  "status": {
+    "TRAINING_INPUT_AUDIT": "PASS",
+    "TRAINING_ACCESS_AUDIT": "FAIL",
+    "PROHIBITED_READ_INJECTION_TEST": "PASS",
+    "DESIGN_A_COMPATIBILITY": "PASS",
+    "SCIENTIFIC_DATA_ISOLATION": "FAIL",
+    "OS_LEVEL_ISOLATION": "NOT_ESTABLISHED",
+    "TRAINING_DRY_RUN": "PASS",
+    "TRAINING_READY": "NO"
+  },
+  "registry_sha256": "42e8cf78339b992ab4e10af1d8c5798230bc71467ce65f69f86c91d995a560bf",
+  "plane_count": 2246,
+  "role_counts": {
+    "train": 1150,
+    "validation": 916,
+    "test_truth": 180
+  },
+  "verified_training_payloads": 4132,
+  "checkpoint_count": 504,
+  "dry_run": {
+    "steps_per_model": 1,
+    "train_events_per_unit": 8,
+    "validation_events_per_unit": 8,
+    "material": [
+      "WF2",
+      "GI"
+    ],
+    "orientations": [
+      "x",
+      "y",
+      "z"
+    ],
+    "seeds": [
+      1701,
+      1702,
+      1703
+    ],
+    "templates": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "spacing_um": 250,
+    "formal_epochs_completed": 0
+  },
+  "historical_checkpoint_inputs": 0,
+  "python_boundary_status": "PASS",
+  "unexpected_denials": [],
+  "limitations": [
+    "Python audit events are not exhaustive for native C/C++ IO; direct Win32/CRT calls inside torch/numpy/native extensions remain UNVERIFIED.",
+    "Dependency bootstrap is recorded but not access-denied; DLL loads and native import-time IO are UNVERIFIED.",
+    "Runtime code directories are read-allowed; native runtime data reads and adversarial code replacement are not isolated.",
+    "Only one-step G250 dry path across both materials/all axes/seeds/templates was executed; full event-cap selection, all spacing regimes, 50-epoch scheduling and final checkpoint provenance registry are NOT released.",
+    "Formal training is disabled; no formal B0 epoch50 exists. Dry checkpoints are explicitly rejected for formal Design A use.",
+    "Budget remains frozen conditional estimate (120 source B0, 720 adaptations for Plan C); this dry run is not a scientific runtime estimate.",
+    "Preparation stays in p1_dataset.main; reconstruction stays in p2_runner (synthetic audit only); final scientific evaluator remains unreleased. Training imports none of them."
+  ],
+  "evidence_sha256": {
+    "release.json": "e85f394ede38bd15d20649697a60816a20f997946efd814235c7ab2b40e5bef6",
+    "access.json": "6c9fc93f2d6a05a10ed1694b426ec3bead0f2792101756faca191992311c3f87",
+    "payloads.json": "68fd2a9754eb62b5ff6e180e081b1f507c2fc9f51b2d7158aa8aca122d4ee861",
+    "dry_run.json": "2244d0b43a2e6dd68070b79e4b89be72cd4ceb6a28b393481662388fc8f479a6"
+  },
+  "injection_tests": 41,
+  "injection_blocked": 41
+}
