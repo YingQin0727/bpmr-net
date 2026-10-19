@@ -63,6 +63,9 @@ def main():
         old=json.loads(prior.read_text(encoding='utf-8'))
         ledger=list(old.get('checkpoints',[])); failures=list(old.get('failures',[]))
     done_pairs={(r['unit'],r['variant']) for r in ledger}
+    metrics_path=OUT.joinpath(P+'_TRAINING_METRICS.csv')
+    if metrics_path.exists():
+        with metrics_path.open(encoding='utf-8-sig',newline='') as mf: metrics=list(csv.DictReader(mf))
     reads=[ROOT/'paper_revision/TRAINING_2D_RELEASE_R2.json',ROOT/'paper_revision/revision_protocol.json',BASE/'R1_RECONSTITUTION_P1_PLANE_REGISTRY.csv',B0,OUT.joinpath(P+'_CHECKPOINT_MANIFEST.json')]
     reads += [BASE/r[k+'_path'] for r in rows if r['role'] in ('train','validation') for k in ('labels','support')]
     reads += [ROOT/r['path'] for r in b0map.values()]
@@ -107,9 +110,10 @@ def main():
         metrics.extend({'unit':unit,'variant':variant,'checkpoint_sha256':cksha,'epoch':e['epoch'],'train_loss':e['train_loss'],'validation_mse':e['validation']['mse'],'validation_nll':e['validation']['nll']} for e in epochs)
         with access_log.open('a',encoding='utf-8') as af: af.write(json.dumps({'unit':unit,'variant':variant,'records':guard.records},separators=(',',':'))+'\n')
         guard.records.clear()
-        OUT.joinpath(P+'_TASK_LEDGER.csv').write_text('unit,variant,path,checkpoint_sha256,source_checkpoint_sha256,strict_reload,finite_parameters,trainable_parameter_count,elapsed_seconds,a4_gate_frozen\n'+'\n'.join(','.join(str(rec[k]) for k in ['unit','variant','path','checkpoint_sha256','source_checkpoint_sha256','strict_reload','finite_parameters','trainable_parameter_count','elapsed_seconds','a4_gate_frozen']) for rec in ledger)+'\n',encoding='utf-8')
-        OUT.joinpath(P+'_TRAINING_METRICS.csv').write_text('unit,variant,checkpoint_sha256,epoch,train_loss,validation_mse,validation_nll\n'+'\n'.join(','.join(str(x[k]) for k in x) for x in metrics)+'\n',encoding='utf-8')
-        OUT.joinpath(P+'_CHECKPOINT_MANIFEST.json').write_text(json.dumps({'stage':P,'expected_tasks':720,'checkpoints':ledger,'failures':failures},indent=2),encoding='utf-8')
+        ledger_path=OUT.joinpath(P+'_TASK_LEDGER.csv')
+        ledger_path.with_suffix('.tmp').write_text('unit,variant,path,checkpoint_sha256,source_checkpoint_sha256,strict_reload,finite_parameters,trainable_parameter_count,elapsed_seconds,a4_gate_frozen\n'+'\n'.join(','.join(str(rec[k]) for k in ['unit','variant','path','checkpoint_sha256','source_checkpoint_sha256','strict_reload','finite_parameters','trainable_parameter_count','elapsed_seconds','a4_gate_frozen']) for rec in ledger)+'\n',encoding='utf-8'); ledger_path.with_suffix('.tmp').replace(ledger_path)
+        metrics_path.with_suffix('.tmp').write_text('unit,variant,checkpoint_sha256,epoch,train_loss,validation_mse,validation_nll\n'+'\n'.join(','.join(str(x[k]) for k in x) for x in metrics)+'\n',encoding='utf-8'); metrics_path.with_suffix('.tmp').replace(metrics_path)
+        mp=OUT.joinpath(P+'_CHECKPOINT_MANIFEST.json'); mp.with_suffix('.tmp').write_text(json.dumps({'stage':P,'expected_tasks':720,'checkpoints':ledger,'failures':failures},indent=2),encoding='utf-8'); mp.with_suffix('.tmp').replace(mp)
         print(f'completed {len(ledger)}/{a.limit} {unit} {variant}',flush=True)
     OUT.joinpath(P+'_CHECKPOINT_MANIFEST.json').write_text(json.dumps({'stage':P,'expected_tasks':720,'checkpoints':ledger,'failures':failures},indent=2),encoding='utf-8')
     print(json.dumps({'completed':len(ledger),'failures':failures}))
