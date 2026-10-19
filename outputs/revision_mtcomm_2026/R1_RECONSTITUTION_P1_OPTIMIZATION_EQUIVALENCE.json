@@ -1,0 +1,58 @@
+{
+  "identity": "REVISION_REPLICATION",
+  "comparisons": [
+    {
+      "variant": "A0",
+      "tolerance_absolute": 1e-07,
+      "conditional_probability_max_abs_error": 0.0,
+      "tolerance_pass": true,
+      "conditional_probability_bitwise_equal": true,
+      "final_state_bitwise_equal": true,
+      "order_equal": true,
+      "rng_final_equal": true,
+      "clamping_preserved": true,
+      "exact_resume_state": true,
+      "exact_resume_probabilities": true,
+      "exact_resume_rng": true,
+      "boundary_feature_checks_exact": true,
+      "fresh_state_fixed_probability_errors": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "steps": 360,
+      "measured_reference_small_sweep_seconds": 0.24750144999984514,
+      "measured_optimized_small_sweep_seconds": 0.11998219999986759,
+      "small_sweep_updates": 180
+    },
+    {
+      "variant": "A3",
+      "tolerance_absolute": 1e-07,
+      "conditional_probability_max_abs_error": 0.0,
+      "tolerance_pass": true,
+      "conditional_probability_bitwise_equal": true,
+      "final_state_bitwise_equal": true,
+      "order_equal": true,
+      "rng_final_equal": true,
+      "clamping_preserved": true,
+      "exact_resume_state": true,
+      "exact_resume_probabilities": true,
+      "exact_resume_rng": true,
+      "boundary_feature_checks_exact": true,
+      "fresh_state_fixed_probability_errors": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "steps": 360,
+      "measured_reference_small_sweep_seconds": 1.4682890000001407,
+      "measured_optimized_small_sweep_seconds": 0.8314299500000288,
+      "small_sweep_updates": 180
+    }
+  ],
+  "scope": "TESTED_FIXTURES_ONLY_NOT_GENERAL_BITWISE_PROOF",
+  "sampler_unchanged": "Immediate writeback, raster ordering, numpy Generator PCG64 choice, clamping, periodic neighbor access retained.",
+  "primary_authority": "Unmodified historical reference; optimized implementation not authorized for scientific campaign until complete worker/feature semantics validated."
+}

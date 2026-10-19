@@ -1,0 +1,24 @@
+[
+  {
+    "path": "D:\\Paper2\\paper2_stage02a_source_recovery\\official_download\\GI_5um_1030x1033x3051_8b_segmented.raw",
+    "counts": {
+      "0": 1089276887,
+      "1": 58106621,
+      "2": 7711583,
+      "3": 1966689069,
+      "4": 124449330
+    },
+    "total": 3246233490
+  },
+  {
+    "path": "D:\\Paper2\\paper2_stage02a_source_recovery\\official_download\\WF2_5um_1030x1033x3051_8b_segmented_corrected.raw",
+    "counts": {
+      "0": 1087990449,
+      "1": 35688934,
+      "2": 54759863,
+      "3": 1966689069,
+      "4": 101105175
+    },
+    "total": 3246233490
+  }
+]

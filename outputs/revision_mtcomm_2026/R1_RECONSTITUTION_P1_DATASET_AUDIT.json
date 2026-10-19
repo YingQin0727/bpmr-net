@@ -1,0 +1,334 @@
+{
+  "identity": "REVISION_REPLICATION",
+  "status": "REGISTERED_QUARANTINE_NOT_RELEASED",
+  "sources": [
+    {
+      "material": "WF2",
+      "path": "D:\\Paper2\\paper2_stage02a_source_recovery\\official_download\\WF2_5um_1030x1033x3051_8b_segmented_corrected.raw",
+      "sha256": "932853c36761504216c3a734a852c08f6bf451ba6a5c4da9367a2ec8b724d22a",
+      "shape_zyx": [
+        3051,
+        1033,
+        1030
+      ],
+      "dtype": "uint8",
+      "label_counts": {
+        "0": 1087990449,
+        "1": 35688934,
+        "2": 54759863,
+        "3": 1966689069,
+        "4": 101105175
+      },
+      "pitch_um": 5
+    },
+    {
+      "material": "GI",
+      "path": "D:\\Paper2\\paper2_stage02a_source_recovery\\official_download\\GI_5um_1030x1033x3051_8b_segmented.raw",
+      "sha256": "35f336b0446a0bd8107197fdde697283b450d67aabb9fd59d4f104d8b97f8c94",
+      "shape_zyx": [
+        3051,
+        1033,
+        1030
+      ],
+      "dtype": "uint8",
+      "label_counts": {
+        "0": 1089276887,
+        "1": 58106621,
+        "2": 7711583,
+        "3": 1966689069,
+        "4": 124449330
+      },
+      "pitch_um": 5
+    }
+  ],
+  "planes": 2246,
+  "rois": [
+    {
+      "material": "WF2",
+      "roi": 0,
+      "origin_zyx": [
+        2300,
+        800,
+        200
+      ],
+      "shape_zyx": [
+        48,
+        48,
+        48
+      ],
+      "truth_path": "REVISION_REPLICATION_P1_dataset\\test_truth\\WF2_ROI0.truth.bin",
+      "truth_sha256": "80381abc7daaf5b1b0aaa126a7829eab65a09a8dad6c7ae9a65269ec18de7a54",
+      "phase_counts": [
+        134,
+        2233,
+        98355,
+        9870
+      ],
+      "observations": {
+        "25": {
+          "path": "REVISION_REPLICATION_P1_dataset\\observations\\WF2_ROI0_25um.bin",
+          "sha256": "fd51070d15bba4f4bf91a159923a59bd95e82052e65413c852995c844ce71ec2",
+          "mask_sha256": "148cf4c85a00ec36d96c0e713ce024e54eb8af22ffa21d8ac681e9be58fdf620",
+          "observed": 51273,
+          "updates_per_sweep": 59319
+        },
+        "250": {
+          "path": "REVISION_REPLICATION_P1_dataset\\observations\\WF2_ROI0_250um.bin",
+          "sha256": "fd59a2e79a3ca4acd072a946ea219fb0d3a63d67ed520d1efa5e4ba2baa04f34",
+          "mask_sha256": "e7abddc8d3a5e9c0cce4a16008e2adf56c3ada9e4620918d97f5ef673d3ae2e4",
+          "observed": 6769,
+          "updates_per_sweep": 103823
+        },
+        "1000": {
+          "path": "REVISION_REPLICATION_P1_dataset\\observations\\WF2_ROI0_1000um.bin",
+          "sha256": "fd59a2e79a3ca4acd072a946ea219fb0d3a63d67ed520d1efa5e4ba2baa04f34",
+          "mask_sha256": "e7abddc8d3a5e9c0cce4a16008e2adf56c3ada9e4620918d97f5ef673d3ae2e4",
+          "observed": 6769,
+          "updates_per_sweep": 103823
+        }
+      }
+    },
+    {
+      "material": "WF2",
+      "roi": 1,
+      "origin_zyx": [
+        2700,
+        800,
+        800
+      ],
+      "shape_zyx": [
+        48,
+        48,
+        48
+      ],
+      "truth_path": "REVISION_REPLICATION_P1_dataset\\test_truth\\WF2_ROI1.truth.bin",
+      "truth_sha256": "6126334ceef34403b485f0ff0b93ecfcd34241270483b9879dcc029d580832f7",
+      "phase_counts": [
+        0,
+        4082,
+        106000,
+        510
+      ],
+      "observations": {
+        "25": {
+          "path": "REVISION_REPLICATION_P1_dataset\\observations\\WF2_ROI1_25um.bin",
+          "sha256": "74542baa64dafb3c8d1abf78b092d33a5348f3883236097abae497a711daf6d6",
+          "mask_sha256": "148cf4c85a00ec36d96c0e713ce024e54eb8af22ffa21d8ac681e9be58fdf620",
+          "observed": 51273,
+          "updates_per_sweep": 59319
+        },
+        "250": {
+          "path": "REVISION_REPLICATION_P1_dataset\\observations\\WF2_ROI1_250um.bin",
+          "sha256": "79ea0c001939bf25b7d8396abdcc4750b7a3001a40db7582366b548c4babed83",
+          "mask_sha256": "e7abddc8d3a5e9c0cce4a16008e2adf56c3ada9e4620918d97f5ef673d3ae2e4",
+          "observed": 6769,
+          "updates_per_sweep": 103823
+        },
+        "1000": {
+          "path": "REVISION_REPLICATION_P1_dataset\\observations\\WF2_ROI1_1000um.bin",
+          "sha256": "79ea0c001939bf25b7d8396abdcc4750b7a3001a40db7582366b548c4babed83",
+          "mask_sha256": "e7abddc8d3a5e9c0cce4a16008e2adf56c3ada9e4620918d97f5ef673d3ae2e4",
+          "observed": 6769,
+          "updates_per_sweep": 103823
+        }
+      }
+    },
+    {
+      "material": "WF2",
+      "roi": 2,
+      "origin_zyx": [
+        2100,
+        200,
+        800
+      ],
+      "shape_zyx": [
+        48,
+        48,
+        48
+      ],
+      "truth_path": "REVISION_REPLICATION_P1_dataset\\test_truth\\WF2_ROI2.truth.bin",
+      "truth_sha256": "18f2593fe3cb42c8c3b3193feb01a3f9858ef9109f3f9570517a0866a32416b2",
+      "phase_counts": [
+        437,
+        750,
+        109150,
+        255
+      ],
+      "observations": {
+        "25": {
+          "path": "REVISION_REPLICATION_P1_dataset\\observations\\WF2_ROI2_25um.bin",
+          "sha256": "e4d8b71d1c77b8544b0afbeff79c16cb38ed7d49c0983c1eabbe41ae81d1ffc6",
+          "mask_sha256": "148cf4c85a00ec36d96c0e713ce024e54eb8af22ffa21d8ac681e9be58fdf620",
+          "observed": 51273,
+          "updates_per_sweep": 59319
+        },
+        "250": {
+          "path": "REVISION_REPLICATION_P1_dataset\\observations\\WF2_ROI2_250um.bin",
+          "sha256": "04f49d5bf2f4a9c7d452e0631f73ada76512fab58b4b641dee0c47f429be258f",
+          "mask_sha256": "e7abddc8d3a5e9c0cce4a16008e2adf56c3ada9e4620918d97f5ef673d3ae2e4",
+          "observed": 6769,
+          "updates_per_sweep": 103823
+        },
+        "1000": {
+          "path": "REVISION_REPLICATION_P1_dataset\\observations\\WF2_ROI2_1000um.bin",
+          "sha256": "04f49d5bf2f4a9c7d452e0631f73ada76512fab58b4b641dee0c47f429be258f",
+          "mask_sha256": "e7abddc8d3a5e9c0cce4a16008e2adf56c3ada9e4620918d97f5ef673d3ae2e4",
+          "observed": 6769,
+          "updates_per_sweep": 103823
+        }
+      }
+    },
+    {
+      "material": "GI",
+      "roi": 0,
+      "origin_zyx": [
+        2300,
+        800,
+        200
+      ],
+      "shape_zyx": [
+        48,
+        48,
+        48
+      ],
+      "truth_path": "REVISION_REPLICATION_P1_dataset\\test_truth\\GI_ROI0.truth.bin",
+      "truth_sha256": "d1322f0e5a4c1aa04d80a01b3e984ee1a8147ae2076378665f087d496da8eccf",
+      "phase_counts": [
+        790,
+        230,
+        98355,
+        11217
+      ],
+      "observations": {
+        "25": {
+          "path": "REVISION_REPLICATION_P1_dataset\\observations\\GI_ROI0_25um.bin",
+          "sha256": "6a86c434da92d4cfcdf83e065a2cae7799c24ef390f4ad4e64d0491baf2b0c52",
+          "mask_sha256": "148cf4c85a00ec36d96c0e713ce024e54eb8af22ffa21d8ac681e9be58fdf620",
+          "observed": 51273,
+          "updates_per_sweep": 59319
+        },
+        "250": {
+          "path": "REVISION_REPLICATION_P1_dataset\\observations\\GI_ROI0_250um.bin",
+          "sha256": "573b43207fcc2cede911590f8c5048f61becb7e8cd4ab0c6992a527e315acf72",
+          "mask_sha256": "e7abddc8d3a5e9c0cce4a16008e2adf56c3ada9e4620918d97f5ef673d3ae2e4",
+          "observed": 6769,
+          "updates_per_sweep": 103823
+        },
+        "1000": {
+          "path": "REVISION_REPLICATION_P1_dataset\\observations\\GI_ROI0_1000um.bin",
+          "sha256": "573b43207fcc2cede911590f8c5048f61becb7e8cd4ab0c6992a527e315acf72",
+          "mask_sha256": "e7abddc8d3a5e9c0cce4a16008e2adf56c3ada9e4620918d97f5ef673d3ae2e4",
+          "observed": 6769,
+          "updates_per_sweep": 103823
+        }
+      }
+    },
+    {
+      "material": "GI",
+      "roi": 1,
+      "origin_zyx": [
+        2700,
+        800,
+        800
+      ],
+      "shape_zyx": [
+        48,
+        48,
+        48
+      ],
+      "truth_path": "REVISION_REPLICATION_P1_dataset\\test_truth\\GI_ROI1.truth.bin",
+      "truth_sha256": "5ce11d3bc14e7329d886aa2dc6f1d1311fd58805af852d8727799ca6c064c6ef",
+      "phase_counts": [
+        3815,
+        227,
+        106000,
+        550
+      ],
+      "observations": {
+        "25": {
+          "path": "REVISION_REPLICATION_P1_dataset\\observations\\GI_ROI1_25um.bin",
+          "sha256": "5204f914e19c94798012cd57202ad5fdc041f532541a63c576cdcacb7446b63f",
+          "mask_sha256": "148cf4c85a00ec36d96c0e713ce024e54eb8af22ffa21d8ac681e9be58fdf620",
+          "observed": 51273,
+          "updates_per_sweep": 59319
+        },
+        "250": {
+          "path": "REVISION_REPLICATION_P1_dataset\\observations\\GI_ROI1_250um.bin",
+          "sha256": "5274e7d1321a1fc9181ba8a5ed548745d20b4be149f7efd7a2412ebaa10f8c83",
+          "mask_sha256": "e7abddc8d3a5e9c0cce4a16008e2adf56c3ada9e4620918d97f5ef673d3ae2e4",
+          "observed": 6769,
+          "updates_per_sweep": 103823
+        },
+        "1000": {
+          "path": "REVISION_REPLICATION_P1_dataset\\observations\\GI_ROI1_1000um.bin",
+          "sha256": "5274e7d1321a1fc9181ba8a5ed548745d20b4be149f7efd7a2412ebaa10f8c83",
+          "mask_sha256": "e7abddc8d3a5e9c0cce4a16008e2adf56c3ada9e4620918d97f5ef673d3ae2e4",
+          "observed": 6769,
+          "updates_per_sweep": 103823
+        }
+      }
+    },
+    {
+      "material": "GI",
+      "roi": 2,
+      "origin_zyx": [
+        2100,
+        200,
+        800
+      ],
+      "shape_zyx": [
+        48,
+        48,
+        48
+      ],
+      "truth_path": "REVISION_REPLICATION_P1_dataset\\test_truth\\GI_ROI2.truth.bin",
+      "truth_sha256": "4257f17a738568564b4fa2074fac38461cc2139405e259708f51f3779742f306",
+      "phase_counts": [
+        412,
+        785,
+        109150,
+        245
+      ],
+      "observations": {
+        "25": {
+          "path": "REVISION_REPLICATION_P1_dataset\\observations\\GI_ROI2_25um.bin",
+          "sha256": "79b553ac71aa6bad4e610b49ec04d842635ebaca338ef7794f3faaccadfc1e2d",
+          "mask_sha256": "148cf4c85a00ec36d96c0e713ce024e54eb8af22ffa21d8ac681e9be58fdf620",
+          "observed": 51273,
+          "updates_per_sweep": 59319
+        },
+        "250": {
+          "path": "REVISION_REPLICATION_P1_dataset\\observations\\GI_ROI2_250um.bin",
+          "sha256": "8b00f44e59861289b7be93ac7f29a56babe7df4b52e2f523778c732d181d9988",
+          "mask_sha256": "e7abddc8d3a5e9c0cce4a16008e2adf56c3ada9e4620918d97f5ef673d3ae2e4",
+          "observed": 6769,
+          "updates_per_sweep": 103823
+        },
+        "1000": {
+          "path": "REVISION_REPLICATION_P1_dataset\\observations\\GI_ROI2_1000um.bin",
+          "sha256": "8b00f44e59861289b7be93ac7f29a56babe7df4b52e2f523778c732d181d9988",
+          "mask_sha256": "e7abddc8d3a5e9c0cce4a16008e2adf56c3ada9e4620918d97f5ef673d3ae2e4",
+          "observed": 6769,
+          "updates_per_sweep": 103823
+        }
+      }
+    }
+  ],
+  "selection": "P0 hash geometry rule instantiated; no outcome selection; diversity descriptive only",
+  "local_mask_rule": "Explicit P1 amendment before fitting: local lattice centered at origin+24, steps5/50/200; 250/1000 share exact masks in 48-cube. Global training planes remain source-index modulo5/50/200. Deduplicate local masks, do not claim three distinct local densities.",
+  "support_semantics": "Provider explicitly defines phases1..4. Raw0 is excluded unassigned segmentation domain; no physical meaning assigned. Zero never trains/evaluates as a fifth or remapped phase.",
+  "execution_geometry": "Source/payload stored ZYX. Sampler state uses XYZ=np.transpose(source_crop,(2,1,0)). x-normal raw ZY tile transpose->YZ; y-normal ZX identity; z-normal YX transpose->XY. Plane registry declares both orders; mandatory adapter before event encoding.",
+  "training_tile_rule": "One 256x256 tile per registered normal index anchored split lower+8; deliberately fixed cap, not full split plane; source bounds in registry.",
+  "test_readonly": "Windows readonly attribute set; does NOT enforce read denial to same user.",
+  "release_blocker": "OS process isolation pending; no downstream execution authorized.",
+  "integrity_all_registered_payloads": "PASS",
+  "payload_bytes_registered": 271624192,
+  "full_square_radius4_valid_center_counts": {
+    "WF2|train": 18516960,
+    "WF2|validation": 16063119,
+    "GI|train": 18516960,
+    "GI|validation": 16063119
+  },
+  "geometry_adapter_fixture": "PASS",
+  "generator_sha256": "770a124958c4f647ff1fa7421b7003a40f40ef8282399287b6cbb120528a1965"
+}

@@ -1,0 +1,181 @@
+{
+  "identity": "REVISION_REPLICATION",
+  "plans": {
+    "A": {
+      "name": "Scientifically complete reference",
+      "new_B0_runs": 216,
+      "A0_A5_adaptation_runs": 1296,
+      "heldout_model_evaluations": 1512,
+      "trajectories": 2412,
+      "total_voxel_updates": 1999535400,
+      "measured_kernel": "reference",
+      "training_hours": 24.863399999981088,
+      "reconstruction_hours": 2983.4472592462507,
+      "known_total_cpu_hours": 3008.310659246232,
+      "wall_hours_single_worker": 3008.310659246232,
+      "wall_hours_two_workers_assuming_70percent_efficiency": 2148.793328033023,
+      "peak_ram_estimate_gib": 2.0,
+      "peak_ram_basis": "Measured synthetic worker RSS <0.5GiB; reserve2GiB per worker plus role-staged memory-mapped files; no full source accessible.",
+      "omitted_costs": "Comparator implementation runtime and evaluation/rendering not measured; budget reserve24h for evaluation and48h comparator cap, cannot count as validated complete total.",
+      "unknown_external_comparator_hours": null,
+      "deadline_window_hours": 456,
+      "auxiliary_states": {
+        "dominant_phase_states": 12,
+        "published_comparator_trajectories_planned": 36,
+        "neural_trajectory_count_excludes_comparator": true,
+        "comparator_sweeps": "not applicable: annealing move budget requires validation"
+      },
+      "fits_window_known_work": false,
+      "parallelism": "Independent trajectories only; never voxel updates. 2 workers unmeasured efficiency assumption; do not rely on it for deadline.",
+      "critical_path": "OS isolation -> release -> new common B0 -> adaptations -> evaluator-frozen selection -> trajectory sweeps/resume -> locked evaluation -> response writing",
+      "gpu": "Not validated; sequential batch-one dependency limits benefit; no GPU speedup assumed.",
+      "independent_material_generalization": false
+    },
+    "B": {
+      "name": "Optimized complete same cases",
+      "new_B0_runs": 216,
+      "A0_A5_adaptation_runs": 1296,
+      "heldout_model_evaluations": 1512,
+      "trajectories": 2412,
+      "total_voxel_updates": 1999535400,
+      "measured_kernel": "trace_vector_features",
+      "training_hours": 24.863399999981088,
+      "reconstruction_hours": 1616.7076226846746,
+      "known_total_cpu_hours": 1641.5710226846556,
+      "wall_hours_single_worker": 1641.5710226846556,
+      "wall_hours_two_workers_assuming_70percent_efficiency": 1172.5507304890398,
+      "peak_ram_estimate_gib": 2.0,
+      "peak_ram_basis": "Measured synthetic worker RSS <0.5GiB; reserve2GiB per worker plus role-staged memory-mapped files; no full source accessible.",
+      "omitted_costs": "Comparator implementation runtime and evaluation/rendering not measured; budget reserve24h for evaluation and48h comparator cap, cannot count as validated complete total.",
+      "unknown_external_comparator_hours": null,
+      "deadline_window_hours": 456,
+      "auxiliary_states": {
+        "dominant_phase_states": 12,
+        "published_comparator_trajectories_planned": 36,
+        "neural_trajectory_count_excludes_comparator": true,
+        "comparator_sweeps": "not applicable: annealing move budget requires validation"
+      },
+      "fits_window_known_work": false,
+      "parallelism": "Independent trajectories only; never voxel updates. 2 workers unmeasured efficiency assumption; do not rely on it for deadline.",
+      "critical_path": "OS isolation -> release -> new common B0 -> adaptations -> evaluator-frozen selection -> trajectory sweeps/resume -> locked evaluation -> response writing",
+      "gpu": "Not validated; sequential batch-one dependency limits benefit; no GPU speedup assumed.",
+      "independent_material_generalization": false
+    },
+    "C": {
+      "name": "Deadline contingency",
+      "new_B0_runs": 120,
+      "A0_A5_adaptation_runs": 720,
+      "heldout_model_evaluations": 840,
+      "trajectories": 284,
+      "total_voxel_updates": 139294464,
+      "measured_kernel": "trace_vector_features",
+      "training_hours": 13.812999999989492,
+      "reconstruction_hours": 111.10964603831592,
+      "known_total_cpu_hours": 124.9226460383054,
+      "wall_hours_single_worker": 124.9226460383054,
+      "wall_hours_two_workers_assuming_70percent_efficiency": 89.23046145593244,
+      "peak_ram_estimate_gib": 2.0,
+      "peak_ram_basis": "Measured synthetic worker RSS <0.5GiB; reserve2GiB per worker plus role-staged memory-mapped files; no full source accessible.",
+      "omitted_costs": "Comparator implementation runtime and evaluation/rendering not measured; budget reserve24h for evaluation and48h comparator cap, cannot count as validated complete total.",
+      "unknown_external_comparator_hours": null,
+      "deadline_window_hours": 456,
+      "auxiliary_states": {
+        "dominant_phase_states": 12,
+        "published_comparator_trajectories_planned": 12,
+        "neural_trajectory_count_excludes_comparator": true,
+        "comparator_sweeps": "not applicable: annealing move budget requires validation"
+      },
+      "fits_window_known_work": true,
+      "parallelism": "Independent trajectories only; never voxel updates. 2 workers unmeasured efficiency assumption; do not rely on it for deadline.",
+      "critical_path": "OS isolation -> release -> new common B0 -> adaptations -> evaluator-frozen selection -> trajectory sweeps/resume -> locked evaluation -> response writing",
+      "gpu": "Not validated; sequential batch-one dependency limits benefit; no GPU speedup assumed.",
+      "independent_material_generalization": false
+    }
+  },
+  "selected": "C_CONDITIONAL_NOT_READY",
+  "recommendation": "C maximizes all-question coverage within local deadline using full A0-A5 controls, 3 spatial ROIs/state and3 paired short trajectories, one continued to10; reductions affect replication breadth explicitly. A/B too large serially.",
+  "training_assumptions": "100000 events/model maximum;50epochs;ceil(100000/4096)=25 steps;50source epochs +50adaptation; actual events subject to support erosion; timing P0 synthetic full batch. Fixed caps before performance.",
+  "scalar_proxy_limit": "A2/A4/A5 use A3 timing; A1 uses A0; arithmetic extrapolations not full trajectory timings. Training/comparator/evaluation costs uncertain.",
+  "prior_587day_comparison": "P0 used4threads synthetic predictor and all local labels independently. P1 measured actual reference predictor, one thread, 12distinct models, full state encoding; dedup coarse local masks and share seed continuations. P1 budget is a different explicitly declared matrix, not claim of587day speedup.",
+  "coverage": [
+    {
+      "comment": "R1-C1",
+      "status": "FULL_PLAN",
+      "approach": "Define abbreviations in text; no experiment"
+    },
+    {
+      "comment": "R1-C2",
+      "status": "FULL_PLAN",
+      "approach": "Shared fidelity/topology/slices and explicit limitations"
+    },
+    {
+      "comment": "R2-C1",
+      "status": "FULL_PLAN",
+      "approach": "All A0-A5 held-out comparisons, common B0, capacity caveat"
+    },
+    {
+      "comment": "R2-C2",
+      "status": "FULL_PLAN",
+      "approach": "Registered data descriptions/rendering; prep only"
+    },
+    {
+      "comment": "R2-C3",
+      "status": "PARTIAL",
+      "approach": "3 prespecified ROIs with differing composition, WF2 ROI1 oil absent; no performance-driven substitution; train-dominant baseline; no material independence"
+    },
+    {
+      "comment": "R2-C4",
+      "status": "FULL_PLAN",
+      "approach": "Shared per-phase topology and extinction; not effective-property validation"
+    },
+    {
+      "comment": "R2-C5",
+      "status": "PARTIAL_C",
+      "approach": "One long paired seed, other2 short; order/init oneROI/state. Finite horizon and sparse interaction coverage"
+    },
+    {
+      "comment": "R2-C6",
+      "status": "PARTIAL_C",
+      "approach": "Cross3 global x2 distinct local masks on oneROI/state and one paired seed; 250/1000 local identical"
+    },
+    {
+      "comment": "R2-C7",
+      "status": "PARTIAL",
+      "approach": "Publication-verified Yeong-Torquato stats baseline adaptation specified; executable conditioning fidelity/runtime unvalidated"
+    },
+    {
+      "comment": "R2-C8",
+      "status": "FULL_PLAN",
+      "approach": "Validation-only threshold sensitivity, test saturation reporting, exploratory status, reuse probability logs"
+    },
+    {
+      "comment": "R2-C9",
+      "status": "FULL_PLAN",
+      "approach": "Gate distributions versus entropy/margin/support; A3/A4; descriptive associations"
+    },
+    {
+      "comment": "R2-C10",
+      "status": "FULL_PLAN",
+      "approach": "Fixed central orthogonal slices from shared saved states"
+    }
+  ],
+  "comparator": {
+    "selected": "Yeong\u2013Torquato correlation-constrained simulated annealing, explicit four-phase/hard-clamp adaptation",
+    "publication": "Yeong & Torquato (1998), Physical Review E58,224, DOI10.1103/PhysRevE.58.224",
+    "verified_url": "https://doi.org/10.1103/PhysRevE.58.224",
+    "published_scope": "3D reconstruction from 2D two-point probability and lineal-path statistics; retrieved abstract does not establish multiphase hard-clamp implementation.",
+    "implementation_contract": "New revision adapter, not claim of original author code: fit per-phase target two-point and lineal-path descriptors only from registered train planes. Initialize train-prior categorical labels; clamp identical observation mask/values. Swap two unobserved valid voxels; observations never proposed. Objective weights and annealing schedule fixed using validation only. No target truth statistics or test phase fractions.",
+    "fair_constraints": "Same ROI grid, phase semantics, observations, valid support, observation-excluded evaluation; report compute and descriptor-target mismatch rather than assert strongest published implementation.",
+    "status": "METHOD_SELECTED_IMPLEMENTATION_NOT_VALIDATED",
+    "rejected": "Unconditional GAN not automatically fair. SNESIM/MPSlib hard-data interface verified, but requires representative3D training image absent under sparse-plane information parity; no dense source training image permitted.",
+    "alternative_docs": "https://mpslib.readthedocs.io/en/latest/Algorithms/chapSnesim/mps_snesim.html"
+  },
+  "hardware": {
+    "local": "Ryzen9 6900HX 8cores16threads,16GB;1 inference thread best; PlanC known kernels fit serial deadline estimate.",
+    "high_core": "Independent trajectory parallelism possible, unmeasured scaling and memory contention; no numeric server advantage assumed.",
+    "GPU": "No compatible measured GPU implementation; not recommended on evidence available.",
+    "server_required": false,
+    "conclusion": "No server justified yet for C known-work budget; cannot certify full end-to-end feasibility until isolation/comparator are validated.",
+    "cost_estimate": null
+  }
+}

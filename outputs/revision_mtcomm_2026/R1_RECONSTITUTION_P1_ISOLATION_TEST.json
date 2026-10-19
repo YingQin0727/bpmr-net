@@ -1,0 +1,26 @@
+{
+  "identity": "REVISION_REPLICATION",
+  "isolation_enforced": false,
+  "probes": [
+    {
+      "role": "source",
+      "path": "D:\\Paper2\\paper2_stage02a_source_recovery\\official_download\\WF2_5um_1030x1033x3051_8b_segmented_corrected.raw",
+      "result": "READ_ALLOWED",
+      "returncode": 0
+    },
+    {
+      "role": "test_truth",
+      "path": "C:\\Users\\admin\\Documents\\ChatGPT\\\u8bba\u65871\\outputs\\revision_mtcomm_2026\\REVISION_REPLICATION_P1_dataset\\test_truth\\WF2_ROI0.truth.bin",
+      "result": "READ_ALLOWED",
+      "returncode": 0
+    },
+    {
+      "role": "train_positive_control",
+      "path": "C:\\Users\\admin\\Documents\\ChatGPT\\\u8bba\u65871\\outputs\\revision_mtcomm_2026\\REVISION_REPLICATION_P1_dataset\\train\\GI_train__0_100.labels.bin",
+      "result": "READ_ALLOWED",
+      "returncode": 0
+    }
+  ],
+  "test": "Native open from separate Python process, not role-loader API. Reads one byte solely as access probe; no byte value retained.",
+  "required": "Distinct OS worker identity or restricted sandbox with allowlisted role mounts. Current same-user file permissions insufficient. No training/reconstruction release."
+}

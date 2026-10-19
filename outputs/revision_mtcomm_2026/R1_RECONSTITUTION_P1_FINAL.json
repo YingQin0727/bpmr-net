@@ -1,0 +1,37 @@
+{
+  "identity": "REVISION_REPLICATION",
+  "classification": "PARTIAL",
+  "result": "REVISION_R1_RECONSTITUTION_P1=PARTIAL",
+  "dataset": "2246 registered planes in quarantine; integrity/domain/bounds checked; not released",
+  "spatial_leakage": "No direct role overlap; guards128 > radius4; raw0 excluded support; event creation must erode support.",
+  "isolation_enforced": false,
+  "planes": 2246,
+  "model_training_started": false,
+  "scientific_reconstruction_started": false,
+  "measured_update_seconds": {
+    "reference": {
+      "A0": 0.0014145500000068978,
+      "A3": 0.008404459375000783
+    },
+    "trace_vector_features": {
+      "A0": 0.0006640250000060632,
+      "A3": 0.004632887499994354
+    }
+  },
+  "fixture_equivalence": true,
+  "speedup": {
+    "A0": 2.130266179728145,
+    "A3": 1.8140866522252108
+  },
+  "recommended_plan": "C_CONDITIONAL",
+  "local_CPU": "Known-work projection feasible; full end-to-end readiness unresolved",
+  "server_required": "Not justified by measured evidence for C; no rental requested",
+  "blockers": [
+    "OS isolation negative test FAILED: same-user subprocess can read both source and test truth; readonly is not read denial.",
+    "Reference harness dependencies explicitly rebound; complete native scientific worker/geometry/RNG-resume files not yet validated.",
+    "Optimized predictor fixture equivalence is not universal proof; training-produced A0-A5 models require validation before use.",
+    "Published-method adapter not implemented/validated/timed; complete budget has unknown comparator cost.",
+    "No independent material generalization; PlanC long-horizon/global-local comparisons have restricted seed/ROI breadth."
+  ],
+  "next_stage_readiness": "NOT_READY_FOR_CAMPAIGN. Close isolation and comparator/worker gates before any scientific fitting/reconstruction."
+}

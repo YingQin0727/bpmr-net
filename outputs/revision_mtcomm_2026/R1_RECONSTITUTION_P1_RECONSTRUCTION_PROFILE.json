@@ -1,0 +1,276 @@
+{
+  "identity": "REVISION_REPLICATION",
+  "scientific_evidence": false,
+  "source_files": [
+    {
+      "path": "C:\\Users\\admin\\Documents\\\u535a\u58eb\u7533\u8bf7\u8bba\u6587\\r2_lite_3d_pilot.py",
+      "sha256": "7f9e99ce653ca0fca7480f04be9ff871548af03cbd7ba7e24b3a352cf3fa5130"
+    },
+    {
+      "path": "C:\\Users\\admin\\Documents\\\u535a\u58eb\u7533\u8bf7\u8bba\u6587\\step65b_condition_cpdf_predictor.py",
+      "sha256": "3066ea7bd8277faed98da6f3be9242f840ecc680f03007fe89132eae2c943f6b"
+    },
+    {
+      "path": "C:\\Users\\admin\\Documents\\\u535a\u58eb\u7533\u8bf7\u8bba\u6587\\fu_style_cpdf_runtime.py",
+      "sha256": "00255463562bc8f4bd2875d208bc86af08032a24c0386cc141b693f6280d63d6"
+    },
+    {
+      "path": "C:\\Users\\admin\\Documents\\\u535a\u58eb\u7533\u8bf7\u8bba\u6587\\.remote_src\\fu_style_senn_core.py",
+      "sha256": "8d4365a6cd62c5e8cade5440d9dce236875dac42ae038217a95540e67de436d8"
+    }
+  ],
+  "reference_scope": "Unmodified AST-extracted predictor/encoder/fusion functions; dependency bindings explicit: XYZ state, x->yz y->zx z->xy, radius4 row-major offsets from frozen B0_OFFSETS. Original whole runner not importable on Windows; this is a predictor harness, not validated complete runner.",
+  "model_identity": "12 distinct fixed-seed random models per variant; nonzero A3 residual; no fit/checkpoint eligibility claim",
+  "state_sha256": "d80f57578007b371a38d1d22af209c900790013def057d26af0eee1db08eee4a",
+  "profiles": [
+    {
+      "variant": "A0",
+      "implementation": "reference",
+      "threads": 1,
+      "seconds_per_update": [
+        0.0014209093749997237,
+        0.0014145500000068978,
+        0.0014047250000004396
+      ],
+      "median_seconds_per_update": 0.0014145500000068978,
+      "workload": "32 immediate-writeback updates on 48^3 synthetic state, 3 repeats, 5 warmups"
+    },
+    {
+      "variant": "A0",
+      "implementation": "trace_only",
+      "threads": 1,
+      "seconds_per_update": [
+        0.0008509249999946178,
+        0.0008467874999951164,
+        0.0008453749999972615
+      ],
+      "median_seconds_per_update": 0.0008467874999951164,
+      "workload": "32 immediate-writeback updates on 48^3 synthetic state, 3 repeats, 5 warmups"
+    },
+    {
+      "variant": "A0",
+      "implementation": "trace_vector_features",
+      "threads": 1,
+      "seconds_per_update": [
+        0.0006580843750043641,
+        0.0006640250000060632,
+        0.0006646874999916008
+      ],
+      "median_seconds_per_update": 0.0006640250000060632,
+      "workload": "32 immediate-writeback updates on 48^3 synthetic state, 3 repeats, 5 warmups"
+    },
+    {
+      "variant": "A0",
+      "implementation": "reference",
+      "threads": 2,
+      "seconds_per_update": [
+        0.0014827781249948657,
+        0.001474643750000837,
+        0.0014552687499929107
+      ],
+      "median_seconds_per_update": 0.001474643750000837,
+      "workload": "32 immediate-writeback updates on 48^3 synthetic state, 3 repeats, 5 warmups"
+    },
+    {
+      "variant": "A0",
+      "implementation": "trace_only",
+      "threads": 2,
+      "seconds_per_update": [
+        0.0008742906250063243,
+        0.0008755937500097843,
+        0.0008769125000043232
+      ],
+      "median_seconds_per_update": 0.0008755937500097843,
+      "workload": "32 immediate-writeback updates on 48^3 synthetic state, 3 repeats, 5 warmups"
+    },
+    {
+      "variant": "A0",
+      "implementation": "trace_vector_features",
+      "threads": 2,
+      "seconds_per_update": [
+        0.0006976375000107282,
+        0.0006902249999996002,
+        0.0006952781249935924
+      ],
+      "median_seconds_per_update": 0.0006952781249935924,
+      "workload": "32 immediate-writeback updates on 48^3 synthetic state, 3 repeats, 5 warmups"
+    },
+    {
+      "variant": "A0",
+      "implementation": "reference",
+      "threads": 4,
+      "seconds_per_update": [
+        0.0014570312499984084,
+        0.0015155249999878606,
+        0.0014903062500053466
+      ],
+      "median_seconds_per_update": 0.0014903062500053466,
+      "workload": "32 immediate-writeback updates on 48^3 synthetic state, 3 repeats, 5 warmups"
+    },
+    {
+      "variant": "A0",
+      "implementation": "trace_only",
+      "threads": 4,
+      "seconds_per_update": [
+        0.0008862156250017961,
+        0.0008821750000009843,
+        0.0008793312500046113
+      ],
+      "median_seconds_per_update": 0.0008821750000009843,
+      "workload": "32 immediate-writeback updates on 48^3 synthetic state, 3 repeats, 5 warmups"
+    },
+    {
+      "variant": "A0",
+      "implementation": "trace_vector_features",
+      "threads": 4,
+      "seconds_per_update": [
+        0.0007052312499951086,
+        0.0007036749999969061,
+        0.000693196875005242
+      ],
+      "median_seconds_per_update": 0.0007036749999969061,
+      "workload": "32 immediate-writeback updates on 48^3 synthetic state, 3 repeats, 5 warmups",
+      "component_reference_medians_threads1": {
+        "features": 0.0002567999999882886,
+        "torch_12_forwards": 0.0007825000000138971,
+        "fusion": 0.00020769999991898658,
+        "rng_choice": 2.0350000113467104e-05
+      }
+    },
+    {
+      "variant": "A3",
+      "implementation": "reference",
+      "threads": 1,
+      "seconds_per_update": [
+        0.008384565624993456,
+        0.008404459375000783,
+        0.008443790625008774
+      ],
+      "median_seconds_per_update": 0.008404459375000783,
+      "workload": "32 immediate-writeback updates on 48^3 synthetic state, 3 repeats, 5 warmups"
+    },
+    {
+      "variant": "A3",
+      "implementation": "trace_only",
+      "threads": 1,
+      "seconds_per_update": [
+        0.004901674999999273,
+        0.004903996875000871,
+        0.004899696875000359
+      ],
+      "median_seconds_per_update": 0.004901674999999273,
+      "workload": "32 immediate-writeback updates on 48^3 synthetic state, 3 repeats, 5 warmups"
+    },
+    {
+      "variant": "A3",
+      "implementation": "trace_vector_features",
+      "threads": 1,
+      "seconds_per_update": [
+        0.004630040625002607,
+        0.004632887499994354,
+        0.004666506250003977
+      ],
+      "median_seconds_per_update": 0.004632887499994354,
+      "workload": "32 immediate-writeback updates on 48^3 synthetic state, 3 repeats, 5 warmups"
+    },
+    {
+      "variant": "A3",
+      "implementation": "reference",
+      "threads": 2,
+      "seconds_per_update": [
+        0.008555650000005244,
+        0.008650106250001954,
+        0.008743128125004773
+      ],
+      "median_seconds_per_update": 0.008650106250001954,
+      "workload": "32 immediate-writeback updates on 48^3 synthetic state, 3 repeats, 5 warmups"
+    },
+    {
+      "variant": "A3",
+      "implementation": "trace_only",
+      "threads": 2,
+      "seconds_per_update": [
+        0.005085899999997423,
+        0.004993993749991432,
+        0.005005371875000719
+      ],
+      "median_seconds_per_update": 0.005005371875000719,
+      "workload": "32 immediate-writeback updates on 48^3 synthetic state, 3 repeats, 5 warmups"
+    },
+    {
+      "variant": "A3",
+      "implementation": "trace_vector_features",
+      "threads": 2,
+      "seconds_per_update": [
+        0.004828493749997165,
+        0.004841546874999381,
+        0.004834849999994617
+      ],
+      "median_seconds_per_update": 0.004834849999994617,
+      "workload": "32 immediate-writeback updates on 48^3 synthetic state, 3 repeats, 5 warmups"
+    },
+    {
+      "variant": "A3",
+      "implementation": "reference",
+      "threads": 4,
+      "seconds_per_update": [
+        0.008650040624999633,
+        0.008615687499997193,
+        0.008690478124989909
+      ],
+      "median_seconds_per_update": 0.008650040624999633,
+      "workload": "32 immediate-writeback updates on 48^3 synthetic state, 3 repeats, 5 warmups"
+    },
+    {
+      "variant": "A3",
+      "implementation": "trace_only",
+      "threads": 4,
+      "seconds_per_update": [
+        0.005107721874992421,
+        0.005155531250011336,
+        0.005146621874999369
+      ],
+      "median_seconds_per_update": 0.005146621874999369,
+      "workload": "32 immediate-writeback updates on 48^3 synthetic state, 3 repeats, 5 warmups"
+    },
+    {
+      "variant": "A3",
+      "implementation": "trace_vector_features",
+      "threads": 4,
+      "seconds_per_update": [
+        0.00490716875000885,
+        0.0048800874999983535,
+        0.00490711249999265
+      ],
+      "median_seconds_per_update": 0.00490711249999265,
+      "workload": "32 immediate-writeback updates on 48^3 synthetic state, 3 repeats, 5 warmups",
+      "component_reference_medians_threads1": {
+        "features": 0.000275999999985288,
+        "torch_12_forwards": 0.0075851999999940745,
+        "fusion": 0.0002344500001072447,
+        "rng_choice": 2.945000005638576e-05
+      }
+    }
+  ],
+  "loads": [
+    {
+      "variant": "A0",
+      "bank_bytes": 2265795,
+      "median_warm_load_seconds": 0.007853300000078889
+    },
+    {
+      "variant": "A3",
+      "bank_bytes": 2336263,
+      "median_warm_load_seconds": 0.02027799999996205
+    }
+  ],
+  "sampled_peak_rss_bytes": 384278528,
+  "bottlenecks": "Reference encoder np.asarray(state,dtype=int) copies entire int16 state three times per update; models already resident per trajectory in original. Twelve eager forwards and many numpy normalizations/calls dominate.",
+  "limitations": [
+    "No test truth access",
+    "No real reconstruction",
+    "Partial synthetic trajectories do not prove all-input bitwise equivalence",
+    "TorchScript trace validated only registered shape/radius/model topology; torch.compile not measured; no GPU implementation evaluated",
+    "Process RSS samples exclude dataset staging; checkpoint loading warm memory excludes cold disk"
+  ]
+}

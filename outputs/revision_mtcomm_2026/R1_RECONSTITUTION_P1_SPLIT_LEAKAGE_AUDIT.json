@@ -1,0 +1,70 @@
+{
+  "identity": "REVISION_REPLICATION",
+  "spatial_status": "PASS_FOR_DIRECT_LABEL_OVERLAP",
+  "feature_radius": 4,
+  "feature_support": "400-vector consists of 80 offsets in [-4,4]^2 excluding center; 9x9 residual patch contains no labels beyond these slots even with dilation4.",
+  "split_boxes_zyx": {
+    "train": [
+      [
+        32,
+        1000
+      ],
+      [
+        32,
+        1001
+      ],
+      [
+        32,
+        998
+      ]
+    ],
+    "validation": [
+      [
+        1128,
+        1512
+      ],
+      [
+        32,
+        1001
+      ],
+      [
+        32,
+        998
+      ]
+    ],
+    "test": [
+      [
+        1640,
+        3019
+      ],
+      [
+        32,
+        1001
+      ],
+      [
+        32,
+        998
+      ]
+    ]
+  },
+  "guard_voxels": 128,
+  "split_paired_across_states": true,
+  "plane_cross_partition_overlap": 0,
+  "neighborhood_cross_partition_overlap": 0,
+  "event_rule": "Every center footprint must lie inside tile and support; erode support by full square radius4 before event creation. No events created in P1.",
+  "historical_exclusion": "Union of both historical ROIs expanded128 masked to sentinel255/support0. Events must exclude any invalid footprint.",
+  "periodic_rule": "Periodic wrap allowed only inside reconstruction ROI; training must not wrap across split boundaries.",
+  "limitation": "No direct overlap does not mean statistical independence of adjacent geology; both states same rock.",
+  "isolation_status": "FAILED_SAME_USER_CAN_READ_RAW_AND_TEST_TRUTH",
+  "executable_probe": "paper_revision/p1_isolation_probe.py",
+  "payload_bounds_checked": 2246,
+  "hash_and_domain_check": "PASS",
+  "geometry_adapter_fixture": "PASS",
+  "full_support_erosion_counts": {
+    "WF2|train": 18516960,
+    "WF2|validation": 16063119,
+    "GI|train": 18516960,
+    "GI|validation": 16063119
+  },
+  "dataset_release": false
+}
