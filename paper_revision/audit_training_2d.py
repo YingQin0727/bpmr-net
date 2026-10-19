@@ -74,7 +74,7 @@ def main():
               for t in range(4) for v in ('B0_SOURCE','A0','A1','A2','A3','A4','A5')]
     reads += writes  # only current-run generated dry checkpoints; no external model input
     runtime = [Path(sys.base_prefix)/'Lib', Path(sys.base_prefix)/'DLLs',
-               Path(sysconfig.get_paths()['purelib'])]
+               Path(sysconfig.get_paths()['purelib']), ROOT/'.venv-revision311/Lib/site-packages']
     # No repository-wide read grant. Runtime directories are code dependencies,
     # whose native IO and arbitrary data contents are explicitly unverified.
     access = TrainingAccess(reads, writes, runtime)
@@ -180,7 +180,10 @@ def main():
     unexpected_denials = [r for r in access.records if not r['allowed'] and
                          r['phase'] != 'prohibited_read_injection' and
                          not (r['phase']=='training_module_import' and r['path'].endswith('.pyc'))]
-    assert not unexpected_denials
+    if unexpected_denials:
+        access.active = False
+        (REPORT/'unexpected_denials.json').write_text(json.dumps(unexpected_denials,indent=2),encoding='utf-8')
+        raise AssertionError('unexpected guarded access; see unexpected_denials.json')
     access.phase = 'complete'
     access.active = False  # only trusted driver serializes evidence after training returns
     status = dict(TRAINING_INPUT_AUDIT='PASS', TRAINING_ACCESS_AUDIT='FAIL',

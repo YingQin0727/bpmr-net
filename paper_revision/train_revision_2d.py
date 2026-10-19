@@ -89,7 +89,7 @@ def require_design_a(metadata, unit, allow_dry_run=False):
     if (metadata.get('design') != 'A' or metadata.get('identity') != 'REVISION_REPLICATION'
             or metadata.get('unit') != unit or metadata.get('variant') != 'B0_SOURCE'
             or metadata.get('historical_checkpoint') is not False
-            or metadata.get('kind') != ('DRY_RUN_ONLY' if allow_dry_run else 'EPOCH50')
+            or metadata.get('kind') != ('NON_SCIENTIFIC_TEST' if allow_dry_run else 'EPOCH50')
             or (not allow_dry_run and metadata.get('epochs_completed') != 50)):
         raise PermissionError('not a compatible new Design A source checkpoint')
 
@@ -136,7 +136,7 @@ def dry_run(root, rows, directory, access):
                             assert all(torch.equal(v, model.b0.state_dict()[k]) for k, v in common.state_dict().items())
                         with torch.no_grad():
                             assert torch.isfinite(loss_for(variant, probability(model, vx), vy))
-                        metadata = dict(identity='REVISION_REPLICATION', design='A', kind='DRY_RUN_ONLY',
+                        metadata = dict(identity='REVISION_REPLICATION', design='A', kind='NON_SCIENTIFIC_TEST',
                                         unit=unit, variant=variant, epochs_completed=0, optimizer_steps=1,
                                         historical_checkpoint=False, train_events=train_hash, validation_events=val_hash,
                                         source_checkpoint_sha256=common_hash)
