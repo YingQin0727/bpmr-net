@@ -1,0 +1,102 @@
+{
+  "identity": "REVISION_REPLICATION",
+  "result": "REVISION_R1_RELEASE_FIX_P3=PARTIAL",
+  "G1": "FAIL",
+  "G2": "FAIL",
+  "G3": "FAIL",
+  "TRAINING_READY": "NO",
+  "RECONSTRUCTION_READY": "NO",
+  "FULL_CAMPAIGN_READY": "NO",
+  "LOCAL_CPU_FEASIBLE": "CONDITIONAL",
+  "SERVER_REQUIRED": "UNDETERMINED",
+  "EXTENSION_ADVISABLE": "YES",
+  "stop_reason": "If a dedicated environment requires user-level Windows administrative approval, installation, account creation or access changes, stop at that operation and report the minimum manual action needed.",
+  "manual_action": {
+    "minimum_manual_action": "Install a local VM runtime compatible with Windows Home using Windows administrator approval; then report the installed runtime. No dataset permission change, edition upgrade or cloud rental is requested.",
+    "example": "VirtualBox base runtime; installer/version/license must be checked before installation. No Extension Pack is required for this workflow.",
+    "alternative": "User-provided existing isolated VM with no host drive shares; assess before use.",
+    "after_install": "Next agent stage creates a dedicated guest, stages only frozen permitted train/validation/observations, keeps source/truth/backups outside guest, and verifies exact worker access. No training on installation alone.",
+    "guest_proposal": {
+      "vcpus": 4,
+      "RAM_GiB": 8,
+      "virtual_disk_GiB": 30,
+      "network": "disable after dependency setup",
+      "shares": "No host home/drive/parent shares; no shared clipboard/drag-drop; input delivered through readonly isolated staging; distinct writable output disk.",
+      "evaluation": "Separate context, receives completed outputs and test truth only after reconstruction; no write access to guest training/config/checkpoint stores."
+    },
+    "no_permission_mutations": "Original source/test/backups remain untouched; dedicated staging only."
+  },
+  "training_started": false,
+  "scientific_reconstructions": 0,
+  "registry": "P2PASSretained;noauditrepeat",
+  "trajectory_manifest": "284uniqueP2PASSretained;noexpansion",
+  "remaining_blockers": [
+    "No isolated execution environment/identity",
+    "G2 production48^3equivalence absent",
+    "G3 fair48^3baseline validation absent",
+    "Executable trainingevents/checkpoint/log contract not verified"
+  ],
+  "next_executable_stage": "P3_ISOLATED_ENVIRONMENT_BOOTSTRAP after user installsVMruntime; no modeltrainingauthorization implied.",
+  "base_commit": "666c1a4bc3f120368263fe45560ef7385f24b781",
+  "report_commit_note": "This report is committed in the subsequent revision-only commit; obtain itsSHA via gitlog --all --grep ReleaseFixP3. Self-hashing commitSHA cannot be embedded in itself.",
+  "implementation_sha256": {
+    "src/bpmr_net/models.py": "8c0d0012c8ba741cd27759dfd8c1c88c2f2c47a2545c62504d4c364211d676b6",
+    "src/bpmr_net/features.py": "87792e46496a1cac946b2fa4b899449fcd45afeb1d26ed030638ff53d9a3afda",
+    "paper_revision/models_revision.py": "0d28354a9b3289b1c2daaea6e84c2d7889fc75e2842e766eaf39e3037581f001",
+    "paper_revision/p2_runner.py": "c374e42cdac54ee8c3fe90fcd05947e219cc629bc4f9806fb3aa24ad591ca2c4",
+    "paper_revision/p1_profile.py": "9be68bdfc97d2a0a64c45bb939e1a8dbf5b06bdb27f728258834e5673085e324",
+    "paper_revision/p2_baseline.py": "b49ba8771934c105fd8ccbc719e455c5b2b6394b9a84a26a14706a500df738f6",
+    "paper_revision/p3_release_stop.py": "900df9970a3fbc9243b52925d259b71178f24884aa5e6183fa12b8bee3a90d16"
+  },
+  "evidence_sha256": {
+    "R1_RECONSTITUTION_P1_PLANE_REGISTRY.csv": "42e8cf78339b992ab4e10af1d8c5798230bc71467ce65f69f86c91d995a560bf",
+    "R1_RECONSTITUTION_P1_DATASET_AUDIT.json": "5eba20e3a1a9f4e057684d631a5a65d96d80c6bbea5feb101d46629c1500b3dd",
+    "R1_RECONSTITUTION_P2_RELEASE_GATES.json": "ee9d30f701c74dc44c78b69272cb44b3e6dc474bcdf895f70b030a760d3d01b5",
+    "R1_RECONSTITUTION_P2_RUNNER_EQUIVALENCE.json": "bfa660716de3f996b967bb9152ead1c53aa12174148b27ad1ef707edfe025c06",
+    "R1_RECONSTITUTION_P2_EXTERNAL_BASELINE_AUDIT.json": "2638e96d07536720d0c26ae5ae2312cf02680defb12d5c4431296f378920a0e6",
+    "R1_RECONSTITUTION_P2_RESOURCE_BUDGET.json": "be96e0cb4bad383589a7f91f507b5fb294170f2803bb9a5d3418ec869d548ed1",
+    "R1_RECONSTITUTION_P2_TRAJECTORY_MATRIX_AUDIT.csv": "44ba97acf69c7b80509a5f01c06e38e7c5571faef3e7e77367889114f9aeeae7"
+  },
+  "commands": [
+    {
+      "command": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "returncode": 0,
+      "stdout": "666c1a4bc3f120368263fe45560ef7385f24b781\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "branch",
+        "--show-current"
+      ],
+      "returncode": 0,
+      "stdout": "revision/mtcomm-major-2026\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "whoami",
+        "/all"
+      ],
+      "returncode": 0,
+      "stdout": "\r\nUSER INFORMATION\r\n----------------\r\n\r\nUser Name             SID                                          \r\n===================== =============================================\r\ndesktop-64vp21e\\admin S-1-5-21-2452293266-1158813196-812636544-1001\r\n\r\n\r\nGROUP INFORMATION\r\n-----------------\r\n\r\nGroup Name                             Type             SID          Attributes                                        \r\n====================================== ================ ============ ==================================================\r\nEveryone                               Well-known group S-1-1-0      Mandatory group, Enabled by default, Enabled group\r\nNT AUTHORITY\\本地帐户和管理员组成员    Well-known group S-1-5-114    Group used for deny only                          \r\nBUILTIN\\Administrators                 Alias            S-1-5-32-544 Group used for deny only                          \r\nBUILTIN\\Users                          Alias            S-1-5-32-545 Mandatory group, Enabled by default, Enabled group\r\nNT AUTHORITY\\INTERACTIVE               Well-known group S-1-5-4      Mandatory group, Enabled by default, Enabled group\r\nCONSOLE LOGON                          Well-known group S-1-2-1      Mandatory group, Enabled by default, Enabled group\r\nNT AUTHORITY\\Authenticated Users       Well-known group S-1-5-11     Mandatory group, Enabled by default, Enabled group\r\nNT AUTHORITY\\This Organization         Well-known group S-1-5-15     Mandatory group, Enabled by default, Enabled group\r\nNT AUTHORITY\\本地帐户                  Well-known group S-1-5-113    Mandatory group, Enabled by default, Enabled group\r\nLOCAL                                  Well-known group S-1-2-0      Mandatory group, Enabled by default, Enabled group\r\nNT AUTHORITY\\NTLM Authentication       Well-known group S-1-5-64-10  Mandatory group, Enabled by default, Enabled group\r\nMandatory Label\\Medium Mandatory Level Label            S-1-16-8192                                                    \r\n\r\n\r\nPRIVILEGES INFORMATION\r\n----------------------\r\n\r\nPrivilege Name                Description                          State   \r\n============================= ==================================== ========\r\nSeShutdownPrivilege           Shut down the system                 Disabled\r\nSeChangeNotifyPrivilege       Bypass traverse checking             Enabled \r\nSeUndockPrivilege             Remove computer from docking station Disabled\r\nSeIncreaseWorkingSetPrivilege Increase a process working set       Disabled\r\nSeTimeZonePrivilege           Change the time zone                 Disabled\r\n\r\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "powershell.exe",
+        "-NoProfile",
+        "-Command",
+        "$os=Get-ItemProperty 'HKLM:/SOFTWARE/Microsoft/Windows NT/CurrentVersion';$cs=Get-CimInstance Win32_ComputerSystem;$cpu=Get-CimInstance Win32_Processor;[pscustomobject]@{EditionID=$os.EditionID;ProductName=$os.ProductName;Build=$os.CurrentBuild;HypervisorPresent=$cs.HypervisorPresent;RAM=$cs.TotalPhysicalMemory;CPU=$cpu.Name;VirtualizationFirmwareEnabled=$cpu.VirtualizationFirmwareEnabled;SLAT=$cpu.SecondLevelAddressTranslationExtensions;Tools=@(Get-Command WindowsSandbox.exe,docker.exe,vmrun.exe,VBoxManage.exe -ErrorAction SilentlyContinue|Select-Object Name,Source)}|ConvertTo-Json -Depth 4"
+      ],
+      "returncode": 0,
+      "stdout": "{\r\n    \"EditionID\":  \"Core\",\r\n    \"ProductName\":  \"Windows 10 Home\",\r\n    \"Build\":  \"26200\",\r\n    \"HypervisorPresent\":  false,\r\n    \"RAM\":  16387301376,\r\n    \"CPU\":  \"AMD Ryzen 9 6900HX with Radeon Graphics        \",\r\n    \"VirtualizationFirmwareEnabled\":  true,\r\n    \"SLAT\":  true,\r\n    \"Tools\":  [\r\n\r\n              ]\r\n}\r\n",
+      "stderr": ""
+    }
+  ]
+}

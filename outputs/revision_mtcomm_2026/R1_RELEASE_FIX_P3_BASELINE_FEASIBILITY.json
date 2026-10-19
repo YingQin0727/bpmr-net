@@ -1,0 +1,26 @@
+{
+  "identity": "REVISION_REPLICATION",
+  "G3": "FAIL",
+  "status": "NOT_RERUN_AFTER_ADMINISTRATIVE_STOP",
+  "previous": "P2 eight8^3/16^3 train-derived synthetic hard-clamp prototypes; no complete48^3 feasibility proof.",
+  "pending": "Verify full objective/procedure/allowed-information parity, validation-derivedtargets,48^3 workload and convergence/stopbudget; if infeasible assessonealternative before declaring unavailable.",
+  "truth_statistics_prohibited": [
+    "target phase fractions",
+    "target correlation",
+    "target topology",
+    "target initialization",
+    "stopping"
+  ],
+  "publication": "10.1103/PhysRevE.58.224; prior publisher abstract verification retained, not fulltext algorithmverification.",
+  "new_objective_evaluations": 0,
+  "new_reconstruction_runtime": null,
+  "implementation_sha256": {
+    "src/bpmr_net/models.py": "8c0d0012c8ba741cd27759dfd8c1c88c2f2c47a2545c62504d4c364211d676b6",
+    "src/bpmr_net/features.py": "87792e46496a1cac946b2fa4b899449fcd45afeb1d26ed030638ff53d9a3afda",
+    "paper_revision/models_revision.py": "0d28354a9b3289b1c2daaea6e84c2d7889fc75e2842e766eaf39e3037581f001",
+    "paper_revision/p2_runner.py": "c374e42cdac54ee8c3fe90fcd05947e219cc629bc4f9806fb3aa24ad591ca2c4",
+    "paper_revision/p1_profile.py": "9be68bdfc97d2a0a64c45bb939e1a8dbf5b06bdb27f728258834e5673085e324",
+    "paper_revision/p2_baseline.py": "b49ba8771934c105fd8ccbc719e455c5b2b6394b9a84a26a14706a500df738f6",
+    "paper_revision/p3_release_stop.py": "900df9970a3fbc9243b52925d259b71178f24884aa5e6183fa12b8bee3a90d16"
+  }
+}
