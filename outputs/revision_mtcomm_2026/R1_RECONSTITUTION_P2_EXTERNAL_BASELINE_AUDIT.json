@@ -1,0 +1,189 @@
+{
+  "identity": "REVISION_REPLICATION",
+  "method": "Yeong\u2013Torquato-style multiphase correlation/lineal-path simulated annealing adapter",
+  "publication": {
+    "doi": "10.1103/PhysRevE.58.224",
+    "url": "https://doi.org/10.1103/PhysRevE.58.224",
+    "verified": "Publisher abstract/metadata verified; full text unavailable; not exact author implementation"
+  },
+  "implementation_license": "New repository-native code under repository LICENSE; no third-party code copied. MaterialReconstruction.jl binary implementation not imported.",
+  "information_boundary": "Only two registered G250 training planes and synthetic3D states used. No source dense file, test ROI or observation file opened.",
+  "test_scope": "Synthetic conditioning labels, non-test train-derived statistics,8/16cube64moves; not paper results.",
+  "predefined_candidate": {
+    "roi_shape": [
+      48,
+      48,
+      48
+    ],
+    "seeds": [
+      2701,
+      2702,
+      2703
+    ],
+    "proposed_moves": 10000,
+    "lags_voxels": [
+      1,
+      2,
+      4
+    ],
+    "temperature": "0.01 geometric to0.00001",
+    "stopping": "fixed10000attempts, no test-dependent stop",
+    "descriptor_weights": "equal per phase/lag/axis-average",
+    "conditioning": "same legal observations clamped; only unobserved voxel swaps",
+    "prior": "train-only phase fractions; preserve initialized free phase counts; do not match hidden truth counts"
+  },
+  "fairness_limits": [
+    "Prototype uses only2train planes; production must pool exactly same global-regime allowed train planes as neural model.",
+    "8/16cube cost cannot certify48cube runtime; full-descriptor recomputation per move scales withvolume; no validated incremental48cube implementation.",
+    "Fixed phase-count swaps restrict volume-fraction relaxation; state initial count derives train prior, not truth.",
+    "10000moves likely insufficient mixing; validation-only convergence/budget study needed before credible competitiveness claim.",
+    "Axis-averaged low-lag statistics are a restricted published-framework adaptation; cannot call canonical published implementation."
+  ],
+  "evidence": [
+    {
+      "plane_id": "WF2_train__0_100",
+      "role": "train",
+      "labels_sha256": "8bda49c22227c25fff9f269448aa10f0f5527938a7625e3d7e4cd56f4f29fb9f",
+      "support_sha256": "ac9c9e33223c1d3e70ca84b7f5c7f8eacee75552d948380ffe82905096882fd0",
+      "prior": [
+        0.06201969010925103,
+        0.020853238067544553,
+        0.8532796078594276,
+        0.06384746396377684
+      ],
+      "target_sha256": "b6e51bf241b9e5ecb65d75c9e9835637b12b39f08708eac9d45b75fa1f742bff",
+      "target_seconds": 0.008879699999852164
+    },
+    {
+      "plane_id": "GI_train__0_100",
+      "role": "train",
+      "labels_sha256": "eef0995fc73bd998c7b1dba919aa54deb93a58e1406e92c4b0fcb1490c62dcf1",
+      "support_sha256": "ac9c9e33223c1d3e70ca84b7f5c7f8eacee75552d948380ffe82905096882fd0",
+      "prior": [
+        0.0800066464503801,
+        0.011382046275910771,
+        0.8532796078594276,
+        0.05533169941428156
+      ],
+      "target_sha256": "5c66f3e4976bb5b01110fdffe836964f8c3b73531ab7f7cfb74117b8518cbeb9",
+      "target_seconds": 0.00552730000072188
+    }
+  ],
+  "runs": [
+    {
+      "material": "WF2",
+      "size": 8,
+      "seed": 2701,
+      "moves": 64,
+      "accepted": 61,
+      "median_move_seconds": 0.0008282500002678717,
+      "total_seconds": 0.06994229999963864,
+      "clamping_violations": 0,
+      "phase_count_preserved": true,
+      "initial_objective": 0.018747259511789155,
+      "final_objective": 0.01775188441309296,
+      "final_state_sha256": "0b1ad925c9218a255a2306925eb4f48578314e196c93acd6e36f58af1aa2a3c1"
+    },
+    {
+      "material": "WF2",
+      "size": 8,
+      "seed": 2702,
+      "moves": 64,
+      "accepted": 63,
+      "median_move_seconds": 0.0008219999999710126,
+      "total_seconds": 0.053732700000182376,
+      "clamping_violations": 0,
+      "phase_count_preserved": true,
+      "initial_objective": 0.007191933250646747,
+      "final_objective": 0.007010498301448231,
+      "final_state_sha256": "dc388185499cc29f59b11777334138dd94e343a85071cbfb43c63538c24cd25f"
+    },
+    {
+      "material": "WF2",
+      "size": 16,
+      "seed": 2701,
+      "moves": 64,
+      "accepted": 62,
+      "median_move_seconds": 0.0012978499999007909,
+      "total_seconds": 0.0853439000002254,
+      "clamping_violations": 0,
+      "phase_count_preserved": true,
+      "initial_objective": 0.011588006525999792,
+      "final_objective": 0.011617220979000017,
+      "final_state_sha256": "d5e0a055750200f3499d5d90f4e2ef6925ef8a4765a8ea6ee171942a48aab5e9"
+    },
+    {
+      "material": "WF2",
+      "size": 16,
+      "seed": 2702,
+      "moves": 64,
+      "accepted": 62,
+      "median_move_seconds": 0.0013005499999962922,
+      "total_seconds": 0.08490849999998318,
+      "clamping_violations": 0,
+      "phase_count_preserved": true,
+      "initial_objective": 0.011743571926340799,
+      "final_objective": 0.011640705472737883,
+      "final_state_sha256": "ce4a50da3cc96f36b386828da2024812147d9de1dec2c5169e519b1daeb778a7"
+    },
+    {
+      "material": "GI",
+      "size": 8,
+      "seed": 2701,
+      "moves": 64,
+      "accepted": 62,
+      "median_move_seconds": 0.0008272000000033586,
+      "total_seconds": 0.054077499999948486,
+      "clamping_violations": 0,
+      "phase_count_preserved": true,
+      "initial_objective": 0.020747879574108525,
+      "final_objective": 0.02000315802840587,
+      "final_state_sha256": "b91d4d0d78f8d6c085a4a00553e25cd6585f503948cd36d60945d7d2d2d6ba91"
+    },
+    {
+      "material": "GI",
+      "size": 8,
+      "seed": 2702,
+      "moves": 64,
+      "accepted": 63,
+      "median_move_seconds": 0.0008447499999419961,
+      "total_seconds": 0.055183800000122574,
+      "clamping_violations": 0,
+      "phase_count_preserved": true,
+      "initial_objective": 0.009218683855599792,
+      "final_objective": 0.009104183322519343,
+      "final_state_sha256": "d447926602c63981b0469e53a21ddd16443fc7eef5ce395fa3bace48fd3ce827"
+    },
+    {
+      "material": "GI",
+      "size": 16,
+      "seed": 2701,
+      "moves": 64,
+      "accepted": 63,
+      "median_move_seconds": 0.0013278999999783991,
+      "total_seconds": 0.08710739999969519,
+      "clamping_violations": 0,
+      "phase_count_preserved": true,
+      "initial_objective": 0.01245780534385322,
+      "final_objective": 0.012521548703560516,
+      "final_state_sha256": "2023ff6a19a45f62748c89cdbe8f37daa83d98536d561b433e014db46b45ec43"
+    },
+    {
+      "material": "GI",
+      "size": 16,
+      "seed": 2702,
+      "moves": 64,
+      "accepted": 64,
+      "median_move_seconds": 0.0013297000000420667,
+      "total_seconds": 0.0868798000001334,
+      "clamping_violations": 0,
+      "phase_count_preserved": true,
+      "initial_objective": 0.012221929754187658,
+      "final_objective": 0.012135590289652595,
+      "final_state_sha256": "9466673f7b0027c05a5dec30da84952abd1f348144deecb38c84cd00e8faa4a4"
+    }
+  ],
+  "peak_sampled_rss_bytes": 44646400,
+  "total_wall_seconds": 0.6272254999994402,
+  "G3": "FAIL_INCOMPLETE_PRODUCTION_SCALE_AND_INFORMATION_PARITY_VALIDATION"
+}

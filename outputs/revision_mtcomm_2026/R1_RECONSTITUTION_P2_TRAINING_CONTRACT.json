@@ -1,0 +1,36 @@
+{
+  "identity": "REVISION_REPLICATION",
+  "status": "SPECIFIED_NOT_EXECUTED",
+  "design": "A",
+  "seeds": [
+    1701,
+    1702,
+    1703
+  ],
+  "max_events_per_model": 100000,
+  "event_order": "sort by source,orientation,index,row,column then deterministic seed-bound cap, hashbeforefit; same cap/events/orderforallbranches",
+  "event_support": "9x9fullsquare erosion of support; no periodic train wrap",
+  "source_B0": {
+    "epochs": 50,
+    "primary": "epoch50",
+    "loss": "MSE on normalized categorical probability versus onehot; explicit revision deviation from historical raw sigmoidMSE"
+  },
+  "branches": "A0/A1 allB0 trainable;A2-A5 frozencommonB0; same source checkpoint hash; variants from revision_protocol.json",
+  "optimizer": {
+    "name": "Adam",
+    "lr": 0.001,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "weight_decay": 0
+  },
+  "batch_size": 4096,
+  "shuffle": false,
+  "continuation_epochs": 50,
+  "primary": "epoch50,noearlystopping",
+  "secondary": "bestvalidationonly,samecriterionperobjective,no testselection",
+  "initialization": "same commonB0 for each paired unit; residualhead zero,gatebias-2.197224577, seedfixed",
+  "implementation_pending": "No training entrypoint/final event manifest exists; must implement and verify source loss normalization/target semantics before release. Spec alone insufficient."
+}

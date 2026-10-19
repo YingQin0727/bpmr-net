@@ -1,0 +1,117 @@
+{
+  "identity": "REVISION_REPLICATION",
+  "results": [
+    {
+      "workers": 1,
+      "workers_measured": [
+        {
+          "work_units": 384,
+          "active_seconds": 1.6401174000002356,
+          "cpu_seconds": 1.640625,
+          "rss_bytes": 353255424,
+          "available_ram_bytes": 7996395520,
+          "samples": [
+            0.5513903999999457,
+            0.5467478999999003,
+            0.5419791000003897
+          ]
+        }
+      ],
+      "total_process_wall_seconds": 6.5164621000003535,
+      "active_throughput_updates_per_second": 234.1295812116528,
+      "sum_sampled_worker_rss_bytes": 353255424,
+      "active_throughput_speedup_vs1": 1.0
+    },
+    {
+      "workers": 2,
+      "workers_measured": [
+        {
+          "work_units": 384,
+          "active_seconds": 1.7526140999989366,
+          "cpu_seconds": 1.734375,
+          "rss_bytes": 353075200,
+          "available_ram_bytes": 7669399552,
+          "samples": [
+            0.5803820999999516,
+            0.5850118999996994,
+            0.5872200999992856
+          ]
+        },
+        {
+          "work_units": 384,
+          "active_seconds": 1.6871313999999984,
+          "cpu_seconds": 1.6875,
+          "rss_bytes": 353546240,
+          "available_ram_bytes": 7669628928,
+          "samples": [
+            0.5586743999992905,
+            0.5630586000006588,
+            0.5653984000000492
+          ]
+        }
+      ],
+      "total_process_wall_seconds": 7.083286799999769,
+      "active_throughput_updates_per_second": 438.2025683808352,
+      "sum_sampled_worker_rss_bytes": 706621440,
+      "active_throughput_speedup_vs1": 1.8716241070994815
+    },
+    {
+      "workers": 4,
+      "workers_measured": [
+        {
+          "work_units": 384,
+          "active_seconds": 1.7270063999985723,
+          "cpu_seconds": 1.734375,
+          "rss_bytes": 352751616,
+          "available_ram_bytes": 7096147968,
+          "samples": [
+            0.5743427999996129,
+            0.5774525999995603,
+            0.5752109999993991
+          ]
+        },
+        {
+          "work_units": 384,
+          "active_seconds": 1.716597399999955,
+          "cpu_seconds": 1.6875,
+          "rss_bytes": 353456128,
+          "available_ram_bytes": 7096147968,
+          "samples": [
+            0.5700393000006443,
+            0.5724304999994274,
+            0.5741275999998834
+          ]
+        },
+        {
+          "work_units": 384,
+          "active_seconds": 1.7556735999987723,
+          "cpu_seconds": 1.734375,
+          "rss_bytes": 353345536,
+          "available_ram_bytes": 7096156160,
+          "samples": [
+            0.5827529999996841,
+            0.5865760999995473,
+            0.5863444999995409
+          ]
+        },
+        {
+          "work_units": 384,
+          "active_seconds": 1.7435385000007955,
+          "cpu_seconds": 1.734375,
+          "rss_bytes": 354041856,
+          "available_ram_bytes": 7095934976,
+          "samples": [
+            0.5755251999999018,
+            0.58246120000058,
+            0.5855521000003137
+          ]
+        }
+      ],
+      "total_process_wall_seconds": 7.745124200000646,
+      "active_throughput_updates_per_second": 874.8778816296344,
+      "sum_sampled_worker_rss_bytes": 1413595136,
+      "active_throughput_speedup_vs1": 3.7367250951461193
+    }
+  ],
+  "scope": "Synthetic trace-only12A3forward banks, independent workers. Active spans may not perfectly overlap; startup/tracing included in process wall, excluded active. No feature/fusion/eval contention; not full scientific worker scaling."
+}

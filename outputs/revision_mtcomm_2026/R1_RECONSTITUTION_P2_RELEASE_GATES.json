@@ -1,0 +1,36 @@
+{
+  "identity": "REVISION_REPLICATION",
+  "G1": {
+    "status": "FAIL",
+    "reason": "G1: no actual restricted scientific identity configured/tested; native probes read source/truth and2alternativecopies."
+  },
+  "G2": {
+    "status": "FAIL",
+    "fixture_pass": true,
+    "cases": 96,
+    "reason": "G2:96synthetic cases pass but complete original runner/intended isolated executable and scientific checkpoint semantics unverified."
+  },
+  "G3": {
+    "status": "FAIL",
+    "prototype_runs": 8,
+    "reason": "G3:8non-test prototype runs establish clamp-preserving mechanics only; allowed-information parity,48cube runtime/mixing/stopbudget unvalidated."
+  },
+  "registry": "PASS",
+  "training_contract": "SPECIFIED_NOT_EXECUTABLE_VERIFIED",
+  "SCIENTIFIC_CAMPAIGN_READY": "NO",
+  "implementation_hashes": {
+    "paper_revision\\p2_audit.py": "04a4f5592be1f4cd5ea8c515fa843dc8c4d774ff0d20b9d2b48e04a18b7d1e76",
+    "paper_revision\\p2_baseline.py": "b49ba8771934c105fd8ccbc719e455c5b2b6394b9a84a26a14706a500df738f6",
+    "paper_revision\\p2_concurrency.py": "bdd834418b76f0d095e5298dc3d781230827b369766c939010bf5d90431b8886",
+    "paper_revision\\p2_finalize.py": "a21d0560860298b351568b4d844cfcca8ac49e48af196a11926b704cdb175149",
+    "paper_revision\\p2_runner.py": "c374e42cdac54ee8c3fe90fcd05947e219cc629bc4f9806fb3aa24ad591ca2c4",
+    "paper_revision/p1_profile.py": "9be68bdfc97d2a0a64c45bb939e1a8dbf5b06bdb27f728258834e5673085e324",
+    "paper_revision/models_revision.py": "0d28354a9b3289b1c2daaea6e84c2d7889fc75e2842e766eaf39e3037581f001",
+    "src/bpmr_net/models.py": "8c0d0012c8ba741cd27759dfd8c1c88c2f2c47a2545c62504d4c364211d676b6",
+    "src/bpmr_net/features.py": "87792e46496a1cac946b2fa4b899449fcd45afeb1d26ed030638ff53d9a3afda",
+    "C:\\Users\\admin\\Documents\\\u535a\u58eb\u7533\u8bf7\u8bba\u6587\\r2_lite_3d_pilot.py": "7f9e99ce653ca0fca7480f04be9ff871548af03cbd7ba7e24b3a352cf3fa5130",
+    "C:\\Users\\admin\\Documents\\\u535a\u58eb\u7533\u8bf7\u8bba\u6587\\step65b_condition_cpdf_predictor.py": "3066ea7bd8277faed98da6f3be9242f840ecc680f03007fe89132eae2c943f6b",
+    "C:\\Users\\admin\\Documents\\\u535a\u58eb\u7533\u8bf7\u8bba\u6587\\fu_style_cpdf_runtime.py": "00255463562bc8f4bd2875d208bc86af08032a24c0386cc141b693f6280d63d6",
+    "C:\\Users\\admin\\Documents\\\u535a\u58eb\u7533\u8bf7\u8bba\u6587\\.remote_src\\fu_style_senn_core.py": "8d4365a6cd62c5e8cade5440d9dce236875dac42ae038217a95540e67de436d8"
+  }
+}

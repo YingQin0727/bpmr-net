@@ -1,0 +1,88 @@
+{
+  "identity": "REVISION_REPLICATION",
+  "G1": "FAIL",
+  "actual_process_identity": "\nUSER INFORMATION\n----------------\n\nUser Name             SID                                          \n===================== =============================================\ndesktop-64vp21e\\admin S-1-5-21-2452293266-1158813196-812636544-1001\n\n\nGROUP INFORMATION\n-----------------\n\nGroup Name                             Type             SID          Attributes                                        \n====================================== ================ ============ ==================================================\nEveryone                               Well-known group S-1-1-0      Mandatory group, Enabled by default, Enabled group\nNT AUTHORITY\\\u672c\u5730\u5e10\u6237\u548c\u7ba1\u7406\u5458\u7ec4\u6210\u5458    Well-known group S-1-5-114    Group used for deny only                          \nBUILTIN\\Administrators                 Alias            S-1-5-32-544 Group used for deny only                          \nBUILTIN\\Users                          Alias            S-1-5-32-545 Mandatory group, Enabled by default, Enabled group\nNT AUTHORITY\\INTERACTIVE               Well-known group S-1-5-4      Mandatory group, Enabled by default, Enabled group\nCONSOLE LOGON                          Well-known group S-1-2-1      Mandatory group, Enabled by default, Enabled group\nNT AUTHORITY\\Authenticated Users       Well-known group S-1-5-11     Mandatory group, Enabled by default, Enabled group\nNT AUTHORITY\\This Organization         Well-known group S-1-5-15     Mandatory group, Enabled by default, Enabled group\nNT AUTHORITY\\\u672c\u5730\u5e10\u6237                  Well-known group S-1-5-113    Mandatory group, Enabled by default, Enabled group\nLOCAL                                  Well-known group S-1-2-0      Mandatory group, Enabled by default, Enabled group\nNT AUTHORITY\\NTLM Authentication       Well-known group S-1-5-64-10  Mandatory group, Enabled by default, Enabled group\nMandatory Label\\Medium Mandatory Level Label            S-1-16-8192                                                    \n\n\nPRIVILEGES INFORMATION\n----------------------\n\nPrivilege Name                Description                          State   \n============================= ==================================== ========\nSeShutdownPrivilege           Shut down the system                 Disabled\nSeChangeNotifyPrivilege       Bypass traverse checking             Enabled \nSeUndockPrivilege             Remove computer from docking station Disabled\nSeIncreaseWorkingSetPrivilege Increase a process working set       Disabled\nSeTimeZonePrivilege           Change the time zone                 Disabled\n\n",
+  "python_executable": "C:\\Users\\admin\\Documents\\ChatGPT\\\u8bba\u65871\\.venv-revision311\\Scripts\\python.exe",
+  "tests": [
+    {
+      "role": "TRAINING",
+      "path": "C:\\Users\\admin\\Documents\\ChatGPT\\\u8bba\u65871\\outputs\\revision_mtcomm_2026\\REVISION_REPLICATION_P1_dataset\\train\\WF2_train__0_40.labels.bin",
+      "expected": "ALLOWED",
+      "actual": "ALLOWED",
+      "passes": true
+    },
+    {
+      "role": "TRAINING",
+      "path": "C:\\Users\\admin\\Documents\\ChatGPT\\\u8bba\u65871\\outputs\\revision_mtcomm_2026\\REVISION_REPLICATION_P1_dataset\\validation\\WF2_validation__0_1135.labels.bin",
+      "expected": "ALLOWED",
+      "actual": "ALLOWED",
+      "passes": true
+    },
+    {
+      "role": "RECONSTRUCTION",
+      "path": "C:\\Users\\admin\\Documents\\ChatGPT\\\u8bba\u65871\\outputs\\revision_mtcomm_2026\\REVISION_REPLICATION_P1_dataset\\observations\\WF2_ROI0_250um.bin",
+      "expected": "ALLOWED",
+      "actual": "ALLOWED",
+      "passes": true
+    },
+    {
+      "role": "TRAINING",
+      "path": "D:\\Paper2\\paper2_stage02a_source_recovery\\official_download\\WF2_5um_1030x1033x3051_8b_segmented_corrected.raw",
+      "expected": "DENIED",
+      "actual": "ALLOWED",
+      "passes": false
+    },
+    {
+      "role": "TRAINING",
+      "path": "C:\\Users\\admin\\Documents\\ChatGPT\\\u8bba\u65871\\outputs\\revision_mtcomm_2026\\REVISION_REPLICATION_P1_dataset\\test_truth\\WF2_ROI0.truth.bin",
+      "expected": "DENIED",
+      "actual": "ALLOWED",
+      "passes": false
+    },
+    {
+      "role": "RECONSTRUCTION",
+      "path": "C:\\Users\\admin\\Documents\\ChatGPT\\\u8bba\u65871\\outputs\\revision_mtcomm_2026\\REVISION_REPLICATION_P1_dataset\\test_truth\\WF2_ROI0.truth.bin",
+      "expected": "DENIED",
+      "actual": "ALLOWED",
+      "passes": false
+    },
+    {
+      "role": "EVALUATION",
+      "path": "C:\\Users\\admin\\Documents\\ChatGPT\\\u8bba\u65871\\outputs\\revision_mtcomm_2026\\REVISION_REPLICATION_P1_dataset\\test_truth\\WF2_ROI0.truth.bin",
+      "expected": "ALLOWED",
+      "actual": "ALLOWED",
+      "passes": true
+    }
+  ],
+  "alternative_source_copies": [
+    {
+      "path": "D:\\$RECYCLE.BIN\\S-1-5-21-2452293266-1158813196-812636544-1001\\$RLPIMC9\\paper_level\\drp167\\GI_5um_1030x1033x3051_8b_segmented.raw",
+      "readable": true
+    },
+    {
+      "path": "D:\\$RECYCLE.BIN\\S-1-5-21-2452293266-1158813196-812636544-1001\\$RLPIMC9\\paper_level\\drp167\\WF2_5um_1030x1033x3051_8b_segmented_corrected.raw",
+      "readable": true
+    }
+  ],
+  "original_acl": [
+    {
+      "Path": "Microsoft.PowerShell.Core\\FileSystem::D:\\Paper2\\paper2_stage02a_source_recovery\\official_download",
+      "Sddl": "O:S-1-5-21-2452293266-1158813196-812636544-1001G:S-1-5-21-2452293266-1158813196-812636544-513D:(A;ID;FA;;;BA)(A;OICIIOID;GA;;;BA)(A;ID;FA;;;SY)(A;OICIIOID;GA;;;SY)(A;ID;0x1301bf;;;AU)(A;OICIIOID;SDGXGWGR;;;AU)(A;ID;0x1200a9;;;BU)(A;OICIIOID;GXGR;;;BU)"
+    },
+    {
+      "Path": "Microsoft.PowerShell.Core\\FileSystem::C:\\Users\\admin\\Documents\\ChatGPT\\\u8bba\u65871\\outputs\\revision_mtcomm_2026\\REVISION_REPLICATION_P1_dataset\\test_truth",
+      "Sddl": "O:S-1-5-21-2452293266-1158813196-812636544-1001G:S-1-5-21-2452293266-1158813196-812636544-513D:AI(A;OICIID;0x1200a9;;;S-1-5-21-2452293266-1158813196-812636544-1002)(A;OICIID;FA;;;SY)(A;OICIID;FA;;;BA)(A;OICIID;FA;;;S-1-5-21-2452293266-1158813196-812636544-1001)"
+    }
+  ],
+  "ACL_mutations": false,
+  "capability": "Medium-integrity filtered token; net session returned system error5 access denied. No Docker/VM executable found; WSL not installed in P1 audit. Existing CodexSandbox accounts are not configured/authorized dedicated scientific roles; no credentials available to test exact identity.",
+  "rollback": "No ACLs changed, no rollback needed. Before future elevated configuration export icacls /save for dedicated staging trees; restore with icacls /restore; preserve source ACLs.",
+  "non_destructive_path": "Elevated local provisioning of dedicated training/reconstruction/evaluation identities or AppContainer/VM; only role-staged allowlisted inputs readable, explicit deny/read isolation of ALL host source/truth copies. Test direct/alternate/link/parent/copy paths under exact launcher. Do not reuse admin identity.",
+  "untested": [
+    "Role-specific write-only outputs",
+    "Evaluation write denial to model/config roots",
+    "Link/parent/copy bypass denial under new identity",
+    "Exact scientific executable restricted identity"
+  ],
+  "scientific_campaign_ready": false
+}

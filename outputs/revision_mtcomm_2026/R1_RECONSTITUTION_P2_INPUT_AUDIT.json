@@ -1,0 +1,206 @@
+{
+  "identity": "REVISION_REPLICATION",
+  "registry_integrity": "PASS",
+  "planes": 2246,
+  "unique_ids": 2246,
+  "registry_sha256": "42e8cf78339b992ab4e10af1d8c5798230bc71467ce65f69f86c91d995a560bf",
+  "role_counts": {
+    "train": 1150,
+    "validation": 916,
+    "test_truth": 180
+  },
+  "bounds_and_hashes_pass": true,
+  "truth_observation_checks": [
+    {
+      "material": "WF2",
+      "roi": 0,
+      "regime": "25",
+      "observed": 51273,
+      "hidden": 59319,
+      "hidden_payload_sentinel": 255
+    },
+    {
+      "material": "WF2",
+      "roi": 0,
+      "regime": "250",
+      "observed": 6769,
+      "hidden": 103823,
+      "hidden_payload_sentinel": 255
+    },
+    {
+      "material": "WF2",
+      "roi": 0,
+      "regime": "1000",
+      "observed": 6769,
+      "hidden": 103823,
+      "hidden_payload_sentinel": 255
+    },
+    {
+      "material": "WF2",
+      "roi": 1,
+      "regime": "25",
+      "observed": 51273,
+      "hidden": 59319,
+      "hidden_payload_sentinel": 255
+    },
+    {
+      "material": "WF2",
+      "roi": 1,
+      "regime": "250",
+      "observed": 6769,
+      "hidden": 103823,
+      "hidden_payload_sentinel": 255
+    },
+    {
+      "material": "WF2",
+      "roi": 1,
+      "regime": "1000",
+      "observed": 6769,
+      "hidden": 103823,
+      "hidden_payload_sentinel": 255
+    },
+    {
+      "material": "WF2",
+      "roi": 2,
+      "regime": "25",
+      "observed": 51273,
+      "hidden": 59319,
+      "hidden_payload_sentinel": 255
+    },
+    {
+      "material": "WF2",
+      "roi": 2,
+      "regime": "250",
+      "observed": 6769,
+      "hidden": 103823,
+      "hidden_payload_sentinel": 255
+    },
+    {
+      "material": "WF2",
+      "roi": 2,
+      "regime": "1000",
+      "observed": 6769,
+      "hidden": 103823,
+      "hidden_payload_sentinel": 255
+    },
+    {
+      "material": "GI",
+      "roi": 0,
+      "regime": "25",
+      "observed": 51273,
+      "hidden": 59319,
+      "hidden_payload_sentinel": 255
+    },
+    {
+      "material": "GI",
+      "roi": 0,
+      "regime": "250",
+      "observed": 6769,
+      "hidden": 103823,
+      "hidden_payload_sentinel": 255
+    },
+    {
+      "material": "GI",
+      "roi": 0,
+      "regime": "1000",
+      "observed": 6769,
+      "hidden": 103823,
+      "hidden_payload_sentinel": 255
+    },
+    {
+      "material": "GI",
+      "roi": 1,
+      "regime": "25",
+      "observed": 51273,
+      "hidden": 59319,
+      "hidden_payload_sentinel": 255
+    },
+    {
+      "material": "GI",
+      "roi": 1,
+      "regime": "250",
+      "observed": 6769,
+      "hidden": 103823,
+      "hidden_payload_sentinel": 255
+    },
+    {
+      "material": "GI",
+      "roi": 1,
+      "regime": "1000",
+      "observed": 6769,
+      "hidden": 103823,
+      "hidden_payload_sentinel": 255
+    },
+    {
+      "material": "GI",
+      "roi": 2,
+      "regime": "25",
+      "observed": 51273,
+      "hidden": 59319,
+      "hidden_payload_sentinel": 255
+    },
+    {
+      "material": "GI",
+      "roi": 2,
+      "regime": "250",
+      "observed": 6769,
+      "hidden": 103823,
+      "hidden_payload_sentinel": 255
+    },
+    {
+      "material": "GI",
+      "roi": 2,
+      "regime": "1000",
+      "observed": 6769,
+      "hidden": 103823,
+      "hidden_payload_sentinel": 255
+    }
+  ],
+  "no_fit_arrays_created": true,
+  "source_code_import_audit": "p1_dataset is preparation-only; p2_runner imports model classes and AST helper, no evaluation module or eager test-truth import. p2_baseline reads train rows only. No released production training/reconstruction entrypoint yet.",
+  "trajectories": 284,
+  "unique_trajectories": 284,
+  "models": {
+    "B0_SOURCE": 36,
+    "A0": 52,
+    "A1": 36,
+    "A2": 36,
+    "A3": 52,
+    "A4": 36,
+    "A5": 36
+  },
+  "globals": [
+    "1000",
+    "25",
+    "250"
+  ],
+  "locals": [
+    "25",
+    "250"
+  ],
+  "training_seeds": [
+    "1701",
+    "1702",
+    "1703"
+  ],
+  "rollout_seeds": [
+    "2701",
+    "2702",
+    "2703"
+  ],
+  "explanation": "252core =6ROIs x2local masks x7models x3paired seeds;24density additions on ROI0/state (G25/G1000, B0/A3);8duplicate G250 core rows reused;16order/init additions. 252+16+16=284.",
+  "gaps": "R2C3 same-rock/material scope;C5 onlyone10sweep pair and restricted sensitivity;C6 oneROI/state onepaired seed fullglobal cross;C7 comparator validation pending.",
+  "file_hashes": {
+    "outputs\\revision_mtcomm_2026\\R1_RECONSTITUTION_P1_DATASET_AUDIT.json": "5eba20e3a1a9f4e057684d631a5a65d96d80c6bbea5feb101d46629c1500b3dd",
+    "outputs\\revision_mtcomm_2026\\R1_RECONSTITUTION_P1_EXPERIMENT_BUDGET.json": "d7d5d6226b0a498d1eb6a095fbe721e556aa52758f5c05a96589a5beb5688a7a",
+    "outputs\\revision_mtcomm_2026\\R1_RECONSTITUTION_P1_FINAL.json": "edd7b1ed38bc133f9c0f24862d6ee9085418da75f3db9e47039475291828190c",
+    "outputs\\revision_mtcomm_2026\\R1_RECONSTITUTION_P1_ISOLATION_TEST.json": "bc3b00ea77a2f7043eaf73c50a9f29cc9dd8218c7d277698d05237c7feb8814f",
+    "outputs\\revision_mtcomm_2026\\R1_RECONSTITUTION_P1_LABEL_SCAN.json": "5286786723a3413270a1087a9b3e37d00adedb7060998fbc03dbced01fb13d93",
+    "outputs\\revision_mtcomm_2026\\R1_RECONSTITUTION_P1_OPTIMIZATION_EQUIVALENCE.json": "bde2e5673fff6388d8b115c3d14e1e5c698d27b87452b8cfcf4bc1380e5a1d4a",
+    "outputs\\revision_mtcomm_2026\\R1_RECONSTITUTION_P1_PLANE_REGISTRY.csv": "42e8cf78339b992ab4e10af1d8c5798230bc71467ce65f69f86c91d995a560bf",
+    "outputs\\revision_mtcomm_2026\\R1_RECONSTITUTION_P1_RECONSTRUCTION_PROFILE.json": "0aeaf61db36c50596a7942b988264397f5b55a69e1ce0162685d6183c05645e1",
+    "outputs\\revision_mtcomm_2026\\R1_RECONSTITUTION_P1_REVIEWER_MATRIX.csv": "40fdbb6eb76815073f3215389c5578ce8fd16b308de4a58b19f79b71a067e312",
+    "outputs\\revision_mtcomm_2026\\R1_RECONSTITUTION_P1_SPLIT_LEAKAGE_AUDIT.json": "41f63400f97c066ac30c26402a0eeeaffeabeb9fc2ba81fe661e4f52923952b5",
+    "outputs\\revision_mtcomm_2026\\R1_RECONSTITUTION_P1_SUMMARY.md": "8f5300f02514834f37465ac1f0646faf84a8371203d5f5560fa5c86094fd7771"
+  }
+}

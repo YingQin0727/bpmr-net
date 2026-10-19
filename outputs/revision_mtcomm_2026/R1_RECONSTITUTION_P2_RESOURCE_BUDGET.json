@@ -1,0 +1,154 @@
+{
+  "identity": "REVISION_REPLICATION",
+  "classification": "LOCAL_CPU_CONDITIONALLY_FEASIBLE",
+  "neural_trajectories": 284,
+  "total_voxel_updates": 139294464,
+  "rates_seconds_per_update": {
+    "B0": {
+      "reference": 0.0013368934722216687,
+      "optimized": 0.0007714601666675157
+    },
+    "BPMR": {
+      "reference": 0.00829447924999916,
+      "optimized": 0.004791832222223194
+    }
+  },
+  "training_hours_prior_synthetic": 13.812999999989492,
+  "reconstruction_reference_hours": 201.4672290258275,
+  "reconstruction_optimized_trace_only_hours": 116.37519708652876,
+  "external_baseline_hours_extrapolated": 1.182802499988611,
+  "external_basis": "Median16cube move cost x27 volume scale x10000moves x12cases; not measured48cube cost, mixing or fair production budget.",
+  "evaluation_proxy_hours": 0.0165106950001397,
+  "evaluation_proxy": "48cube4phase connected-components+FFT TPCF,4repeats; excludes chord/Euler/plots/real evaluator;5savedstates pertrajectory assumed.",
+  "evaluation_seconds_per_state": 0.04185810000035417,
+  "loading_checkpoint_hours_assumed": 0.003489777784773873,
+  "loading_basis": "7warm plane reads plus P1~20msbankload; assumed100plane loads peradaptation; no cold disk dataset staging measurement.",
+  "known_plus_explicitly_assumed_total_cpu_hours": 131.39100005929177,
+  "reserve_evaluation_visualization_hours": 24,
+  "reserve_verification_restart_fraction": 0.3,
+  "elapsed_serial_hours_with_reserves": 202.0083000770793,
+  "elapsed_safe_concurrency_current": "Only1worker extrapolation defensible for complete pipeline; intended isolated worker not launched.",
+  "measured_inference_worker_concurrency": {
+    "identity": "REVISION_REPLICATION",
+    "results": [
+      {
+        "workers": 1,
+        "workers_measured": [
+          {
+            "work_units": 384,
+            "active_seconds": 1.6401174000002356,
+            "cpu_seconds": 1.640625,
+            "rss_bytes": 353255424,
+            "available_ram_bytes": 7996395520,
+            "samples": [
+              0.5513903999999457,
+              0.5467478999999003,
+              0.5419791000003897
+            ]
+          }
+        ],
+        "total_process_wall_seconds": 6.5164621000003535,
+        "active_throughput_updates_per_second": 234.1295812116528,
+        "sum_sampled_worker_rss_bytes": 353255424,
+        "active_throughput_speedup_vs1": 1.0
+      },
+      {
+        "workers": 2,
+        "workers_measured": [
+          {
+            "work_units": 384,
+            "active_seconds": 1.7526140999989366,
+            "cpu_seconds": 1.734375,
+            "rss_bytes": 353075200,
+            "available_ram_bytes": 7669399552,
+            "samples": [
+              0.5803820999999516,
+              0.5850118999996994,
+              0.5872200999992856
+            ]
+          },
+          {
+            "work_units": 384,
+            "active_seconds": 1.6871313999999984,
+            "cpu_seconds": 1.6875,
+            "rss_bytes": 353546240,
+            "available_ram_bytes": 7669628928,
+            "samples": [
+              0.5586743999992905,
+              0.5630586000006588,
+              0.5653984000000492
+            ]
+          }
+        ],
+        "total_process_wall_seconds": 7.083286799999769,
+        "active_throughput_updates_per_second": 438.2025683808352,
+        "sum_sampled_worker_rss_bytes": 706621440,
+        "active_throughput_speedup_vs1": 1.8716241070994815
+      },
+      {
+        "workers": 4,
+        "workers_measured": [
+          {
+            "work_units": 384,
+            "active_seconds": 1.7270063999985723,
+            "cpu_seconds": 1.734375,
+            "rss_bytes": 352751616,
+            "available_ram_bytes": 7096147968,
+            "samples": [
+              0.5743427999996129,
+              0.5774525999995603,
+              0.5752109999993991
+            ]
+          },
+          {
+            "work_units": 384,
+            "active_seconds": 1.716597399999955,
+            "cpu_seconds": 1.6875,
+            "rss_bytes": 353456128,
+            "available_ram_bytes": 7096147968,
+            "samples": [
+              0.5700393000006443,
+              0.5724304999994274,
+              0.5741275999998834
+            ]
+          },
+          {
+            "work_units": 384,
+            "active_seconds": 1.7556735999987723,
+            "cpu_seconds": 1.734375,
+            "rss_bytes": 353345536,
+            "available_ram_bytes": 7096156160,
+            "samples": [
+              0.5827529999996841,
+              0.5865760999995473,
+              0.5863444999995409
+            ]
+          },
+          {
+            "work_units": 384,
+            "active_seconds": 1.7435385000007955,
+            "cpu_seconds": 1.734375,
+            "rss_bytes": 354041856,
+            "available_ram_bytes": 7095934976,
+            "samples": [
+              0.5755251999999018,
+              0.58246120000058,
+              0.5855521000003137
+            ]
+          }
+        ],
+        "total_process_wall_seconds": 7.745124200000646,
+        "active_throughput_updates_per_second": 874.8778816296344,
+        "sum_sampled_worker_rss_bytes": 1413595136,
+        "active_throughput_speedup_vs1": 3.7367250951461193
+      }
+    ],
+    "scope": "Synthetic trace-only12A3forward banks, independent workers. Active spans may not perfectly overlap; startup/tracing included in process wall, excluded active. No feature/fusion/eval contention; not full scientific worker scaling."
+  },
+  "two_worker_hypothetical_hours_lower_bound": 70.20159633598266,
+  "concurrency_limit": "2worker figure is kernel-only optimistic bound, not committed elapsed estimate;4workers <1.5GBsampledRSS but full pipeline scaling unverified.",
+  "deadline": "2026-11-07 Asia/Shanghai; budget window <=456h from2026-10-19, reserve calendar time for writing and validation.",
+  "actual_hardware": "AMD Ryzen9 6900HX8physical16logical,16GB; CPU torch, no tested GPU implementation.",
+  "cloud_recommendation": "No cloud justified by conditional PlanC known workload; environment isolation and baseline validation precede hardware choice.",
+  "uncertainty": "No complete-runtime certification. Training/finalmetrics/comparator mix of measured kernels and explicit projections; failed G1/G2/G3 prevent release."
+}

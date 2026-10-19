@@ -1,0 +1,5 @@
+﻿role,source,train,validation,observations,models,test_truth,output_write,enforcement
+DATA_PREPARATION,read,write,write,write,deny,write,prep,NOT_SEPARATED
+TRAINING,deny,read,read,deny,own_write,deny,training,NOT_ENFORCED
+RECONSTRUCTION,deny,deny,deny,read,read,deny,reconstruction,NOT_ENFORCED
+EVALUATION,deny,deny,deny,read,deny_write,read,evaluation_only,NOT_ENFORCED
