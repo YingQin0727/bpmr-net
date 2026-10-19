@@ -1,0 +1,180 @@
+{
+  "all_pass": true,
+  "tests": {
+    "interrupted_ledger.csv": true,
+    "commit_ledger.csv": true,
+    "interrupted_manifest.json": true,
+    "commit_manifest.json": true,
+    "interrupted_epoch50.pt": true,
+    "commit_epoch50.pt": true,
+    "test_truth_read": true,
+    "forbidden_to_output": true,
+    "output_to_forbidden": true,
+    "output_to_original": true,
+    "relative_traversal": true,
+    "absolute_traversal": true,
+    "frozen_checkpoint_replace": true,
+    "frozen_checkpoint_write": true,
+    "delete": true,
+    "unregistered_temp": true,
+    "junction_escape": true
+  },
+  "audit": [
+    {
+      "path": "c:\\users\\admin\\appdata\\local\\temp\\revision_atomic_r2_50dfur1v\\outputs\\unique-ledger.csv.pending-42",
+      "operation": "write",
+      "phase": "module_import",
+      "allowed": true,
+      "category": "registered_input"
+    },
+    {
+      "path": "c:\\users\\admin\\appdata\\local\\temp\\revision_atomic_r2_50dfur1v\\outputs\\ledger.csv",
+      "operation": "read",
+      "phase": "module_import",
+      "allowed": true,
+      "category": "registered_input"
+    },
+    {
+      "operation": "os.rename",
+      "source": "c:\\users\\admin\\appdata\\local\\temp\\revision_atomic_r2_50dfur1v\\outputs\\unique-ledger.csv.pending-42",
+      "target": "c:\\users\\admin\\appdata\\local\\temp\\revision_atomic_r2_50dfur1v\\outputs\\ledger.csv",
+      "phase": "module_import",
+      "allowed": true
+    },
+    {
+      "path": "c:\\users\\admin\\appdata\\local\\temp\\revision_atomic_r2_50dfur1v\\outputs\\ledger.csv",
+      "operation": "read",
+      "phase": "module_import",
+      "allowed": true,
+      "category": "registered_input"
+    },
+    {
+      "path": "c:\\users\\admin\\appdata\\local\\temp\\revision_atomic_r2_50dfur1v\\outputs\\unique-manifest.json.pending-42",
+      "operation": "write",
+      "phase": "module_import",
+      "allowed": true,
+      "category": "registered_input"
+    },
+    {
+      "path": "c:\\users\\admin\\appdata\\local\\temp\\revision_atomic_r2_50dfur1v\\outputs\\manifest.json",
+      "operation": "read",
+      "phase": "module_import",
+      "allowed": true,
+      "category": "registered_input"
+    },
+    {
+      "operation": "os.rename",
+      "source": "c:\\users\\admin\\appdata\\local\\temp\\revision_atomic_r2_50dfur1v\\outputs\\unique-manifest.json.pending-42",
+      "target": "c:\\users\\admin\\appdata\\local\\temp\\revision_atomic_r2_50dfur1v\\outputs\\manifest.json",
+      "phase": "module_import",
+      "allowed": true
+    },
+    {
+      "path": "c:\\users\\admin\\appdata\\local\\temp\\revision_atomic_r2_50dfur1v\\outputs\\manifest.json",
+      "operation": "read",
+      "phase": "module_import",
+      "allowed": true,
+      "category": "registered_input"
+    },
+    {
+      "path": "c:\\users\\admin\\appdata\\local\\temp\\revision_atomic_r2_50dfur1v\\outputs\\unique-epoch50.pt.pending-42",
+      "operation": "write",
+      "phase": "module_import",
+      "allowed": true,
+      "category": "registered_input"
+    },
+    {
+      "operation": "os.rename",
+      "source": "c:\\users\\admin\\appdata\\local\\temp\\revision_atomic_r2_50dfur1v\\outputs\\unique-epoch50.pt.pending-42",
+      "target": "c:\\users\\admin\\appdata\\local\\temp\\revision_atomic_r2_50dfur1v\\outputs\\epoch50.pt",
+      "phase": "module_import",
+      "allowed": true
+    },
+    {
+      "path": "c:\\users\\admin\\appdata\\local\\temp\\revision_atomic_r2_50dfur1v\\outputs\\epoch50.pt",
+      "operation": "read",
+      "phase": "module_import",
+      "allowed": true,
+      "category": "registered_input"
+    },
+    {
+      "path": "c:\\users\\admin\\appdata\\local\\temp\\revision_atomic_r2_50dfur1v\\test_truth\\sentinel",
+      "operation": "read",
+      "phase": "module_import",
+      "allowed": false,
+      "category": "prohibited"
+    },
+    {
+      "operation": "os.rename",
+      "source": "C:\\Users\\admin\\AppData\\Local\\Temp\\revision_atomic_r2_50dfur1v\\test_truth\\sentinel",
+      "target": "C:\\Users\\admin\\AppData\\Local\\Temp\\revision_atomic_r2_50dfur1v\\outputs\\ledger.csv",
+      "phase": "module_import",
+      "allowed": false
+    },
+    {
+      "operation": "os.rename",
+      "source": "C:\\Users\\admin\\AppData\\Local\\Temp\\revision_atomic_r2_50dfur1v\\outputs\\ledger.csv",
+      "target": "C:\\Users\\admin\\AppData\\Local\\Temp\\revision_atomic_r2_50dfur1v\\test_truth\\out",
+      "phase": "module_import",
+      "allowed": false
+    },
+    {
+      "operation": "os.rename",
+      "source": "C:\\Users\\admin\\AppData\\Local\\Temp\\revision_atomic_r2_50dfur1v\\outputs\\ledger.csv",
+      "target": "C:\\Users\\admin\\AppData\\Local\\Temp\\revision_atomic_r2_50dfur1v\\original3d",
+      "phase": "module_import",
+      "allowed": false
+    },
+    {
+      "operation": "os.rename",
+      "source": "..\\anything",
+      "target": "C:\\Users\\admin\\AppData\\Local\\Temp\\revision_atomic_r2_50dfur1v\\outputs\\ledger.csv",
+      "phase": "module_import",
+      "allowed": false
+    },
+    {
+      "operation": "os.rename",
+      "source": "C:\\Users\\admin\\AppData\\Local\\Temp\\revision_atomic_r2_50dfur1v\\outputs\\..\\test_truth\\sentinel",
+      "target": "C:\\Users\\admin\\AppData\\Local\\Temp\\revision_atomic_r2_50dfur1v\\outputs\\ledger.csv",
+      "phase": "module_import",
+      "allowed": false
+    },
+    {
+      "path": "c:\\users\\admin\\appdata\\local\\temp\\revision_atomic_r2_50dfur1v\\outputs\\unique-epoch50.pt.pending-42",
+      "operation": "write",
+      "phase": "module_import",
+      "allowed": true,
+      "category": "registered_input"
+    },
+    {
+      "operation": "os.rename",
+      "source": "C:\\Users\\admin\\AppData\\Local\\Temp\\revision_atomic_r2_50dfur1v\\outputs\\unique-epoch50.pt.pending-42",
+      "target": "C:\\Users\\admin\\AppData\\Local\\Temp\\revision_atomic_r2_50dfur1v\\outputs\\epoch50.pt",
+      "phase": "module_import",
+      "allowed": false
+    },
+    {
+      "path": "C:\\Users\\admin\\AppData\\Local\\Temp\\revision_atomic_r2_50dfur1v\\outputs\\ledger.csv",
+      "operation": "os.remove",
+      "phase": "module_import",
+      "allowed": false,
+      "category": "blocked_capability"
+    },
+    {
+      "operation": "os.rename",
+      "source": "C:\\Users\\admin\\AppData\\Local\\Temp\\revision_atomic_r2_50dfur1v\\outputs\\arbitrary",
+      "target": "C:\\Users\\admin\\AppData\\Local\\Temp\\revision_atomic_r2_50dfur1v\\outputs\\ledger.csv",
+      "phase": "module_import",
+      "allowed": false
+    },
+    {
+      "operation": "os.rename",
+      "source": "C:\\Users\\admin\\AppData\\Local\\Temp\\revision_atomic_r2_50dfur1v\\outputs\\junction\\sentinel",
+      "target": "C:\\Users\\admin\\AppData\\Local\\Temp\\revision_atomic_r2_50dfur1v\\outputs\\ledger.csv",
+      "phase": "module_import",
+      "allowed": false
+    }
+  ],
+  "test_directory": "C:\\Users\\admin\\AppData\\Local\\Temp\\revision_atomic_r2_50dfur1v",
+  "OS_LEVEL_ISOLATION": "NOT_ESTABLISHED"
+}

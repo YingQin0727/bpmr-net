@@ -1,0 +1,55 @@
+{
+  "stage": "REVISION_DESIGNA_A0A5_ATOMIC_IO_FIX_R2",
+  "ATOMIC_IO_FIX": "PASS",
+  "PROHIBITED_PATH_TESTS": "PASS",
+  "ATOMIC_LEDGER_TEST": "PASS",
+  "CHECKPOINT_RECOVERY": "FAIL",
+  "TRAINING_RESUME": "STOPPED",
+  "FORMAL_COMPLETED_COUNT": 3,
+  "CURRENT_PID": null,
+  "verified": [
+    {
+      "unit": "GI/G25/x/seed1701/template0",
+      "variant": "A0",
+      "sha256": "f8460957015b6307237fd44a4e3843c942656b137e3ebb3857000ff747de4732",
+      "status": "VERIFIED_COMPLETE"
+    },
+    {
+      "unit": "GI/G25/x/seed1701/template0",
+      "variant": "A1",
+      "sha256": "d60fe304824f12079692435be6229da3076f9d5f1cd9cc7abef59204010345e2",
+      "status": "VERIFIED_COMPLETE"
+    },
+    {
+      "unit": "GI/G25/x/seed1701/template0",
+      "variant": "A2",
+      "sha256": "ccd3fde68aef8d316a783f35a54356bde44f181c46de4aa26e27386b3562227d",
+      "status": "VERIFIED_COMPLETE"
+    }
+  ],
+  "orphans": [
+    {
+      "path": "C:\\Users\\admin\\Documents\\ChatGPT\\\u8bba\u65871\\outputs\\revision_mtcomm_2026\\REVISION_REPLICATION_training\\DesignA\\A0A5\\GI\\G25\\x\\seed1701\\template0\\A3\\epoch50.pt",
+      "sha256": "265a37688949f7c6a9b788aea60d0f29678765c72df503bf66578391d00de342",
+      "unit": "GI/G25/x/seed1701/template0",
+      "variant": "A3",
+      "epochs_claimed": 50,
+      "optimizer_steps": [
+        1250.0
+      ],
+      "missing_evidence": [
+        "complete per-epoch training/validation trajectory",
+        "committed per-task manifest record"
+      ],
+      "action": "PRESERVED_IN_PLACE; NOT_COUNTED; NO_RETRAIN"
+    }
+  ],
+  "matrix_count": 720,
+  "smoke_exit_code": 0,
+  "smoke_kind": "NON_SCIENTIFIC_TEST",
+  "OS_LEVEL_ISOLATION": "NOT_ESTABLISHED",
+  "limitations": [
+    "Python capability control; concurrent hostile filesystem changes and direct native syscalls are not an OS security boundary.",
+    "Interruption regression covers prepared-before-replace state and committed-after-replace state, not power-loss durability."
+  ]
+}
