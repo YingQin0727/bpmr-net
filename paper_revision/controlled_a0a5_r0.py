@@ -91,7 +91,7 @@ def main():
     writes += [OUT/'A0A5'/u/v/'epoch50.pt' for u in units for v in VARIANTS]
     checkpoint_paths=[OUT/'A0A5'/u/v/'epoch50.pt' for u in units for v in VARIANTS]
     checkpoint_paths += [OUT/'A0A5'/units[0]/'A3'/'epoch50_reexecution.pt']
-    pairs=[(p.with_suffix('.tmp'),p) for p in writes[:3]]+[(p.with_name('epoch50.pending'),p) for p in checkpoint_paths]
+    pairs=[(p.with_suffix('.tmp'),p) for p in writes[:3]]+[(p.parent/'epoch50.pending',p) for p in checkpoint_paths]
     records=[OUT/'TASK_RECORDS'/u/(v+'.json') for u in units for v in VARIANTS]
     writes += [p.with_name('epoch50.pending') for p in checkpoint_paths]+records
     reads += checkpoint_paths
@@ -146,3 +146,4 @@ def main():
     OUT.joinpath(P+'_CHECKPOINT_MANIFEST.json').write_text(json.dumps({'stage':P,'expected_tasks':720,'checkpoints':ledger,'failures':failures},indent=2),encoding='utf-8')
     print(json.dumps({'completed':len(ledger),'failures':failures}))
 if __name__=='__main__': main()
+
