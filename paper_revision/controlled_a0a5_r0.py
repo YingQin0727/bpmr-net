@@ -90,6 +90,7 @@ def main():
     writes += [p.with_suffix('.tmp') for p in writes[:3]]
     writes += [OUT/'A0A5'/u/v/'epoch50.pt' for u in units for v in VARIANTS]
     checkpoint_paths=[OUT/'A0A5'/u/v/'epoch50.pt' for u in units for v in VARIANTS]
+    checkpoint_paths += [OUT/'A0A5'/units[0]/'A3'/'epoch50_reexecution.pt']
     pairs=[(p.with_suffix('.tmp'),p) for p in writes[:3]]+[(p.with_name('epoch50.pending'),p) for p in checkpoint_paths]
     records=[OUT/'TASK_RECORDS'/u/(v+'.json') for u in units for v in VARIANTS]
     writes += [p.with_name('epoch50.pending') for p in checkpoint_paths]+records
@@ -98,7 +99,10 @@ def main():
     guard.install(); guard.phase='controlled_A0A5_formal'
     for idx,(unit,variant) in enumerate(expected):
         if idx>=a.limit: break
-        target=OUT/f'A0A5/{unit}/{variant}/epoch50.pt'; started=time.time()
+        target=OUT/f'A0A5/{unit}/{variant}/epoch50.pt'
+        if target.exists() and unit=='GI/G25/x/seed1701/template0' and variant=='A3':
+            target=target.with_name('epoch50_reexecution.pt')
+        started=time.time()
         if (unit,variant) in done_pairs:
             continue
         if target.exists(): raise SystemExit('refusing to overwrite existing A0-A5 checkpoint: '+str(target))
@@ -125,7 +129,7 @@ def main():
             vm=val_metrics(model,vx[:4096] if a.io_smoke else vx,vy[:4096] if a.io_smoke else vy,variant); epochs.append({'epoch':epoch,'train_loss':total/steps,'validation':vm,'optimizer_steps':steps})
         meta={'identity':'REVISION_REPLICATION','design':'A','variant':variant,'unit':unit,'kind':'NON_SCIENTIFIC_TEST' if a.io_smoke else 'EPOCH50','epochs_completed':len(epochs),'historical_checkpoint':False,'source_checkpoint_sha256':src['sha256'],'source_b0_unit':unit,'model_seed':derived,'train_events':te,'validation_events':ve,'trainable_parameter_count':sum(p.numel() for p in model.parameters() if p.requires_grad)}
         cksha=save(target,model,opt,meta); elapsed=time.time()-started
-        rec={'unit':unit,'variant':variant,'path':str(target.relative_to(ROOT)),'checkpoint_sha256':cksha,'source_checkpoint_sha256':src['sha256'],'strict_reload':True,'finite_parameters':all(torch.isfinite(p).all().item() for p in model.parameters()),'epochs':epochs,'elapsed_seconds':elapsed,'train_events':te,'validation_events':ve,'trainable_parameter_count':meta['trainable_parameter_count'],'a4_gate_frozen':variant=='A4'}
+        rec={'unit':unit,'variant':variant,'path':str(target.relative_to(ROOT)),'checkpoint_sha256':cksha,'source_checkpoint_sha256':src['sha256'],'strict_reload':True,'finite_parameters':all(torch.isfinite(p).all().item() for p in model.parameters()),'epochs':epochs,'elapsed_seconds':elapsed,'train_events':te,'validation_events':ve,'trainable_parameter_count':meta['trainable_parameter_count'],'a4_gate_frozen':variant=='A4','recovery_reason':'A3_REEXECUTION_AFTER_ATOMIC_IO_ABORT' if (unit=='GI/G25/x/seed1701/template0' and variant=='A3') else None,'orphan_checkpoint_sha256':'265a37688949f7c6a9b788aea60d0f29678765c72df503bf66578391d00de342' if (unit=='GI/G25/x/seed1701/template0' and variant=='A3') else None}
         if not rec['finite_parameters']: raise RuntimeError('nonfinite parameters')
         record_path=OUT/'TASK_RECORDS'/unit/(variant+'.json'); record_path.parent.mkdir(parents=True,exist_ok=True)
         if record_path.exists(): raise RuntimeError('refusing duplicate task record')

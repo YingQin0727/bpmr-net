@@ -1,0 +1,8 @@
+{
+  "path": "C:\\Users\\admin\\Documents\\ChatGPT\\\u8bba\u65871\\outputs\\revision_mtcomm_2026\\REVISION_REPLICATION_training\\DesignA\\A0A5\\GI\\G25\\x\\seed1701\\template0\\A3\\epoch50.pt",
+  "sha256": "265a37688949f7c6a9b788aea60d0f29678765c72df503bf66578391d00de342",
+  "captured_utc": "2026-10-20T02:02:26Z",
+  "failure": "PermissionError: capability disabled during training: os.rename",
+  "error_log": "C:\\Users\\admin\\Documents\\ChatGPT\\\u8bba\u65871\\outputs\\revision_mtcomm_2026\\REVISION_REPLICATION_training\\DesignA\\REVISION_DESIGNA_A0A5_R1_ERROR.log",
+  "status": "IMMUTABLE_ORPHAN_NOT_FORMAL"
+}
