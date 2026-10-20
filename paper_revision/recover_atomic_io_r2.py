@@ -37,10 +37,11 @@ def main():
    orphans.append({'path':str(path),'sha256':sha_file(path),'unit':meta['unit'],'variant':meta['variant'],'epochs_claimed':meta['epochs_completed'],'optimizer_steps':sorted({float(v['step']) for v in ck['optimizer']['state'].values()}),'missing_evidence':['complete per-epoch training/validation trajectory','committed per-task manifest record'],'action':'PRESERVED_IN_PLACE; NOT_COUNTED; NO_RETRAIN'})
  smoke=OUT/'ATOMIC_IO_R2_NON_SCIENTIFIC_TEST'
  sm=json.loads((smoke/'NON_SCIENTIFIC_TEST_CHECKPOINT_MANIFEST.json').read_text()); assert len(sm['checkpoints'])==1
- sr=sm['checkpoints'][0]; assert sr['strict_reload'] and sr['finite_parameters'] and len(sr['epochs'])==2
+ sr=sm['checkpoints'][0]; assert sr['strict_reload'] and sr['finite_parameters'] and len(sr['epochs'])==50
  assert not list(smoke.glob('*.tmp')) and not list(smoke.rglob('*.pending'))
  tests=json.loads((ROOT/'paper_revision/ATOMIC_IO_R2_TEST_RESULTS.json').read_text());assert tests['all_pass']
  result={'stage':'REVISION_DESIGNA_A0A5_ATOMIC_IO_FIX_R2','ATOMIC_IO_FIX':'PASS','PROHIBITED_PATH_TESTS':'PASS','ATOMIC_LEDGER_TEST':'PASS','CHECKPOINT_RECOVERY':'FAIL' if orphans else 'PASS','TRAINING_RESUME':'STOPPED' if orphans else 'READY','FORMAL_COMPLETED_COUNT':len(verified),'CURRENT_PID':None,'verified':verified,'orphans':orphans,'matrix_count':len(expected),'smoke_exit_code':0,'smoke_kind':'NON_SCIENTIFIC_TEST','OS_LEVEL_ISOLATION':'NOT_ESTABLISHED','limitations':['Python capability control; concurrent hostile filesystem changes and direct native syscalls are not an OS security boundary.','Interruption regression covers prepared-before-replace state and committed-after-replace state, not power-loss durability.']}
  (ROOT/'paper_revision/ATOMIC_IO_R2_RECOVERY.json').write_text(json.dumps(result,indent=2),encoding='utf-8'); print(json.dumps(result,indent=2))
 if __name__=='__main__':main()
+
 
