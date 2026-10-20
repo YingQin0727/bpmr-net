@@ -93,7 +93,7 @@ def main():
     checkpoint_paths += [OUT/'A0A5'/units[0]/'A3'/'epoch50_reexecution.pt']
     pairs=[(p.with_suffix('.tmp'),p) for p in writes[:3]]+[(p.parent/'epoch50.pending',p) for p in checkpoint_paths]
     records=[OUT/'TASK_RECORDS'/u/(v+'.json') for u in units for v in VARIANTS]
-    writes += [p.with_name('epoch50.pending') for p in checkpoint_paths]+records
+    writes += checkpoint_paths + [p.with_name('epoch50.pending') for p in checkpoint_paths]+records
     reads += checkpoint_paths
     guard=AtomicTrainingAccess(reads,writes,[Path(__import__('sys').base_prefix)/'Lib',Path(__import__('sys').base_prefix)/'DLLs',ROOT/'.venv-revision311/Lib/site-packages'],namespace=OUT,pairs=pairs,immutable=checkpoint_paths)
     guard.install(); guard.phase='controlled_A0A5_formal'
@@ -120,7 +120,7 @@ def main():
         if variant in ('A2','A3','A4','A5'):
             assert torch.allclose(probability(model,torch.from_numpy(x)),probability(source_model,torch.from_numpy(x)),atol=1e-5,rtol=0)
         opt=controlled_optimizer(model); epochs=[]
-        for epoch in range(1,3 if a.io_smoke else 51):
+        for epoch in range(1,51):
             order=np.arange(min(len(x),4096) if a.io_smoke else len(x),dtype=np.int64); total=0.; steps=0
             for begin in range(0,len(order),4096):
                 ix=order[begin:min(begin+4096,len(x))]; opt.zero_grad(); loss=loss_for(variant,probability(model,torch.from_numpy(x[ix])),torch.from_numpy(y[ix]))
