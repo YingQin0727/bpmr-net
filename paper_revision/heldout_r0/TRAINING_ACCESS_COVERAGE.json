@@ -1,0 +1,27 @@
+{
+  "access_log": "outputs\\revision_mtcomm_2026\\REVISION_REPLICATION_training\\DesignA\\REVISION_DESIGNA_A0A5_R0_PYTHON_ACCESS.jsonl",
+  "access_log_sha256": "25f35d73701e8f27cd98ecf2637d8ae5e34f4eeedad1669b33f7c3b2263a5581",
+  "lines": 720,
+  "unique_tasks": 718,
+  "records": 622927,
+  "missing_tasks": [
+    {
+      "unit": "GI/G25/x/seed1701/template0",
+      "variant": "A0"
+    },
+    {
+      "unit": "GI/G25/x/seed1701/template0",
+      "variant": "A1"
+    }
+  ],
+  "duplicates": [
+    {
+      "unit": "GI/G25/x/seed1701/template0",
+      "variant": "A3",
+      "records": 3
+    }
+  ],
+  "denials": [],
+  "observed_test_or_incomplete_reads": [],
+  "interpretation": "Missing access provenance is not proof of leakage; zero observed violations does not establish coverage of missing tasks."
+}

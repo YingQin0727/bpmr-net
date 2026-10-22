@@ -1,0 +1,27 @@
+{
+  "stage": "REVISION_DESIGNA_HELDOUT_EVALUATION_R0",
+  "status": "BLOCKED",
+  "SCIENTIFIC_TRAINING_COMPLETE": "840_CHECKPOINTS_VERIFIED; FINAL_ACCESS_PROVENANCE_INCOMPLETE",
+  "HELDOUT_EVALUATION_COMPLETE": false,
+  "THREE_D_RECONSTRUCTION_COMPLETE": false,
+  "PUBLISHED_BASELINE_COMPLETE": false,
+  "checkpoint_model_freeze": "PASS",
+  "b0_verified": 120,
+  "a0a5_verified": 720,
+  "evaluated_models": 0,
+  "test_payload_reads": 0,
+  "protocol_frozen_before_test_read": true,
+  "OS_LEVEL_ISOLATION": "NOT_ESTABLISHED",
+  "blocker": "Formal A0/A1 training-access provenance missing for GI/G25/x/seed1701/template0",
+  "locations": [
+    "paper_revision/heldout_evaluation_r0.py:evaluate:formal training access audit conflict",
+    "outputs\\revision_mtcomm_2026\\REVISION_REPLICATION_training\\DesignA\\REVISION_DESIGNA_A0A5_R0_PYTHON_ACCESS.jsonl"
+  ],
+  "recovery": "Recover original task-bound Python/native access evidence from the initial A0/A1 executions or an archived log. Verify source checkpoint, event hashes, time/process identity and all actual scientific input paths. Do not invent logs, extrapolate another task, rerun training, or silently waive this gate.",
+  "side_effects": "No training, model changes, test tuning, evaluation inference, reconstruction or external baseline executed.",
+  "audit_scope": "All840 checkpoint payloads independently hashed, strictly reloaded and checked finite; shared source/events and residual B0 equality checked; current training Python audit examined. Native historical trace cannot automatically replace missing per-task provenance.",
+  "access_evidence_sha256": "88594b36c0a4927f566ab6cc48935c4ec09c65a95b1280033493804b627385ae",
+  "model_freeze_sha256": "61d1e421b64eb4b6967677659511b7d7ea0a7167861e52ee80e0712fd62915c7",
+  "protocol_sha256": "b0164f4b5092ff02a939daa2b8cad4374f33df774820427b94013244e08988f5",
+  "result_manifest_sha256": "b5502c428a687dbafefbe1eae17c29be2514fd7d3bb5a024b26ec033cc27fe92"
+}
