@@ -1,0 +1,247 @@
+{
+  "audit_sha256": "14cefc5d9f2b2bef7664f20b77f894fdff6652b595fe8345619f6aa5ebd20079",
+  "center_slice_coverage": {
+    "GI": {
+      "x": 1.0,
+      "y": 1.0,
+      "z": 1.0
+    },
+    "WF2": {
+      "x": 1.0,
+      "y": 1.0,
+      "z": 1.0
+    }
+  },
+  "figures": {
+    "MASK_AWARE_GI_B0_A3.pdf": "b329dd36384a76c4261b54b7364b2c75851a74b0f931a88a72646359154f9169",
+    "MASK_AWARE_GI_B0_A3.png": "4444d14fc168310640b66155cb39e0b70db15a323638a34904dc40fbb57264f2",
+    "MASK_AWARE_GI_B0_A3.svg": "8374a8e6cd487f7cefd7f15a0e33d9c19bc082e53b7d9c875e0d928f3b1f3f1e",
+    "MASK_AWARE_WF2_B0_A3.pdf": "975129df2dd5571c4cae1986dc9fa59f73f6864346d44bc606017ec9222ea84d",
+    "MASK_AWARE_WF2_B0_A3.png": "0a634ffdfb8af9ae866ff0ed5d8de9f84a11daaa02b9746b2f09169e99250bdd",
+    "MASK_AWARE_WF2_B0_A3.svg": "f08040677a9bea2bbfdcbbed356ffa1dd5b31f9306d946a83908bc57489f00aa"
+  },
+  "files": {
+    "MASK_AWARE_3D_COMPARISON_SUMMARY.md": "1b17293215e10a841fa8c61699bf66a3782566d85b9fb2829747a9852ee57e9a",
+    "MASK_AWARE_3D_METRICS.csv": "d2e6441e824ebb1d6d56c4b08b73d772828f87ebd879aad58dc868684f49ab2f",
+    "MASK_SLICE_COVERAGE.csv": "bbb7e4dbb712964719cf37ace92b8bfde30300d7061292a391c813f53ded6442"
+  },
+  "fixed_sweeps": [
+    3,
+    5,
+    10
+  ],
+  "input_hashes": {
+    "GI": {
+      "observation_file_sha256": "6a86c434da92d4cfcdf83e065a2cae7799c24ef390f4ad4e64d0491baf2b0c52",
+      "observation_mask_sha256": "148cf4c85a00ec36d96c0e713ce024e54eb8af22ffa21d8ac681e9be58fdf620",
+      "truth_file_sha256": "d1322f0e5a4c1aa04d80a01b3e984ee1a8147ae2076378665f087d496da8eccf"
+    },
+    "WF2": {
+      "observation_file_sha256": "fd51070d15bba4f4bf91a159923a59bd95e82052e65413c852995c844ce71ec2",
+      "observation_mask_sha256": "148cf4c85a00ec36d96c0e713ce024e54eb8af22ffa21d8ac681e9be58fdf620",
+      "truth_file_sha256": "80381abc7daaf5b1b0aaa126a7829eab65a09a8dad6c7ae9a65269ec18de7a54"
+    }
+  },
+  "materials": [
+    "WF2",
+    "GI"
+  ],
+  "observation_fraction": {
+    "GI": 0.463623046875,
+    "WF2": 0.463623046875
+  },
+  "selected_slice_coverage": {
+    "GI": {
+      "x": 0.33984375,
+      "y": 0.33984375,
+      "z": 0.33984375
+    },
+    "WF2": {
+      "x": 0.33984375,
+      "y": 0.33984375,
+      "z": 0.33984375
+    }
+  },
+  "selected_slices": {
+    "GI": {
+      "x": 23,
+      "y": 23,
+      "z": 23
+    },
+    "WF2": {
+      "x": 23,
+      "y": 23,
+      "z": 23
+    }
+  },
+  "slice_selection_rule": "minimum observed-mask coverage; ties nearest center index 24, then lower index; no state or truth values used",
+  "source_commit": "fa72c0c",
+  "stage": "MINIMAL_3D_PAPER_COMPARISON_R1",
+  "status": "PASS",
+  "topology_assessment_sweep10": {
+    "GI": {
+      "overall": {
+        "a3_abs_component_count_difference_sum": 60,
+        "a3_component_count": [
+          6,
+          10,
+          24,
+          57
+        ],
+        "a3_largest_component_fraction": [
+          0.9099804305283757,
+          0.9554455445544554,
+          0.9984935343302294,
+          0.980313525337222
+        ],
+        "b0_abs_component_count_difference_sum": 1221,
+        "b0_component_count": [
+          368,
+          373,
+          123,
+          394
+        ],
+        "b0_largest_component_fraction": [
+          0.495260663507109,
+          0.28385899814471244,
+          0.9957379444715051,
+          0.9473980309423348
+        ],
+        "truth_component_count": [
+          2,
+          4,
+          2,
+          29
+        ],
+        "truth_largest_component_fraction": [
+          0.8810126582278481,
+          0.9608695652173913,
+          0.9999898327487163,
+          0.9826156726397433
+        ]
+      },
+      "unobserved": {
+        "a3_abs_component_count_difference_sum": 57,
+        "a3_component_count": [
+          23,
+          16,
+          952,
+          189
+        ],
+        "a3_largest_component_fraction": [
+          0.3106796116504854,
+          0.37623762376237624,
+          0.001204592508940335,
+          0.01088065283917035
+        ],
+        "b0_abs_component_count_difference_sum": 1231,
+        "b0_component_count": [
+          387,
+          380,
+          1054,
+          533
+        ],
+        "b0_largest_component_fraction": [
+          0.07235621521335807,
+          0.0593607305936073,
+          0.0012128792616597495,
+          0.011300448430493274
+        ],
+        "truth_component_count": [
+          18,
+          11,
+          930,
+          164
+        ],
+        "truth_largest_component_fraction": [
+          0.13195876288659794,
+          0.34108527131782945,
+          0.0012172391494541443,
+          0.01044556879386323
+        ]
+      }
+    },
+    "WF2": {
+      "overall": {
+        "a3_abs_component_count_difference_sum": 74,
+        "a3_component_count": [
+          5,
+          9,
+          31,
+          81
+        ],
+        "a3_largest_component_fraction": [
+          0.8148148148148148,
+          0.855883877656817,
+          0.9983704618374308,
+          0.9724714518760196
+        ],
+        "b0_abs_component_count_difference_sum": 1240,
+        "b0_component_count": [
+          392,
+          372,
+          144,
+          384
+        ],
+        "b0_largest_component_fraction": [
+          0.10480349344978165,
+          0.7031881454872025,
+          0.9965285200908082,
+          0.9387270097127506
+        ],
+        "truth_component_count": [
+          1,
+          3,
+          2,
+          46
+        ],
+        "truth_largest_component_fraction": [
+          1.0,
+          0.8311688311688312,
+          0.9999898327487163,
+          0.9771023302938197
+        ]
+      },
+      "unobserved": {
+        "a3_abs_component_count_difference_sum": 68,
+        "a3_component_count": [
+          4,
+          47,
+          963,
+          192
+        ],
+        "a3_largest_component_fraction": [
+          0.25,
+          0.06517311608961303,
+          0.0012070006035003018,
+          0.01205500094179695
+        ],
+        "b0_abs_component_count_difference_sum": 1244,
+        "b0_component_count": [
+          394,
+          416,
+          1076,
+          498
+        ],
+        "b0_largest_component_fraction": [
+          0.007352941176470588,
+          0.04609375,
+          0.0012201631968275757,
+          0.01216451052326704
+        ],
+        "truth_component_count": [
+          5,
+          45,
+          930,
+          160
+        ],
+        "truth_largest_component_fraction": [
+          0.35714285714285715,
+          0.049766718506998445,
+          0.0012172391494541443,
+          0.011915844349283188
+        ]
+      }
+    }
+  }
+}
