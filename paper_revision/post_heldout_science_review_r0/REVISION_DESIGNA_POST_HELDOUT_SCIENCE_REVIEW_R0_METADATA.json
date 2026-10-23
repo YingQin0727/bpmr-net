@@ -1,0 +1,16 @@
+{
+  "stage": "REVISION_DESIGNA_POST_HELDOUT_SCIENCE_REVIEW_R0",
+  "frozen_r1_audit_sha256": "5eb6df776fd4fb72b718fe4cc179c47836ad02ee3e994b256932c52f1fdc1fdd",
+  "frozen_r1_metrics_sha256": "4dc0cfde924479370620507eacadbd05a294c26592ec568132078ca171279568",
+  "registered_planes": 2246,
+  "reviewer_rows_read": 12,
+  "support_ratio_values": [
+    1.0
+  ],
+  "gate_rows": 8024,
+  "minimal_3d_trajectory_count": 48,
+  "estimated_reference_cpu_hours": 42.0,
+  "gpu_required": "UNDETERMINED",
+  "new_scientific_computation_started": false,
+  "new_test_labels_read": false
+}
