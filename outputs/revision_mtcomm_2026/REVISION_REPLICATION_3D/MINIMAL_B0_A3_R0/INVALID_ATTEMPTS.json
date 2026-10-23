@@ -1,0 +1,22 @@
+{
+  "stage": "MINIMAL_3D_B0_A3_COMPARISON",
+  "formal_count": 0,
+  "attempts": [
+    {
+      "attempt_id": "ATTEMPT_01",
+      "status": "ABORTED_NOT_FORMAL",
+      "output_namespace": "FORMAL_RUN",
+      "reason": "Pre-fix runner read test truth before all reconstruction trajectories were frozen; process was stopped and its partial sweep files are retained as evidence.",
+      "counted_as_formal": false
+    },
+    {
+      "attempt_id": "ATTEMPT_02",
+      "status": "ABORTED_NOT_FORMAL",
+      "output_namespace": "FORMAL_RUN",
+      "reason": "A duplicate local invocation overlapped the first pre-fix output namespace during recovery; both processes were stopped before formal counting.",
+      "counted_as_formal": false
+    }
+  ],
+  "formal_namespace": "FORMAL_RUN_R1",
+  "note": "Only the four trajectories in FORMAL_RUN_R1 are included in the PASS result."
+}

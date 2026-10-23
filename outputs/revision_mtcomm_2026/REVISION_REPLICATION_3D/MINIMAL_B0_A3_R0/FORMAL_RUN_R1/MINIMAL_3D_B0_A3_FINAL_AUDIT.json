@@ -1,0 +1,40 @@
+{
+  "checks": {
+    "all_phases_present": true,
+    "hard_clamp": true,
+    "paired_initial_state": true,
+    "paired_observation_mask": true,
+    "saved_sweeps": true,
+    "state_hashes": true,
+    "trajectory_count": true
+  },
+  "files": {
+    "MINIMAL_3D_B0_A3_RESULTS.csv": "c91e57304757bd9c5562c3c177528871dcbef14f0812d7dd5bd1b51598e4a3af",
+    "MINIMAL_3D_B0_A3_ROI_REGISTRY.json": "685f0b289b5ec9a619fd7d25c0cc29214f60c16fe7f8c73c4d49d1d7466fcabb",
+    "MINIMAL_3D_B0_A3_RUNTIME.csv": "ce007fcac91c6a4deb33f4d2571d8430b9566aebbee92eefe74a840ab592cdd1",
+    "MINIMAL_3D_B0_A3_SLICES.pdf": "06e44b220089802ecd120f97a631d52d80c286ea138c086e4abc22593f4ff505",
+    "MINIMAL_3D_B0_A3_SLICES.png": "caca727ec737287dc2c4250ee1534aa47aa15cdb8dc91041a7a0b246b72424fb",
+    "MINIMAL_3D_B0_A3_SLICES.svg": "29f256af57884e9706890a841d3bf5090d91eb44782bde139961c1f5010433a6",
+    "MINIMAL_3D_B0_A3_SUMMARY_RELEASE.json": "2753c7203928e523f9aa63b1c94998f6fc93736caebc66d50062ffe19200c5fa"
+  },
+  "formal_trajectories": 4,
+  "materials": [
+    "WF2",
+    "GI"
+  ],
+  "model_identity": "Design A B0_SOURCE/A3, G250, seed1701, registry-ordered x/y/z and template0..3 fusion",
+  "stage": "MINIMAL_3D_B0_A3_COMPARISON",
+  "status": "PASS",
+  "summary_sha256": "2753c7203928e523f9aa63b1c94998f6fc93736caebc66d50062ffe19200c5fa",
+  "sweeps": [
+    0,
+    3,
+    5,
+    10
+  ],
+  "truth_read_policy": "truth loaded only after all four trajectory state files and reconstruction lock were written",
+  "variants": [
+    "B0_SOURCE",
+    "A3"
+  ]
+}

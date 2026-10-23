@@ -1,0 +1,72 @@
+{
+  "control": {
+    "clamp_mode": "hard_observed",
+    "global_fit_um": 250,
+    "initialization": "train_prior",
+    "local_observation_um": 25,
+    "rollout_seed": 1701,
+    "shape_xyz": [
+      48,
+      48,
+      48
+    ],
+    "training_seed": 1701,
+    "update_order": "forward"
+  },
+  "materials_observation_sha256": {
+    "GI": "6a86c434da92d4cfcdf83e065a2cae7799c24ef390f4ad4e64d0491baf2b0c52",
+    "WF2": "fd51070d15bba4f4bf91a159923a59bd95e82052e65413c852995c844ce71ec2"
+  },
+  "observation_mask_sha256": "594e18c8c93ae15a0c0d6d9e50e810f4dd1795d864fc4ddece6569a5d3753ac8",
+  "roi": {
+    "GI": {
+      "mask_sha256": "148cf4c85a00ec36d96c0e713ce024e54eb8af22ffa21d8ac681e9be58fdf620",
+      "observation_file_sha256": "6a86c434da92d4cfcdf83e065a2cae7799c24ef390f4ad4e64d0491baf2b0c52",
+      "observed_count": 51273,
+      "origin_zyx": [
+        2300,
+        800,
+        200
+      ],
+      "shape_zyx": [
+        48,
+        48,
+        48
+      ],
+      "updates_per_sweep": 59319
+    },
+    "WF2": {
+      "mask_sha256": "148cf4c85a00ec36d96c0e713ce024e54eb8af22ffa21d8ac681e9be58fdf620",
+      "observation_file_sha256": "fd51070d15bba4f4bf91a159923a59bd95e82052e65413c852995c844ce71ec2",
+      "observed_count": 51273,
+      "origin_zyx": [
+        2300,
+        800,
+        200
+      ],
+      "shape_zyx": [
+        48,
+        48,
+        48
+      ],
+      "updates_per_sweep": 59319
+    }
+  },
+  "roi_selection": "ROI0, first frozen matrix condition; selected before reconstruction quality was read",
+  "stage": "MINIMAL_3D_B0_A3_COMPARISON",
+  "train_validation_test_separation": {
+    "direct_label_overlap": false,
+    "guard_band_voxels": 128,
+    "test_roi_z_origin": 2300,
+    "train_z_max": 1000,
+    "validation_z_min": 1128
+  },
+  "truth_sha256": {
+    "GI": {
+      "sha256": "d1322f0e5a4c1aa04d80a01b3e984ee1a8147ae2076378665f087d496da8eccf"
+    },
+    "WF2": {
+      "sha256": "80381abc7daaf5b1b0aaa126a7829eab65a09a8dad6c7ae9a65269ec18de7a54"
+    }
+  }
+}
