@@ -1,0 +1,1338 @@
+{
+  "protocol_sha256": "b0164f4b5092ff02a939daa2b8cad4374f33df774820427b94013244e08988f5",
+  "groups": [
+    {
+      "material": "GI",
+      "orientation": "x",
+      "population": 48000,
+      "count": 48000,
+      "event_sha256": "a021f638f4078334900875090c86b32257d510300d36c1eb6e3a3da632292e9a",
+      "feature_sha256": "8b9b34fd68051576ff3027b8102b5946a70bb615fdaa9f354199f2f0b0d0ff3b",
+      "target_sha256": "4e5f52d874e0afc93a8e805f10ca23dd121ea6ac922e6eb3912971ba59b3f762",
+      "ordinal_sha256": "d36ce3b5ceeb8212c2e411ef4c6ecce473d52268d5bf07aed7a6a8a9b6f5eaca",
+      "planes": [
+        {
+          "plane_id": "GI_test_truth_ROI0_2_200",
+          "labels_sha256": "eeabdcb2610aa36385393c1de6a58bcc00ddb2e26e3e2b2c9ec0adb8f2503719",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI0_2_205",
+          "labels_sha256": "688988bfba8da49259661b2b817c5be178b85a5c1624c065ad55b9cd35fdacfa",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI0_2_210",
+          "labels_sha256": "f68f05fe2667f0a7d37fa23d66d10397a2e9165e754dfb84681fe834e1c309cb",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI0_2_215",
+          "labels_sha256": "b727a40099cfebe283a032c8d6a7268d27faa972844f6d57059257948acd33b7",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI0_2_220",
+          "labels_sha256": "b5f4b427e697df840a9f94ab985ac6120fa2c8a55ccdd97eb8d3e08fbfe71bf7",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI0_2_225",
+          "labels_sha256": "c306dda0d6eaa2fc240fd2c1001fddcb07c53dc4c69335d0ae7ffca00fb41dcf",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI0_2_230",
+          "labels_sha256": "591d314d00fe54f9e6fcc44d8976f158cda758d6295459245dc4be563605e577",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI0_2_235",
+          "labels_sha256": "79d52be56701c39ac962b7b0714eb053e5f3a07c6d684d20e56358c6f98c5dac",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI0_2_240",
+          "labels_sha256": "bbbc02b49cbfb728f360ba6d9bd953df4326d74e567be575ccd1eb1731878c5b",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI0_2_245",
+          "labels_sha256": "cb2b5b3149172da685395b6461a5f18f9d3ee42b4e1645455d3c6e1ec99dc59c",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI1_2_800",
+          "labels_sha256": "926ab9e59c6907060d84e2a5239aa4613f6820de6c5bcfd9392e99e16e7ea436",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI1_2_805",
+          "labels_sha256": "a58f5f618b4e8dbc828ab1f1b153260a9191732aeabad7f74785e53994203783",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI1_2_810",
+          "labels_sha256": "2316739e002bbec87d11128b581d76aea8d1e4ac81aeadfd8e5e612dabd588a2",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI1_2_815",
+          "labels_sha256": "2cd1de71ab691a94637f59fd6f9da1977a05568ce8d491aa378894b35930916d",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI1_2_820",
+          "labels_sha256": "275bf06c22428b176f2ca9a412b1f427dc444c31150dc361dd03fd3d32a74d67",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI1_2_825",
+          "labels_sha256": "d050d1719c32ac188afef16b4c9af3a4c390f7438d2f5717e4cb6920200ef07f",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI1_2_830",
+          "labels_sha256": "6b308a2bf699e433f50c72d5383ddd2ba13927fd040a498ec33170952870340d",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI1_2_835",
+          "labels_sha256": "78dfc2099629d6f02e88846ce750422918d93da795532ec8602554fc06594aae",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI1_2_840",
+          "labels_sha256": "d5630a73a1b54c8b68bda07985728b754f5057920a4e8981bd11815309c77c5b",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI1_2_845",
+          "labels_sha256": "00374b597bf1fa7ee5d7db25cabb18f49ac5dc8f0c4a3939d04c8f0d2c63dfa0",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI2_2_800",
+          "labels_sha256": "9bdce0b207ca2b965e0990b853ad06c2845f48b4b0ee7fc842d085be3dfaeb61",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI2_2_805",
+          "labels_sha256": "a22d16ad90d508d94686310838dc7422b8768fe49d61e94e0597cbe93dbef88f",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI2_2_810",
+          "labels_sha256": "6b271fc3e2db5be5ff0f1b475a153cdd0b67171620d6251a741fa4a3cccd0183",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI2_2_815",
+          "labels_sha256": "f51b341569c70a2a7839bd5e182bcb15c9f125f9d380c4dddc46f1fb8d53da93",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI2_2_820",
+          "labels_sha256": "9092ecab53544260365f00a7d43a37089786b18e1288e739739c6ae85341f07b",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI2_2_825",
+          "labels_sha256": "5240f88c05d0270e74ccb5c45f1e6f56ccd3d493fccaba8ee75ab6696a12b84e",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI2_2_830",
+          "labels_sha256": "017419322e43e40e2c7533ac587c9f129e2a762894dabb7fa7de4e9f07d2e144",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI2_2_835",
+          "labels_sha256": "f54e01015a48241f89800bced16706acaa716aa87cf35274dc2d93db7edd7a3d",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI2_2_840",
+          "labels_sha256": "2249039126284159fa7862fac44d9e9207f60560dd4855f945f3a9243f33f821",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI2_2_845",
+          "labels_sha256": "342d40760f3751410e2805d22b7601c02b6737d8301be7f53485b574d3bca030",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        }
+      ]
+    },
+    {
+      "material": "GI",
+      "orientation": "y",
+      "population": 48000,
+      "count": 48000,
+      "event_sha256": "84852bae29330f8ec7266940e65274dbb066e4cb55d2a5ff1a7d294f9c5abc1f",
+      "feature_sha256": "e08d94978fdfbf8f0768eb42d28cf64a93a4c44a5c5116c36c3ee69dd0985e55",
+      "target_sha256": "41340f9833ad62c31e9efc190d96558eefc944163d53fe8fcf9061a7dd518fa6",
+      "ordinal_sha256": "d36ce3b5ceeb8212c2e411ef4c6ecce473d52268d5bf07aed7a6a8a9b6f5eaca",
+      "planes": [
+        {
+          "plane_id": "GI_test_truth_ROI0_1_800",
+          "labels_sha256": "fecdfebdd93faedfc220926a1c600bc754242333df6372b32c8803c9a269b23f",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI0_1_805",
+          "labels_sha256": "b943c5db2657af5d69bc13c73632c5f99b9831283ec1459cfab5a26d4fcb1c7f",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI0_1_810",
+          "labels_sha256": "b8136d92de2ff045df049c5b00d7df6993b540bd3e55abfaaf51b52e34a7d2c5",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI0_1_815",
+          "labels_sha256": "da826e3958a8dfd27ddbab67cf5b6922a4d755a687a4fd6ee9b0850e0baf44b7",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI0_1_820",
+          "labels_sha256": "689932156cc77613df26be77037b0b10a1a5fda88dced8535f2d84d6ebb047a4",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI0_1_825",
+          "labels_sha256": "692139541a3f6d900dd86df9a3ce2483574a5be27015207d978b055edde13e0e",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI0_1_830",
+          "labels_sha256": "eca01bf74e75e0e7358f9eeff34d3e447e570bf22e5fecde96f86d2c86618b4c",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI0_1_835",
+          "labels_sha256": "b4f5ef56a5a87d35de80c331c15140bd408b739fd0229684a43d87bedd9d01ca",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI0_1_840",
+          "labels_sha256": "762fd7d81f498097cc1fe2e3f11171fcd9b4b088d7d4425d30d846a0f17b4986",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI0_1_845",
+          "labels_sha256": "16859f8a4f78039852b5a8de1a4c241830ad3b4ed8f3603c7d3b2cb9e52e73f3",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI1_1_800",
+          "labels_sha256": "28fdc9276c05d86f5afac7d3cfcd205cab98d3655e9ad0ee70d36958f5542b7f",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI1_1_805",
+          "labels_sha256": "06a4bf55bb5955299a12a28fbb62f1a0bb5cc2c32c8bd063f8a357d4db06d24b",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI1_1_810",
+          "labels_sha256": "9f17a9b11af799f7f2aa83616818afc8a3c89cf63ad00a425797b6693d490785",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI1_1_815",
+          "labels_sha256": "1d4367f1c726cd5fdd156f2d024e36178a5ed9ac8582652630712c8da180b8de",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI1_1_820",
+          "labels_sha256": "04065be80de1db29a3c85bd1e3d5a19015a9e263233cf807daf3dccf97ad34e3",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI1_1_825",
+          "labels_sha256": "e21bb4fbcf268b4da6af6eef753406419b3188a4dc6ae79dd56c4f38073249a9",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI1_1_830",
+          "labels_sha256": "39c60a131d005d70805ce98836ff6bf6862142f4db65a41ccf0cea5a16407c41",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI1_1_835",
+          "labels_sha256": "627fa95e5c1397586f9fbc140c6828b3efcf18a80e7c794743a50ee8dd72b094",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI1_1_840",
+          "labels_sha256": "b4f5ef56a5a87d35de80c331c15140bd408b739fd0229684a43d87bedd9d01ca",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI1_1_845",
+          "labels_sha256": "b4f5ef56a5a87d35de80c331c15140bd408b739fd0229684a43d87bedd9d01ca",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI2_1_200",
+          "labels_sha256": "b4f5ef56a5a87d35de80c331c15140bd408b739fd0229684a43d87bedd9d01ca",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI2_1_205",
+          "labels_sha256": "7c56656df4c4570dece9e5745f9149067c3ed94c57aab71853db64f0781b5ccb",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI2_1_210",
+          "labels_sha256": "b4f5ef56a5a87d35de80c331c15140bd408b739fd0229684a43d87bedd9d01ca",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI2_1_215",
+          "labels_sha256": "68fca0b1dd9d92da6b436b5de00719b5a4a4ba31fce3cbef15fa957da2c6e7a6",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI2_1_220",
+          "labels_sha256": "edccb3f42352cd224d5a3039acb536e9c3b443b52fc25fadbdde1909c9e0a972",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI2_1_225",
+          "labels_sha256": "5cf72aa6482e9162755995665e69b76fb0cd5a56a02bdf762d204cfd5eb573d4",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI2_1_230",
+          "labels_sha256": "a21b5012d77187a45379f5c2a3ce6bac7b34d55c13ce32ae9bc295e8db9d4b30",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI2_1_235",
+          "labels_sha256": "b4f5ef56a5a87d35de80c331c15140bd408b739fd0229684a43d87bedd9d01ca",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI2_1_240",
+          "labels_sha256": "b4f5ef56a5a87d35de80c331c15140bd408b739fd0229684a43d87bedd9d01ca",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI2_1_245",
+          "labels_sha256": "b4f5ef56a5a87d35de80c331c15140bd408b739fd0229684a43d87bedd9d01ca",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        }
+      ]
+    },
+    {
+      "material": "GI",
+      "orientation": "z",
+      "population": 48000,
+      "count": 48000,
+      "event_sha256": "78f73aa60c8a51e06d123b390df9638005342837832d60a68d5e0c14c59dd4e3",
+      "feature_sha256": "41974e27848caf8fcfa384c4fd71bd6ef5418db1a0862024d5b7f327c04d6b2a",
+      "target_sha256": "913f63dac3c7bef50f16145f86cdac0dba0d1c3d088f92654c0b733541b828cc",
+      "ordinal_sha256": "d36ce3b5ceeb8212c2e411ef4c6ecce473d52268d5bf07aed7a6a8a9b6f5eaca",
+      "planes": [
+        {
+          "plane_id": "GI_test_truth_ROI0_0_2300",
+          "labels_sha256": "a70858a5110ec5d486a5adbc43585b94aa3bb82466bd5a038009c67f4dd588cb",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI0_0_2305",
+          "labels_sha256": "318aedccd685b6ac80ccfe3e2b2a11cec4156fbcb6d6bf8306b27445f2bf87b8",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI0_0_2310",
+          "labels_sha256": "ed0bfd16ed2aa29407d212d3a1069a1afd14a2bf6527e79df817c1b6ef09867d",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI0_0_2315",
+          "labels_sha256": "d016a4be3d30b2f2af4042bd4305ef173318a92bce1bcc7ea3bbdbf55ecf7269",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI0_0_2320",
+          "labels_sha256": "00e073468ecd7415310080f7a5694e9a3a993070474f752ca867f3b274cf0c85",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI0_0_2325",
+          "labels_sha256": "55cac5db3b81dcb2f5f0526fee33967d817cc1f3c77be8b22adc282fcc14dbcc",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI0_0_2330",
+          "labels_sha256": "b4f5ef56a5a87d35de80c331c15140bd408b739fd0229684a43d87bedd9d01ca",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI0_0_2335",
+          "labels_sha256": "73e9414568a64ea58eea6b762b5b3776d91892563bd2a183aa4e63589f6c078d",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI0_0_2340",
+          "labels_sha256": "3b25f25637e47eeeac4d2b171b6f79f68fa5906d51fd525d8e8f3e26ad1e5711",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI0_0_2345",
+          "labels_sha256": "2990be65a43172e8a52e21012659ebe702ae4dccbc93eef5eabb6c8da5bf883f",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI1_0_2700",
+          "labels_sha256": "a935fb89970ebe8bb4323c43ce28741ff13dd2d3423ca5708b63aac6558478cd",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI1_0_2705",
+          "labels_sha256": "dd2a378dbd2272720a3dbb1f163397742a3bfc6e6037000205199fbfecd20097",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI1_0_2710",
+          "labels_sha256": "e664b52a739afbe6ceee115bf46a39549c827fe99ceafc24d0dd99076319d433",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI1_0_2715",
+          "labels_sha256": "f184df237d5dbf5db5d772dbe0faeb4c35713c8d13ad17e78293b3beb386a2c8",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI1_0_2720",
+          "labels_sha256": "c4a2f79d60a557bfdd84f90e1f8996b38acbb227b46575ccfc9675a566fbbd37",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI1_0_2725",
+          "labels_sha256": "6661972873b98503d0a674827854a799e77f414a3493d2b70e1059ddb4851d50",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI1_0_2730",
+          "labels_sha256": "659c3d13341d12b2b8d94d1ade9a0008281be48c68b891eacc528cfdbab8b079",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI1_0_2735",
+          "labels_sha256": "a653edeef042b3a10ff3aa551a088bfb857bcf86dd8dd79b0486dd8725cf3724",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI1_0_2740",
+          "labels_sha256": "d9311dfdc8a635e1137823378b29b95b0a87a3e959a0cb9bc42b2642a92ab77a",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI1_0_2745",
+          "labels_sha256": "efbdcb223a148379da1e971e69b04435c4a20a3f3f472c8b0938346a8917e197",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI2_0_2100",
+          "labels_sha256": "abf8bc8595de2a5fbee59d80ff177fe8639b925a3b009b6eef1d156d00dfb09d",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI2_0_2105",
+          "labels_sha256": "b0dc0e0ee1c1a68ea72af20e4fc2d955073d0944e336f23ac073657f2bc47ec7",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI2_0_2110",
+          "labels_sha256": "f7138630420daee89ea2e6246c11743fb2858483e9f1bb5ab3bc1636497158f4",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI2_0_2115",
+          "labels_sha256": "b4f5ef56a5a87d35de80c331c15140bd408b739fd0229684a43d87bedd9d01ca",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI2_0_2120",
+          "labels_sha256": "b4f5ef56a5a87d35de80c331c15140bd408b739fd0229684a43d87bedd9d01ca",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI2_0_2125",
+          "labels_sha256": "b4f5ef56a5a87d35de80c331c15140bd408b739fd0229684a43d87bedd9d01ca",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI2_0_2130",
+          "labels_sha256": "b4f5ef56a5a87d35de80c331c15140bd408b739fd0229684a43d87bedd9d01ca",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI2_0_2135",
+          "labels_sha256": "b4f5ef56a5a87d35de80c331c15140bd408b739fd0229684a43d87bedd9d01ca",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI2_0_2140",
+          "labels_sha256": "b4f5ef56a5a87d35de80c331c15140bd408b739fd0229684a43d87bedd9d01ca",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "GI_test_truth_ROI2_0_2145",
+          "labels_sha256": "b4f5ef56a5a87d35de80c331c15140bd408b739fd0229684a43d87bedd9d01ca",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        }
+      ]
+    },
+    {
+      "material": "WF2",
+      "orientation": "x",
+      "population": 48000,
+      "count": 48000,
+      "event_sha256": "224791d155b530b8c7a4826771da71b040995c40f3a03ad83937c239c0504446",
+      "feature_sha256": "96502b6bec5993656c9f539d8641db675fd2ab80d2c24dc0f4f9f7ea2f8acfbf",
+      "target_sha256": "92be11c2817920aad26305c07f992b159a9b66c2af2ac1d431745044796414cb",
+      "ordinal_sha256": "d36ce3b5ceeb8212c2e411ef4c6ecce473d52268d5bf07aed7a6a8a9b6f5eaca",
+      "planes": [
+        {
+          "plane_id": "WF2_test_truth_ROI0_2_200",
+          "labels_sha256": "0f2c4a1ac2dbd576445649b4ad43f2ee1074f6deb5c04d439206022a34f6ee08",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI0_2_205",
+          "labels_sha256": "2f97bcf731f73cf69370a57a6f745d4d8970fdb2dcb100f53ff6edbe5a8dec2a",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI0_2_210",
+          "labels_sha256": "8dcc1a28aaa0f67894a10bd1c4ca924d67a287258f5dc06a4631bcde86920266",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI0_2_215",
+          "labels_sha256": "8344a56ba0836648059f34e5554bc78f8c1babe55523e7f7184d9d51f9f3d642",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI0_2_220",
+          "labels_sha256": "9a97aba1e4eb8bb6aa03ed94065eda4d13a54e6031c40e38c864438b18bc893c",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI0_2_225",
+          "labels_sha256": "6c8f3b1cef9856eb0524e7570a55658bd8a12ecc7a1e3d42921a9ffbbe8f693c",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI0_2_230",
+          "labels_sha256": "fbf4b06c1fd215419e821ec8d7f44aa50bba8865689e7d23dda7ea81643ab395",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI0_2_235",
+          "labels_sha256": "79d52be56701c39ac962b7b0714eb053e5f3a07c6d684d20e56358c6f98c5dac",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI0_2_240",
+          "labels_sha256": "bbbc02b49cbfb728f360ba6d9bd953df4326d74e567be575ccd1eb1731878c5b",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI0_2_245",
+          "labels_sha256": "bae8c258113d80c60d5ea434d68fc05b3c798494c32879992d7f9ce582ff6b30",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI1_2_800",
+          "labels_sha256": "c13ae864aed0e08df3e1fe50db21b2a41ce3ed4197156e4849df46ce96892ea0",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI1_2_805",
+          "labels_sha256": "47b082bca928f5fdb879f4f87d00c7b120a0d07c4d33ad13988cc5c1e24c9bbc",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI1_2_810",
+          "labels_sha256": "0f98334c18e58a1005016dc5cd5888d04f83649fe4121d4638bb1e3c2386cb64",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI1_2_815",
+          "labels_sha256": "f2124baaf3b2cdef63b72e6456df57855940bc15e3973270905e627245ab2cd5",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI1_2_820",
+          "labels_sha256": "88ea63cba4a415c3003dea19eca0e0349d9d94b40033f3c8a1349a3fbaf0da77",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI1_2_825",
+          "labels_sha256": "ff5a907c6c7d775255a588af10308741a0b82fe52991b8a1d40f657082647f07",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI1_2_830",
+          "labels_sha256": "f8292d306588c3431694aca340cdd6fd563a391c025687d8ca6f641e01ee2812",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI1_2_835",
+          "labels_sha256": "4996d4f3c8d2184a7673490184a97ef3cae1a71065c0e424790496741382a360",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI1_2_840",
+          "labels_sha256": "1f4936c6fd05cf3f172d29837f18790c465762ee182662d080736cb8cb004138",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI1_2_845",
+          "labels_sha256": "ddc60b795ac15f41db41265b3f28cf0a991afe7750c1ce5c621cf2f8c7808aa7",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI2_2_800",
+          "labels_sha256": "9bdce0b207ca2b965e0990b853ad06c2845f48b4b0ee7fc842d085be3dfaeb61",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI2_2_805",
+          "labels_sha256": "2b4f35df294a637888f403554283694facca59d1efbff32b1c256484c53e44f1",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI2_2_810",
+          "labels_sha256": "6b271fc3e2db5be5ff0f1b475a153cdd0b67171620d6251a741fa4a3cccd0183",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI2_2_815",
+          "labels_sha256": "f8701faea4c248fdb0b78b923e984b9d8e3fadd7d66c471ed8b80165f9f8a5ea",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI2_2_820",
+          "labels_sha256": "9092ecab53544260365f00a7d43a37089786b18e1288e739739c6ae85341f07b",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI2_2_825",
+          "labels_sha256": "5240f88c05d0270e74ccb5c45f1e6f56ccd3d493fccaba8ee75ab6696a12b84e",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI2_2_830",
+          "labels_sha256": "017419322e43e40e2c7533ac587c9f129e2a762894dabb7fa7de4e9f07d2e144",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI2_2_835",
+          "labels_sha256": "597a42a27c8ae587c72cc96b51e3c6b31cb3055b173e3eaa5340b88a59aca2d1",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI2_2_840",
+          "labels_sha256": "2249039126284159fa7862fac44d9e9207f60560dd4855f945f3a9243f33f821",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI2_2_845",
+          "labels_sha256": "342d40760f3751410e2805d22b7601c02b6737d8301be7f53485b574d3bca030",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        }
+      ]
+    },
+    {
+      "material": "WF2",
+      "orientation": "y",
+      "population": 48000,
+      "count": 48000,
+      "event_sha256": "99766fa699269d18fa4e06956a1dd39a85b2028a0cc8f885cdc97afb97f66fbe",
+      "feature_sha256": "411d9ef09b1f3bde9212cd3a3ae67f7e273866cd45c16b01ff65b153df661df2",
+      "target_sha256": "971dc9d1f6a4ddd12d15aad2ff21798c35c21a765255c04da1aa831a77e20a0b",
+      "ordinal_sha256": "d36ce3b5ceeb8212c2e411ef4c6ecce473d52268d5bf07aed7a6a8a9b6f5eaca",
+      "planes": [
+        {
+          "plane_id": "WF2_test_truth_ROI0_1_800",
+          "labels_sha256": "41c9c337325a3ef8225fb3087368a2187f0e200c2ec4a833e2b03330afd291a0",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI0_1_805",
+          "labels_sha256": "2a6f580009b315738bd13410f724bbbf1df65a547dd2d48173ab03937aaf7da3",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI0_1_810",
+          "labels_sha256": "e8f5ccf2291d58b89e71968c0f43344182fe867b7c6cbf6fc45021c49235fdef",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI0_1_815",
+          "labels_sha256": "8e20ed3fc7a228636955afd8cf9de188e5f5595f682c9165a07c35e924b67d72",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI0_1_820",
+          "labels_sha256": "689932156cc77613df26be77037b0b10a1a5fda88dced8535f2d84d6ebb047a4",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI0_1_825",
+          "labels_sha256": "692139541a3f6d900dd86df9a3ce2483574a5be27015207d978b055edde13e0e",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI0_1_830",
+          "labels_sha256": "eca01bf74e75e0e7358f9eeff34d3e447e570bf22e5fecde96f86d2c86618b4c",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI0_1_835",
+          "labels_sha256": "b4f5ef56a5a87d35de80c331c15140bd408b739fd0229684a43d87bedd9d01ca",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI0_1_840",
+          "labels_sha256": "6469333b75fcad88503f41bda1fc80f1311cb7fece9bbf613ec5cf2ad4b6d612",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI0_1_845",
+          "labels_sha256": "fbaef713614f477b763cfde8cd8510e7f3907ba63576f99d7036bef95a254548",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI1_1_800",
+          "labels_sha256": "78eb70dfffbe6c5a3be834f3f53c575e94be88df30b009b00804c77d3ecdb398",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI1_1_805",
+          "labels_sha256": "1aac09e97018d60a93057cb708d43e2e0749c789959e651c30f56d03df530ac1",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI1_1_810",
+          "labels_sha256": "08e314ea77f8dfd354f4c83feed60c65929aa9a77bcc15eef77e34f5b15c3f09",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI1_1_815",
+          "labels_sha256": "f6f1b5172cbe5c9b9c227af75de143ef416da9d4f49c730446c1eb986a9f25cd",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI1_1_820",
+          "labels_sha256": "89987df3c94df154bf20b0ea4e11916da7bac44f1a1982ab53f66a85333e975a",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI1_1_825",
+          "labels_sha256": "e21bb4fbcf268b4da6af6eef753406419b3188a4dc6ae79dd56c4f38073249a9",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI1_1_830",
+          "labels_sha256": "da1947aeecdacb28da7b91869f0fa9aa73e28447ed18a1356eb1eaed02b614db",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI1_1_835",
+          "labels_sha256": "627fa95e5c1397586f9fbc140c6828b3efcf18a80e7c794743a50ee8dd72b094",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI1_1_840",
+          "labels_sha256": "b4f5ef56a5a87d35de80c331c15140bd408b739fd0229684a43d87bedd9d01ca",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI1_1_845",
+          "labels_sha256": "b4f5ef56a5a87d35de80c331c15140bd408b739fd0229684a43d87bedd9d01ca",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI2_1_200",
+          "labels_sha256": "b4f5ef56a5a87d35de80c331c15140bd408b739fd0229684a43d87bedd9d01ca",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI2_1_205",
+          "labels_sha256": "7c56656df4c4570dece9e5745f9149067c3ed94c57aab71853db64f0781b5ccb",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI2_1_210",
+          "labels_sha256": "b4f5ef56a5a87d35de80c331c15140bd408b739fd0229684a43d87bedd9d01ca",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI2_1_215",
+          "labels_sha256": "00999b29549421b3532b78bc202eaf11fa9febcf5a8033ab354a2c1e16dc37e3",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI2_1_220",
+          "labels_sha256": "edccb3f42352cd224d5a3039acb536e9c3b443b52fc25fadbdde1909c9e0a972",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI2_1_225",
+          "labels_sha256": "15442a5a3207219d19b7c287ed7920676622b4e0fa146b10edba0ef67101f77c",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI2_1_230",
+          "labels_sha256": "6e624ebbfa6f94990f6dce45f6facd53ee47dd2437cf0045a1972155b31e81a9",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI2_1_235",
+          "labels_sha256": "b4f5ef56a5a87d35de80c331c15140bd408b739fd0229684a43d87bedd9d01ca",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI2_1_240",
+          "labels_sha256": "b4f5ef56a5a87d35de80c331c15140bd408b739fd0229684a43d87bedd9d01ca",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI2_1_245",
+          "labels_sha256": "b4f5ef56a5a87d35de80c331c15140bd408b739fd0229684a43d87bedd9d01ca",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        }
+      ]
+    },
+    {
+      "material": "WF2",
+      "orientation": "z",
+      "population": 48000,
+      "count": 48000,
+      "event_sha256": "c6ba5ff320fbb9a4505163a72e7569e169480a2ff462c99132567b076237830b",
+      "feature_sha256": "168efc3cd9e3f9c25889b45bf009b84af000a43b129c29dd94abce6667260e06",
+      "target_sha256": "4540fe8992fbed7ba817eb928544f65243d10923a38fe189745abfbb302176b0",
+      "ordinal_sha256": "d36ce3b5ceeb8212c2e411ef4c6ecce473d52268d5bf07aed7a6a8a9b6f5eaca",
+      "planes": [
+        {
+          "plane_id": "WF2_test_truth_ROI0_0_2300",
+          "labels_sha256": "fd26a4bc16b0e5088e5f2d07adeab1c3b5fd69dff962fe89c8832d02e5444e52",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI0_0_2305",
+          "labels_sha256": "cb257b88e072e07e91c90c268d3dddcf6b8edd376fbb4772e1eee95a7965efa5",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI0_0_2310",
+          "labels_sha256": "7217643f91b4149ae84ec12991841d93b2c8710fcb14c0035870367ae0eb69e4",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI0_0_2315",
+          "labels_sha256": "46c85e2885baa71c1a80f5ce35bcb1945779707131387c2cec16b063a2b93bd2",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI0_0_2320",
+          "labels_sha256": "21722772f9769b05f9ccb857b5525dcef3f13783fae354a0c8e0343613704cfe",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI0_0_2325",
+          "labels_sha256": "55cac5db3b81dcb2f5f0526fee33967d817cc1f3c77be8b22adc282fcc14dbcc",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI0_0_2330",
+          "labels_sha256": "b4f5ef56a5a87d35de80c331c15140bd408b739fd0229684a43d87bedd9d01ca",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI0_0_2335",
+          "labels_sha256": "420391292f92b8c3d45a7390ccaa723cd586fcf6d2ef04a473e2771a18020168",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI0_0_2340",
+          "labels_sha256": "3563e6f1c487f564ae30472740fc6f124335f97430680c9ece763bcfe5f4bd34",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI0_0_2345",
+          "labels_sha256": "2990be65a43172e8a52e21012659ebe702ae4dccbc93eef5eabb6c8da5bf883f",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI1_0_2700",
+          "labels_sha256": "4f612c4e3db5bb3d2d5800ba07d16fa78e0d62164b81f13facc67bf5b84b8719",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI1_0_2705",
+          "labels_sha256": "745e86418b980dd0a247fd406ce02b93524f209e90a1f37fe52fb9b7fc0a9d40",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI1_0_2710",
+          "labels_sha256": "e664b52a739afbe6ceee115bf46a39549c827fe99ceafc24d0dd99076319d433",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI1_0_2715",
+          "labels_sha256": "728f1bd95d1c02efcb800960fe42709929b22a8eddb380f9196d94aea6e197c4",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI1_0_2720",
+          "labels_sha256": "6aa7801b95eb35f5568731b10cdc99e2cd18f5179a3d947c44be4b8573073dbc",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI1_0_2725",
+          "labels_sha256": "20c7e04428be78c47b331a748eb0c8c5a2eefa8ed6affcfc2ea0f7a61c00afa0",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI1_0_2730",
+          "labels_sha256": "b902c891b2c284914f3eb918b758b70f78b569f340e03b5d09090db40f93924c",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI1_0_2735",
+          "labels_sha256": "5d1b1390163abd9a400a8e41a25ee7487d3708f4533de2d577a21b2d051700a4",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI1_0_2740",
+          "labels_sha256": "edf0d6ffdcef34b7a5262713c85474cc17c56d5619e432538c9dafe3e965fe83",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI1_0_2745",
+          "labels_sha256": "1405999d59eee5f89f22c88f6b3f78413e5c5fadd52c6160c11bc43961dd7bd9",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI2_0_2100",
+          "labels_sha256": "d05fb922427869356d2408a17ad2499299aa11af18dbaaa52c0dcb50b5f9f1ed",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI2_0_2105",
+          "labels_sha256": "be3448343a2f6a4514dfa0eaea9bdc12d90ac53b13f9f45506706b4805791a10",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI2_0_2110",
+          "labels_sha256": "f7138630420daee89ea2e6246c11743fb2858483e9f1bb5ab3bc1636497158f4",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI2_0_2115",
+          "labels_sha256": "b4f5ef56a5a87d35de80c331c15140bd408b739fd0229684a43d87bedd9d01ca",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI2_0_2120",
+          "labels_sha256": "b4f5ef56a5a87d35de80c331c15140bd408b739fd0229684a43d87bedd9d01ca",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI2_0_2125",
+          "labels_sha256": "b4f5ef56a5a87d35de80c331c15140bd408b739fd0229684a43d87bedd9d01ca",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI2_0_2130",
+          "labels_sha256": "b4f5ef56a5a87d35de80c331c15140bd408b739fd0229684a43d87bedd9d01ca",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI2_0_2135",
+          "labels_sha256": "b4f5ef56a5a87d35de80c331c15140bd408b739fd0229684a43d87bedd9d01ca",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI2_0_2140",
+          "labels_sha256": "b4f5ef56a5a87d35de80c331c15140bd408b739fd0229684a43d87bedd9d01ca",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        },
+        {
+          "plane_id": "WF2_test_truth_ROI2_0_2145",
+          "labels_sha256": "b4f5ef56a5a87d35de80c331c15140bd408b739fd0229684a43d87bedd9d01ca",
+          "support_sha256": "e91c12886f46fa53bfa4e01c9863126831e4548a4e90d8fd835d6e1406d59c79",
+          "count": 1600,
+          "coordinates_sha256": "086e1154d31b7c8a4e2a4df4269e931f97cc8ee61ef8b8b6be1c41dad610345a"
+        }
+      ]
+    }
+  ],
+  "paired_across_models": true
+}
