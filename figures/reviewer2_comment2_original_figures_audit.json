@@ -4,6 +4,19 @@
     "figure_action": "show_original_registered_mask_without_pink_role_overlay",
     "status": "ROLE_FILTER_NOT_PRESENT_IN_ORIGINAL_OBSERVATION_BUILDER"
   },
+  "latex_layout": {
+    "class": "elsarticle",
+    "columnsep_pt": 24.0,
+    "columnwidth_mm": 78.02407638024077,
+    "columnwidth_pt": 222.0,
+    "options": "final,3p,twocolumn",
+    "ordinary_label_target_pt": "7--8 at full-width placement",
+    "recommended_placement": "figure* at \\textwidth",
+    "single_column_note": "The dense multi-panel layouts are supplied as diagnostic previews at columnwidth; use figure* for the final paper placement to preserve the target label size.",
+    "source_canvas_width_mm": 164.48318804483188,
+    "textwidth_mm": 164.48318804483188,
+    "textwidth_pt": 468.0
+  },
   "mask_counts": {
     "GI_1000um": 6769,
     "GI_250um": 6769,
@@ -43,8 +56,8 @@
     ]
   },
   "preview_widths_mm": {
-    "double_column": 183.0,
-    "single_column": 90.0
+    "double_column": 164.48318804483188,
+    "single_column": 78.02407638024077
   },
   "provenance": {
     "GI": {

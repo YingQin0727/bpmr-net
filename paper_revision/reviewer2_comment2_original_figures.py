@@ -68,8 +68,15 @@ ROLE_COLORS = {
 }
 SPACINGS = (25, 250, 1000)
 ORIENTATIONS = ("x", "y", "z")
-MANUSCRIPT_SINGLE_COLUMN_MM = 90.0
-MANUSCRIPT_DOUBLE_COLUMN_MM = 183.0
+ELSARTICLE_3P_TEXTWIDTH_PT = 468.0
+ELSARTICLE_3P_COLUMNSEP_PT = 24.0
+PT_TO_MM = 25.4 / 72.27
+MANUSCRIPT_SINGLE_COLUMN_MM = (ELSARTICLE_3P_TEXTWIDTH_PT - ELSARTICLE_3P_COLUMNSEP_PT) / 2 * PT_TO_MM
+MANUSCRIPT_DOUBLE_COLUMN_MM = ELSARTICLE_3P_TEXTWIDTH_PT * PT_TO_MM
+# Matplotlib uses 72 points per inch, whereas TeX reports points at 72.27 per
+# inch.  Use the class's 468 pt value here so the exported PDF media box is
+# exactly the measured elsarticle text width.
+FINAL_FIGURE_WIDTH_IN = ELSARTICLE_3P_TEXTWIDTH_PT / 72.0
 ROLE_FIELDS = {
     "fitting": "fitting_plane_indices",
     "validation": "validation_plane_indices",
@@ -285,15 +292,23 @@ def add_phase_legend(fig) -> None:
         loc="lower center",
         ncol=4,
         frameon=False,
-        fontsize=8,
-        bbox_to_anchor=(0.5, 0.002),
+        fontsize=7.2,
+        bbox_to_anchor=(0.5, 0.006),
     )
 
 
 def plot_truth_overview(arrays: dict[str, np.ndarray], provenance: dict[str, dict], out_pdf: Path, out_png: Path) -> None:
-    fig = plt.figure(figsize=(12.6, 6.35), constrained_layout=False)
-    gs = GridSpec(2, 5, figure=fig, width_ratios=(1.38, 1, 1, 1, 0.92), wspace=0.25, hspace=0.34, bottom=0.11, top=0.90, left=0.035, right=0.985)
-    fig.suptitle("Ground-truth ROI structure and phase fractions", fontsize=14, fontweight="bold")
+    # The source canvas is the actual 3p elsarticle text width.  This keeps
+    # vector text at the requested 7--8 pt scale when inserted as figure*.
+    fig = plt.figure(
+        figsize=(FINAL_FIGURE_WIDTH_IN, FINAL_FIGURE_WIDTH_IN * 6.35 / 12.6),
+        constrained_layout=False,
+    )
+    gs = GridSpec(
+        2, 5, figure=fig, width_ratios=(1.38, 1, 1, 1, 0.92),
+        wspace=0.18, hspace=0.38, bottom=0.13, top=0.89, left=0.035, right=0.985,
+    )
+    fig.suptitle("Ground-truth ROI and phase fractions", fontsize=11.5, fontweight="bold", y=0.975)
     for row, material in enumerate(("WF2", "GI")):
         arr = arrays[material]
         ax3d = fig.add_subplot(gs[row, 0], projection="3d")
@@ -313,10 +328,7 @@ def plot_truth_overview(arrays: dict[str, np.ndarray], provenance: dict[str, dic
             rgba[..., :3] = matplotlib.colors.to_rgb(PHASE_COLORS[phase])
             rgba[..., 3] = selected * phase_alpha[phase]
             ax3d.voxels(selected, facecolors=rgba, edgecolor="none", shade=False)
-        ax3d.set_title(f"{material}\n3D cutaway", fontsize=10.2, loc="left", pad=2)
-        ax3d.set_xlabel("X (μm)", fontsize=8, labelpad=1)
-        ax3d.set_ylabel("Y (μm)", fontsize=8, labelpad=1)
-        ax3d.set_zlabel("Z (μm)", fontsize=8, labelpad=1)
+        ax3d.set_title(f"{material}\n3D · 5 μm voxels (XYZ)", fontsize=8.2, loc="left", pad=1)
         # ``voxels`` uses local indices 0..24 for the 2x display grid. Keep
         # those coordinates and label the ticks in the original 5 μm units.
         ax3d.set_xlim(0, 24); ax3d.set_ylim(0, 24); ax3d.set_zlim(0, 24)
@@ -335,12 +347,11 @@ def plot_truth_overview(arrays: dict[str, np.ndarray], provenance: dict[str, dic
         for col, (image, title) in enumerate(slices, start=1):
             ax = fig.add_subplot(gs[row, col])
             ax.imshow(image, cmap=PHASE_CMAP, norm=PHASE_NORM, origin="lower", interpolation="none", aspect="equal")
-            ax.set_title(title, fontsize=9.3)
-            ax.set_xticks((0, 24, 47), labels=("0", "24", "47"), fontsize=7)
-            ax.set_yticks((0, 24, 47), labels=("0", "24", "47"), fontsize=7)
-            ax.set_xlabel("local voxel index", fontsize=7.2)
+            ax.set_title(title, fontsize=7.5, pad=2)
+            ax.set_xticks((0, 24, 47), labels=("0", "24", "47"), fontsize=6.8)
+            ax.set_yticks((0, 24, 47), labels=("0", "24", "47"), fontsize=6.8)
             if col == 1:
-                ax.set_ylabel("local voxel index", fontsize=7.2)
+                ax.set_ylabel("voxel index", fontsize=6.8, labelpad=1)
             _style_axes(ax)
 
         counts = np.bincount(arr.ravel(), minlength=4).astype(float)
@@ -348,13 +359,13 @@ def plot_truth_overview(arrays: dict[str, np.ndarray], provenance: dict[str, dic
         axf = fig.add_subplot(gs[row, 4])
         axf.bar(np.arange(4), fractions, color=PHASE_COLORS, width=0.72)
         axf.set_ylim(0, 1.14)
-        axf.set_xticks(range(4), labels=["0", "1", "2", "3"], fontsize=8)
-        axf.set_ylabel("fraction", fontsize=8)
-        axf.set_title("Phase fractions", fontsize=9.5, pad=8)
+        axf.set_xticks(range(4), labels=["0", "1", "2", "3"], fontsize=7)
+        axf.set_ylabel("fraction", fontsize=7.2, labelpad=1)
+        axf.set_title("Phase fraction", fontsize=8.0, pad=4)
         axf.grid(axis="y", color="#dddddd", linewidth=0.5)
         for phase, fraction in enumerate(fractions):
             label_y = fraction + 0.035 if fraction < 0.94 else 1.025
-            axf.text(phase, label_y, f"{fraction:.3f}", ha="center", va="bottom", fontsize=7.5)
+            axf.text(phase, label_y, f"{fraction:.3f}", ha="center", va="bottom", fontsize=6.2)
         _style_axes(axf)
 
     add_phase_legend(fig)
@@ -364,7 +375,12 @@ def plot_truth_overview(arrays: dict[str, np.ndarray], provenance: dict[str, dic
 
 
 def plot_registered_masks(registration: dict, counts: dict[tuple[str, int], int], out_pdf: Path, out_png: Path) -> None:
-    fig = plt.figure(figsize=(15.2, 7.85), constrained_layout=False)
+    # Match the full-width manuscript canvas rather than shrinking a larger
+    # authoring canvas at LaTeX insertion time.
+    fig = plt.figure(
+        figsize=(FINAL_FIGURE_WIDTH_IN, FINAL_FIGURE_WIDTH_IN * 7.85 / 15.2),
+        constrained_layout=False,
+    )
     gs = GridSpec(2, 4, figure=fig, width_ratios=(1, 1, 1, 1.56), wspace=0.26, hspace=0.44, left=0.045, right=0.985, top=0.89, bottom=0.14)
     fig.suptitle("Registered global planes and local observation masks", fontsize=12.5, fontweight="bold")
     roi_axis_bounds = {
@@ -499,6 +515,19 @@ def main() -> None:
         "preview_widths_mm": {
             "single_column": MANUSCRIPT_SINGLE_COLUMN_MM,
             "double_column": MANUSCRIPT_DOUBLE_COLUMN_MM,
+        },
+        "latex_layout": {
+            "class": "elsarticle",
+            "options": "final,3p,twocolumn",
+            "textwidth_pt": ELSARTICLE_3P_TEXTWIDTH_PT,
+            "columnsep_pt": ELSARTICLE_3P_COLUMNSEP_PT,
+            "columnwidth_pt": (ELSARTICLE_3P_TEXTWIDTH_PT - ELSARTICLE_3P_COLUMNSEP_PT) / 2,
+            "textwidth_mm": MANUSCRIPT_DOUBLE_COLUMN_MM,
+            "columnwidth_mm": MANUSCRIPT_SINGLE_COLUMN_MM,
+            "recommended_placement": "figure* at \\textwidth",
+            "source_canvas_width_mm": MANUSCRIPT_DOUBLE_COLUMN_MM,
+            "ordinary_label_target_pt": "7--8 at full-width placement",
+            "single_column_note": "The dense multi-panel layouts are supplied as diagnostic previews at columnwidth; use figure* for the final paper placement to preserve the target label size.",
         },
         "mask_role_note": (
             "The local panels show the original registered observation mask used by the historical "
