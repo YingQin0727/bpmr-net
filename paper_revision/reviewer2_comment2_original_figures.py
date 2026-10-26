@@ -60,9 +60,6 @@ PHASE_COLORS = ("#0072B2", "#E69F00", "#8C8C8C", "#009E73")
 PHASE_CMAP = ListedColormap(PHASE_COLORS, name="original_four_phase")
 PHASE_NORM = BoundaryNorm(np.arange(-0.5, 4.5, 1), PHASE_CMAP.N)
 MASK_CMAP = ListedColormap(("#f2f2f2", "#2b8cbe"), name="registered_mask")
-MASK_DISPLAY_COLORS = ("#f2f2f2", "#2b8cbe", "#cc79a7", "#e69f00")
-MASK_DISPLAY_CMAP = ListedColormap(MASK_DISPLAY_COLORS, name="registered_mask_roles")
-MASK_DISPLAY_NORM = BoundaryNorm(np.arange(-0.5, 4.5, 1), MASK_DISPLAY_CMAP.N)
 ROLE_COLORS = {
     "fitting": "#0072B2",
     "validation": "#D55E00",
@@ -71,7 +68,8 @@ ROLE_COLORS = {
 }
 SPACINGS = (25, 250, 1000)
 ORIENTATIONS = ("x", "y", "z")
-MANUSCRIPT_LINEWIDTH_MM = 183.0
+MANUSCRIPT_SINGLE_COLUMN_MM = 90.0
+MANUSCRIPT_DOUBLE_COLUMN_MM = 183.0
 ROLE_FIELDS = {
     "fitting": "fitting_plane_indices",
     "validation": "validation_plane_indices",
@@ -232,30 +230,22 @@ def registered_mask(material: str, spacing: int, registration: dict) -> np.ndarr
     return mask
 
 
-def registered_role_mask(material: str, spacing: int, registration: dict) -> np.ndarray:
-    """Return 0=unobserved, 1=allowed, 2=held-out, 3=unassigned.
-
-    The geometry includes every registered ROI-intersecting plane so that the
-    reported totals remain the original 51,273/6,769 counts. Held-out planes
-    are rendered separately and are explicitly not presented as constraints.
-    """
-    categories = np.zeros((48, 48, 48), dtype=np.uint8)
+def registered_clamped_mask(material: str, spacing: int, registration: dict) -> np.ndarray:
+    """Return the original registered observation mask used by reconstruction."""
+    mask = np.zeros((48, 48, 48), dtype=bool)
     starts = {"z": ROI[material][0], "y": ROI[material][2], "x": ROI[material][4]}
     for orientation in ORIENTATIONS:
         key = (material, spacing, orientation)
         data = registration["global_rows"][key]
-        role_map = registration["role_maps"][key]
         for global_index in data["roi_intersecting"]:
             local_index = int(global_index) - starts[orientation]
-            role = role_map.get(int(global_index), "unassigned")
-            category = 2 if role == "held-out" else 1 if role in {"fitting", "validation"} else 3
             if orientation == "x":
-                categories[:, :, local_index] = np.maximum(categories[:, :, local_index], category)
+                mask[:, :, local_index] = True
             elif orientation == "y":
-                categories[:, local_index, :] = np.maximum(categories[:, local_index, :], category)
+                mask[:, local_index, :] = True
             else:
-                categories[local_index, :, :] = np.maximum(categories[local_index, :, :], category)
-    return categories
+                mask[local_index, :, :] = True
+    return mask
 
 
 def assert_mask_counts(registration: dict) -> dict[tuple[str, int], int]:
@@ -265,9 +255,6 @@ def assert_mask_counts(registration: dict) -> dict[tuple[str, int], int]:
         for spacing in SPACINGS:
             mask = registered_mask(material, spacing, registration)
             counts[(material, spacing)] = int(mask.sum())
-            role_mask = registered_role_mask(material, spacing, registration)
-            if int(np.count_nonzero(role_mask)) != counts[(material, spacing)]:
-                raise RuntimeError(f"ROLE_MASK_GEOMETRY_MISMATCH:{material}:{spacing}")
             if counts[(material, spacing)] != expected[spacing]:
                 raise RuntimeError(
                     f"REGISTERED_MASK_COUNT_MISMATCH:{material}:{spacing}:"
@@ -282,12 +269,12 @@ def _style_axes(ax) -> None:
         spine.set_linewidth(0.6)
 
 
-def save_linewidth_preview(png_path: Path, preview_path: Path) -> None:
-    """Resize a rendered figure to the Elsevier full-width manuscript preview."""
+def save_linewidth_preview(png_path: Path, preview_path: Path, width_mm: float) -> None:
+    """Resize a rendered figure to the requested manuscript preview width."""
     from PIL import Image
 
     image = Image.open(png_path).convert("RGB")
-    target_width = round(MANUSCRIPT_LINEWIDTH_MM / 25.4 * 300)
+    target_width = round(width_mm / 25.4 * 300)
     target_height = round(image.height * target_width / image.width)
     image.resize((target_width, target_height), Image.Resampling.LANCZOS).save(preview_path)
 
@@ -306,7 +293,7 @@ def add_phase_legend(fig) -> None:
 def plot_truth_overview(arrays: dict[str, np.ndarray], provenance: dict[str, dict], out_pdf: Path, out_png: Path) -> None:
     fig = plt.figure(figsize=(12.6, 6.35), constrained_layout=False)
     gs = GridSpec(2, 5, figure=fig, width_ratios=(1.38, 1, 1, 1, 0.92), wspace=0.25, hspace=0.34, bottom=0.11, top=0.90, left=0.035, right=0.985)
-    fig.suptitle("Ground-truth ROI structure and phase fractions", fontsize=12.5, fontweight="bold")
+    fig.suptitle("Ground-truth ROI structure and phase fractions", fontsize=14, fontweight="bold")
     for row, material in enumerate(("WF2", "GI")):
         arr = arrays[material]
         ax3d = fig.add_subplot(gs[row, 0], projection="3d")
@@ -317,7 +304,7 @@ def plot_truth_overview(arrays: dict[str, np.ndarray], provenance: dict[str, dic
         cutaway = ~((xx < 7) & (yy < 7) & (zz < 7))
         # Keep the dominant grey phase visible for the all-Phase-2 GI ROI while
         # retaining transparency for the cutaway interior.
-        phase_alpha = (0.90, 0.90, 0.50, 0.90)
+        phase_alpha = (0.88, 0.88, 0.32 if material == "WF2" else 0.50, 0.88)
         for phase in range(4):
             selected = (sample == phase) & cutaway
             if not np.any(selected):
@@ -326,10 +313,10 @@ def plot_truth_overview(arrays: dict[str, np.ndarray], provenance: dict[str, dic
             rgba[..., :3] = matplotlib.colors.to_rgb(PHASE_COLORS[phase])
             rgba[..., 3] = selected * phase_alpha[phase]
             ax3d.voxels(selected, facecolors=rgba, edgecolor="none", shade=False)
-        ax3d.set_title(f"{material}\n3D cutaway", fontsize=8.8, loc="left", pad=2)
-        ax3d.set_xlabel("X (μm)", fontsize=7, labelpad=1)
-        ax3d.set_ylabel("Y (μm)", fontsize=7, labelpad=1)
-        ax3d.set_zlabel("Z (μm)", fontsize=7, labelpad=1)
+        ax3d.set_title(f"{material}\n3D cutaway", fontsize=10.2, loc="left", pad=2)
+        ax3d.set_xlabel("X (μm)", fontsize=8, labelpad=1)
+        ax3d.set_ylabel("Y (μm)", fontsize=8, labelpad=1)
+        ax3d.set_zlabel("Z (μm)", fontsize=8, labelpad=1)
         # ``voxels`` uses local indices 0..24 for the 2x display grid. Keep
         # those coordinates and label the ticks in the original 5 μm units.
         ax3d.set_xlim(0, 24); ax3d.set_ylim(0, 24); ax3d.set_zlim(0, 24)
@@ -338,7 +325,7 @@ def plot_truth_overview(arrays: dict[str, np.ndarray], provenance: dict[str, dic
         ax3d.set_zticks((0, 12, 24), labels=("0", "120", "240"))
         ax3d.set_box_aspect((1, 1, 1))
         ax3d.view_init(elev=25, azim=-58)
-        ax3d.tick_params(labelsize=6, pad=0)
+        ax3d.tick_params(labelsize=7, pad=0)
 
         slices = (
             (arr[24, :, :], "XY · z=24"),
@@ -348,12 +335,12 @@ def plot_truth_overview(arrays: dict[str, np.ndarray], provenance: dict[str, dic
         for col, (image, title) in enumerate(slices, start=1):
             ax = fig.add_subplot(gs[row, col])
             ax.imshow(image, cmap=PHASE_CMAP, norm=PHASE_NORM, origin="lower", interpolation="none", aspect="equal")
-            ax.set_title(title, fontsize=8)
-            ax.set_xticks((0, 24, 47), labels=("0", "24", "47"), fontsize=6)
-            ax.set_yticks((0, 24, 47), labels=("0", "24", "47"), fontsize=6)
-            ax.set_xlabel("local voxel index", fontsize=6)
+            ax.set_title(title, fontsize=9.3)
+            ax.set_xticks((0, 24, 47), labels=("0", "24", "47"), fontsize=7)
+            ax.set_yticks((0, 24, 47), labels=("0", "24", "47"), fontsize=7)
+            ax.set_xlabel("local voxel index", fontsize=7.2)
             if col == 1:
-                ax.set_ylabel("local voxel index", fontsize=6)
+                ax.set_ylabel("local voxel index", fontsize=7.2)
             _style_axes(ax)
 
         counts = np.bincount(arr.ravel(), minlength=4).astype(float)
@@ -361,13 +348,13 @@ def plot_truth_overview(arrays: dict[str, np.ndarray], provenance: dict[str, dic
         axf = fig.add_subplot(gs[row, 4])
         axf.bar(np.arange(4), fractions, color=PHASE_COLORS, width=0.72)
         axf.set_ylim(0, 1.14)
-        axf.set_xticks(range(4), labels=["0", "1", "2", "3"], fontsize=7)
-        axf.set_ylabel("fraction", fontsize=7)
-        axf.set_title("Phase fractions", fontsize=8, pad=8)
+        axf.set_xticks(range(4), labels=["0", "1", "2", "3"], fontsize=8)
+        axf.set_ylabel("fraction", fontsize=8)
+        axf.set_title("Phase fractions", fontsize=9.5, pad=8)
         axf.grid(axis="y", color="#dddddd", linewidth=0.5)
         for phase, fraction in enumerate(fractions):
             label_y = fraction + 0.035 if fraction < 0.94 else 1.025
-            axf.text(phase, label_y, f"{fraction:.3f}", ha="center", va="bottom", fontsize=6.6)
+            axf.text(phase, label_y, f"{fraction:.3f}", ha="center", va="bottom", fontsize=7.5)
         _style_axes(axf)
 
     add_phase_legend(fig)
@@ -413,13 +400,11 @@ def plot_registered_masks(registration: dict, counts: dict[tuple[str, int], int]
 
         mask_spec = GridSpecFromSubplotSpec(3, 3, subplot_spec=gs[row, 3], hspace=0.28, wspace=0.10)
         for r, spacing in enumerate(SPACINGS):
-            role_mask = registered_role_mask(material, spacing, registration)
-            # The off-centre slice keeps the plane geometry legible. Held-out
-            # planes remain magenta and are never labelled as constraints.
-            images = (role_mask[22, :, :], role_mask[:, 22, :], role_mask[:, :, 22])
+            clamped_mask = registered_clamped_mask(material, spacing, registration)
+            images = (clamped_mask[22, :, :], clamped_mask[:, 22, :], clamped_mask[:, :, 22])
             for c, image in enumerate(images):
                 axm = fig.add_subplot(mask_spec[r, c])
-                axm.imshow(image.astype(np.uint8), cmap=MASK_DISPLAY_CMAP, norm=MASK_DISPLAY_NORM, origin="lower", interpolation="none", aspect="equal")
+                axm.imshow(image.astype(np.uint8), cmap=MASK_CMAP, vmin=0, vmax=1, origin="lower", interpolation="none", aspect="equal")
                 axm.set_xticks([]); axm.set_yticks([])
                 for spine in axm.spines.values():
                     spine.set_linewidth(0.45)
@@ -434,11 +419,10 @@ def plot_registered_masks(registration: dict, counts: dict[tuple[str, int], int]
         Patch(facecolor=ROLE_COLORS["validation"], edgecolor="none", label="Validation"),
         Patch(facecolor=ROLE_COLORS["held-out"], edgecolor="none", label="Held-out"),
         Patch(facecolor="none", edgecolor="black", label="ROI-intersecting plane"),
-        Patch(facecolor=MASK_DISPLAY_COLORS[1], edgecolor="none", label="Allowed local plane"),
-        Patch(facecolor=MASK_DISPLAY_COLORS[2], edgecolor="none", label="Held-out; not a constraint"),
+        Patch(facecolor="#2b8cbe", edgecolor="none", label="Clamped local plane"),
     ]
-    fig.legend(handles=role_handles, loc="lower center", ncol=3, frameon=False, fontsize=7.4, bbox_to_anchor=(0.5, 0.045))
-    fig.text(0.5, 0.012, "Local-mask totals: 25 μm = 51,273; 250/1000 μm = 6,769. The 250 and 1000 μm local masks coincide.", ha="center", fontsize=6.9, color="#444444")
+    fig.legend(handles=role_handles, loc="lower center", ncol=5, frameon=False, fontsize=7.4, bbox_to_anchor=(0.5, 0.045))
+    fig.text(0.5, 0.012, "Local clamped-mask totals: 25 μm = 51,273; 250/1000 μm = 6,769. The 250 and 1000 μm masks coincide.", ha="center", fontsize=7.4, color="#444444")
     fig.savefig(out_pdf, metadata={"Title": "Registered global planes and local observation masks", "Creator": "reviewer2_comment2_original_figures.py"})
     fig.savefig(out_png, dpi=450)
     plt.close(fig)
@@ -460,10 +444,22 @@ def main() -> None:
     save_linewidth_preview(
         args.output_dir / "dataset_ground_truth_overview.png",
         args.output_dir / "dataset_ground_truth_overview_linewidth_preview.png",
+        MANUSCRIPT_DOUBLE_COLUMN_MM,
     )
     save_linewidth_preview(
         args.output_dir / "registered_observation_masks.png",
         args.output_dir / "registered_observation_masks_linewidth_preview.png",
+        MANUSCRIPT_DOUBLE_COLUMN_MM,
+    )
+    save_linewidth_preview(
+        args.output_dir / "dataset_ground_truth_overview.png",
+        args.output_dir / "dataset_ground_truth_overview_singlecolumn_preview.png",
+        MANUSCRIPT_SINGLE_COLUMN_MM,
+    )
+    save_linewidth_preview(
+        args.output_dir / "registered_observation_masks.png",
+        args.output_dir / "registered_observation_masks_singlecolumn_preview.png",
+        MANUSCRIPT_SINGLE_COLUMN_MM,
     )
 
     methods_path = REPO / "paper_reproduction" / "factorial_protocol_and_training_v2.py"
@@ -497,7 +493,28 @@ def main() -> None:
             "registered_observation_masks.png",
             "dataset_ground_truth_overview_linewidth_preview.png",
             "registered_observation_masks_linewidth_preview.png",
+            "dataset_ground_truth_overview_singlecolumn_preview.png",
+            "registered_observation_masks_singlecolumn_preview.png",
         ],
+        "preview_widths_mm": {
+            "single_column": MANUSCRIPT_SINGLE_COLUMN_MM,
+            "double_column": MANUSCRIPT_DOUBLE_COLUMN_MM,
+        },
+        "mask_role_note": (
+            "The local panels show the original registered observation mask used by the historical "
+            "reconstruction package; the global panels retain the independent fitting/validation/held-out "
+            "role labels. Held-out is not shown as a separate local overlay."
+        ),
+        "heldout_clamp_audit": {
+            "status": "ROLE_FILTER_NOT_PRESENT_IN_ORIGINAL_OBSERVATION_BUILDER",
+            "evidence": (
+                "factorial_protocol_and_training_v2.build_observation_packages selects every registered "
+                "ROI-intersecting plane and assigns it to observed_mask; it does not filter by the later "
+                "fitting/validation/withheld role map. The figure therefore preserves the original mask "
+                "and does not claim that held-out planes were excluded from historical 3D clamping."
+            ),
+            "figure_action": "show_original_registered_mask_without_pink_role_overlay",
+        },
     }
     (args.output_dir / "reviewer2_comment2_original_figures_audit.json").write_text(json.dumps(audit, indent=2, sort_keys=True) + "\n", encoding="utf-8")
     print(json.dumps(audit, indent=2, sort_keys=True))

@@ -1,4 +1,9 @@
 {
+  "heldout_clamp_audit": {
+    "evidence": "factorial_protocol_and_training_v2.build_observation_packages selects every registered ROI-intersecting plane and assigns it to observed_mask; it does not filter by the later fitting/validation/withheld role map. The figure therefore preserves the original mask and does not claim that held-out planes were excluded from historical 3D clamping.",
+    "figure_action": "show_original_registered_mask_without_pink_role_overlay",
+    "status": "ROLE_FILTER_NOT_PRESENT_IN_ORIGINAL_OBSERVATION_BUILDER"
+  },
   "mask_counts": {
     "GI_1000um": 6769,
     "GI_250um": 6769,
@@ -7,6 +12,7 @@
     "WF2_250um": 6769,
     "WF2_25um": 51273
   },
+  "mask_role_note": "The local panels show the original registered observation mask used by the historical reconstruction package; the global panels retain the independent fitting/validation/held-out role labels. Held-out is not shown as a separate local overlay.",
   "methods_label_mapping": {
     "consistent_with_factorial_protocol": true,
     "original_rule": "raw labels 1..4 are decremented to canonical phases 0..3; already-canonical 0..3 are retained",
@@ -18,7 +24,9 @@
     "registered_observation_masks.pdf",
     "registered_observation_masks.png",
     "dataset_ground_truth_overview_linewidth_preview.png",
-    "registered_observation_masks_linewidth_preview.png"
+    "registered_observation_masks_linewidth_preview.png",
+    "dataset_ground_truth_overview_singlecolumn_preview.png",
+    "registered_observation_masks_singlecolumn_preview.png"
   ],
   "phase_fractions": {
     "GI": [
@@ -33,6 +41,10 @@
       0.847900390625,
       0.09497974537037036
     ]
+  },
+  "preview_widths_mm": {
+    "double_column": 183.0,
+    "single_column": 90.0
   },
   "provenance": {
     "GI": {
