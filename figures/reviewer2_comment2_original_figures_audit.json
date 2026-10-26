@@ -1,0 +1,117 @@
+{
+  "mask_counts": {
+    "GI_1000um": 6769,
+    "GI_250um": 6769,
+    "GI_25um": 51273,
+    "WF2_1000um": 6769,
+    "WF2_250um": 6769,
+    "WF2_25um": 51273
+  },
+  "outputs": [
+    "dataset_ground_truth_overview.pdf",
+    "dataset_ground_truth_overview.png",
+    "registered_observation_masks.pdf",
+    "registered_observation_masks.png"
+  ],
+  "phase_fractions": {
+    "GI": [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+    ],
+    "WF2": [
+      0.0014467592592592592,
+      0.05567310474537037,
+      0.847900390625,
+      0.09497974537037036
+    ]
+  },
+  "provenance": {
+    "GI": {
+      "canonical_mapping": "raw 1..4 -> canonical 0..3",
+      "raw_path": "D:\\Paper2\\paper2_stage02a_source_recovery\\official_download\\GI_5um_1030x1033x3051_8b_segmented.raw",
+      "raw_sha256": "35f336b0446a0bd8107197fdde697283b450d67aabb9fd59d4f104d8b97f8c94",
+      "raw_values": [
+        3
+      ],
+      "roi_shape_zyx": [
+        48,
+        48,
+        48
+      ],
+      "roi_zyx_half_open": [
+        [
+          1576,
+          1624
+        ],
+        [
+          376,
+          424
+        ],
+        [
+          580,
+          628
+        ]
+      ],
+      "voxel_pitch_um": 5
+    },
+    "WF2": {
+      "canonical_mapping": "raw 1..4 -> canonical 0..3",
+      "raw_path": "D:\\Paper2\\paper2_stage02a_source_recovery\\official_download\\WF2_5um_1030x1033x3051_8b_segmented_corrected.raw",
+      "raw_sha256": "932853c36761504216c3a734a852c08f6bf451ba6a5c4da9367a2ec8b724d22a",
+      "raw_values": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "roi_shape_zyx": [
+        48,
+        48,
+        48
+      ],
+      "roi_zyx_half_open": [
+        [
+          1376,
+          1424
+        ],
+        [
+          576,
+          624
+        ],
+        [
+          580,
+          628
+        ]
+      ],
+      "voxel_pitch_um": 5
+    }
+  },
+  "registry_sha256": {
+    "PAPER2_REGISTERED_MASTER_PLANE_LEDGER.csv": "93eafa7010076916e7432ec516d1c5150da91022cc11479d9e3b9043c686d2e3",
+    "global_plane_sets_v2r2.csv": "14a4fa8987ea3ed84d478f6a38ddf6b384c8cf9128dde13e58becffd2dd8b302",
+    "plane_role_registry_v2r2.csv": "7e57171bf2a4a723eea771b70af9eeb22c17b5bc83a06bd6ada6907b7d7d8f06",
+    "source_roi_registry_v2r2.json": "8c45171c6b99ebaeeca8bef38a656ea8567ba081a2778be6b451f6ec7a8e09d0"
+  },
+  "roi": {
+    "GI": [
+      1576,
+      1624,
+      376,
+      424,
+      580,
+      628
+    ],
+    "WF2": [
+      1376,
+      1424,
+      576,
+      624,
+      580,
+      628
+    ]
+  },
+  "source": "original submission registries and original raw segmentation arrays",
+  "voxel_pitch_um": 5
+}
