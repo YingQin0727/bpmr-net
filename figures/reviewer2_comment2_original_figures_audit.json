@@ -7,11 +7,18 @@
     "WF2_250um": 6769,
     "WF2_25um": 51273
   },
+  "methods_label_mapping": {
+    "consistent_with_factorial_protocol": true,
+    "original_rule": "raw labels 1..4 are decremented to canonical phases 0..3; already-canonical 0..3 are retained",
+    "source": "C:\\Users\\admin\\Documents\\ChatGPT\\\u8bba\u65871\\paper_reproduction\\factorial_protocol_and_training_v2.py"
+  },
   "outputs": [
     "dataset_ground_truth_overview.pdf",
     "dataset_ground_truth_overview.png",
     "registered_observation_masks.pdf",
-    "registered_observation_masks.png"
+    "registered_observation_masks.png",
+    "dataset_ground_truth_overview_linewidth_preview.png",
+    "registered_observation_masks_linewidth_preview.png"
   ],
   "phase_fractions": {
     "GI": [
